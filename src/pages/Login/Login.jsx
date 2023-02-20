@@ -7,8 +7,8 @@ import "./Login.scss";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [user, setUser] = useState("");
-  // const [error, setError] = useState("");
+  const [user, setUser] = useState("");
+  const [error, setError] = useState("");
 
   const userLogin = (event) => {
     event.preventDefault();
@@ -18,11 +18,19 @@ const Login = () => {
         const user = userCredential.user;
         //Change page
         console.log(user);
+        setUser(user);
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode, errorMessage);
+        if (errorMessage.includes("invalid-email")) {
+          setError("Invalid email");
+        } else if (errorMessage.includes("wrong-password")) {
+          setError("Wrong password");
+        } else {
+          setError(errorMessage);
+        }
       });
   };
 
@@ -55,6 +63,8 @@ const Login = () => {
           id="password-input"
           onChange={(event) => setPassword(event.target.value)}
         />
+        <p>{user.email}</p>
+        <p>{error}</p>
         <button onClick={userLogin}>Login</button>
       </form>
       <figure className="login-form__image-container">
