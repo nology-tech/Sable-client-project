@@ -11,7 +11,7 @@ const App = () => {
     <Route path="*" element={<Home />}/>  
     </Routes> 
     <div className="button-container">
-    <Button buttonText = "Edit" buttonStyle="isHeader" isPlus={true}/>
+    <Button buttonText = "save" buttonStyle="isPurple" isPlus={false}/>
     </div>
     </div>
   );
