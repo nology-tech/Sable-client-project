@@ -2,13 +2,14 @@ import React from 'react'
 import "./Button.scss"
 
 const Button=(props)=> {
-const {buttonText, handleClick, handleSubmit, buttonStyle, isPlus} = props;
+const {buttonText, handleClick, handleSubmit, buttonStyle, isPlus, isInputIncomplete} = props;
 
 let buttonName = "button";
 let plus = "noPlus"
 
-if(isInputComplete){
-  InputComplete
+
+if(isInputIncomplete){
+  buttonName += " inputIncomplete" 
 }
 
 
