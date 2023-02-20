@@ -1,0 +1,15 @@
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    justify-content: center;
+
+    &__image{
+        padding-right:10px;
+    }
+}
+
+.nav-item:hover{
+    background-color:#2A5FC280;
+}
