@@ -1,5 +1,5 @@
-@use "./reset" as *;
-@use "./typography" as *;
+@use "../styles/base/reset" as *;
+@use "../styles/base/typography" as *;
 
 .button-container{
     height: 500px;
@@ -7,3 +7,4 @@
     justify-content: center;
     align-items: center;
 }
+
