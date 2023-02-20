@@ -1,2 +1,15 @@
 @use "./reset" as *;
 @use "./typography" as *;
+
+.button-container{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__button{
+    background-color: red;
+    position: relative;
+    left: 100px;
+}

@@ -7,12 +7,12 @@ const App = () => {
   return (
   <div>
     
-      <Routes>
-      <Route path="*" element={<Home />}
-      
-       />  
+    <Routes>
+    <Route path="*" element={<Home />}/>  
     </Routes> 
-    <Button buttonText = "test" />
+    <div className="button-container">
+    <Button className= "app__button" buttonText = "test"/>
+    </div>
     </div>
   );
 };
