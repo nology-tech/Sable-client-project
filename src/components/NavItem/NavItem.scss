@@ -1,24 +1,26 @@
+@import "../../styles/main.scss" ;
 
-@use "../../styles/main.scss";
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-right: 1vw;
+  
+  &__image-container {
+    padding-left: 50px;
+  }
 
+  &__text {
+    padding-left: 30px;
+    // font-family:$font-modern;
+//    font-size:  1px !important;
 
-
-.nav-item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width:100%;
+  }
+  &__content{
+    display:flex;
     justify-content: center;
-    margin-right:1vw;
-
-
-    &__image-container{
-        padding-right:10px;
-    }
-
-    &__text{
-        width:100%;
-    }
-
-   
+    align-items: center;
+  }
 }
