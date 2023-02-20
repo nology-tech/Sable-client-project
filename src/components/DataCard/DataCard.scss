@@ -13,7 +13,10 @@
     color: #2d3748;
   }
   &__email,
-  &__mobile-number {
+  &__mobile-number,
+  &__job,
+  &__employed,
+  &__course-name {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
