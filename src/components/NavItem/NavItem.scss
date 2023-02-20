@@ -1,4 +1,4 @@
-@import "../../styles/main.scss" ;
+@use "../../styles/base/typography" as *;
 
 .nav-item {
   display: flex;
@@ -14,7 +14,7 @@
 
   &__text {
     padding-left: 30px;
-    // font-family:$font-modern;
+    font-family:$font-modern !important;
 //    font-size:  1px !important;
 
   }
