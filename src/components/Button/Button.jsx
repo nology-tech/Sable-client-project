@@ -7,6 +7,11 @@ const {buttonText, handleClick, handleSubmit, buttonStyle, isPlus} = props;
 let buttonName = "button";
 let plus = "noPlus"
 
+if(isInputComplete){
+  InputComplete
+}
+
+
 if (isPlus) {
   plus = "isPlus"
 } else{
