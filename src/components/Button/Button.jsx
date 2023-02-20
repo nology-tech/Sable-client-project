@@ -2,12 +2,15 @@ import React from 'react'
 import "./Button.scss"
 
 const Button=(props)=> {
-const {buttonText, handleClick, handleSubmit, buttonStyle, isPlus, plus} = props;
+const {buttonText, handleClick, handleSubmit, buttonStyle, isPlus} = props;
 
 let buttonName = "button";
+let plus = "noPlus"
 
 if (isPlus) {
-  plus = <span className='isPlus'>+</span>
+  plus = "isPlus"
+} else{
+  plus = "noPlus"
 }
 
 buttonName += " " + buttonStyle
@@ -17,7 +20,7 @@ buttonName += " " + buttonStyle
    className= {buttonName} 
    onClick= {handleClick}
    onSubmit= {handleSubmit}>
-    {plus}
+    <span className={plus}>+</span>
     {buttonText}
    </button>
   )

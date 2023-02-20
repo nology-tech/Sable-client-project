@@ -7,6 +7,9 @@
     height: 50px;
     font-size: 16px;
     font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 //go,save,cancel, and the apply are default width and height
@@ -25,12 +28,15 @@
     width: 130px;
 }
 
+.noPlus{
+    display: none;
+}
+
 .isPlus{
-    position: absolute;
-    left: 25%;
-    right: 20.83%;
-    top: 25%;
-    bottom: 20.83%;
+    position: relative;
+    color: white;
+    right: 16%;
+    font-size: 25px;
 }
 
 .isRequestComplete{
