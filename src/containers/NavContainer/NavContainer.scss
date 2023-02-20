@@ -3,37 +3,35 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height:100vh;
+  height: 100vh;
   width: 20vw;
   border-top-right-radius: 20px;
-  background-color: #8AAAE5;
+  background-color: #8aaae5;
 
-
-  &__logo{
-    display:flex;
-    height:15vh;
-    justify-content:center;
-    align-items:center;
+  &__logo {
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
   }
 
-  &__menu-options{
-    display:flex;
+  &__menu-options {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:30vh;
+    height: 30vh;
   }
-  &__settings{
-    display:flex;
+  &__settings {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:50vh;
-
+    height: 50vh;
   }
-  &__line-break{
-    display:flex;
+  &__line-break {
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:5vh;
+    height: 5vh;
   }
 }
