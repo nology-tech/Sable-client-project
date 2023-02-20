@@ -1,11 +1,24 @@
+
+@use "../../styles/main.scss";
+
+
+
 .nav-item{
     display: flex;
     flex-direction: row;
     align-items: center;
     width:100%;
     justify-content: center;
+    margin-right:1vw;
+
 
     &__image-container{
         padding-right:10px;
     }
+
+    &__text{
+        width:100%;
+    }
+
+   
 }

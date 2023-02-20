@@ -8,7 +8,7 @@ const NavItem = ({image, itemText}) => {
           <img className="nav-item__image" src={image} alt={itemText}/>
         </div>
         <div className='nav-item__text'>
-            <p>{itemText}</p>
+            <h3>{itemText}</h3>
         </div>
     </div>
   )
