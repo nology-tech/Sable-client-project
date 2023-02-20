@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import "./styles/main.scss";
 
 const App = () => {
+ 
   return (
   <div>
     
@@ -11,7 +12,7 @@ const App = () => {
     <Route path="*" element={<Home />}/>  
     </Routes> 
     <div className="button-container">
-    <Button buttonText = "save" buttonStyle="isPurple" isPlus={false}/>
+    <Button buttonText = "save" buttonStyle="isPurple" isInputIncomplete={true}  isPlus={false}/>
     </div>
     </div>
   );
