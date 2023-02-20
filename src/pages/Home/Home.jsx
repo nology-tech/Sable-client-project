@@ -1,7 +1,11 @@
 import Layout from "../../components/Layout/Layout";
+import NavContainer from "../../containers/NavContainer/NavContainer";
+import "../Home/Home.scss"
 
 const Home = () => {
   return (
+    <div className="app-container">
+    <NavContainer/>
     <Layout>
       <h1>Page Heading</h1>
       <h2>Section Heading</h2>
@@ -13,6 +17,7 @@ const Home = () => {
         necessitatibus.
       </p>
     </Layout>
+    </div>
   );
 };
 
