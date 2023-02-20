@@ -1,0 +1,23 @@
+@use "../../styles/base/typography" as *;
+@use "../../styles/abstracts/variables" as *;
+
+.user-card {
+  display: flex;
+  background-color: white;
+
+  &__name {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2d3748;
+  }
+  &__email,
+  &__mobile-number {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #95accb;
+  }
+}
