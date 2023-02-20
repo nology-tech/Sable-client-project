@@ -1,8 +1,88 @@
 .button{
-    background: #E5C58A;
+    background-color: #E5C58A;
     box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
     border-radius: 7px;
+    border-color: transparent;
     width: 165px;
     height: 50px;
-    border-color: transparent;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+//go,save,cancel, and the apply are default width and height
+
+.isLogin{
+    height: 46px;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.isHeader{
+    height: 50px;
+    width: 130px;
+}
+
+.isPlus{
+    position: absolute;
+    left: 25%;
+    right: 20.83%;
+    top: 25%;
+    bottom: 20.83%;
+}
+
+.isRequestComplete{
+    width: 132px;
+    height: 38px;
+    font-size: 14px;
+    border-radius: 5.5px;
+    font-weight: 700;
+}
+
+.isResourceSave{
+    width: 167.89px;
+    height: 58.4px;
+}
+
+.isUpload{
+    background: #F5F5F5;
+    width: 145px;
+    height: 39px;
+    font-size: 12px;
+    color: black;
+}
+
+.isCancel{
+    box-shadow: none;
+    font-weight: 700;
+    &--grey{
+        background-color: rgba(124, 118, 138, 0.25);
+    }
+    &--purple{
+        background: #FFFFFF;
+        border: 1px solid #724BCB;
+        color: #724BCB;
+    }
+}
+
+.isDelete{
+    width: 424.55px;
+    height: 265px;
+    border-radius: 5.6px;
+
+    --cancel{
+        border: 0.804878px solid #EE6161;
+        color: #EE6161;
+        font-size: 11.27px;
+    }
+    --confirm{
+        background: #EE6161;
+        font-size: 14px;
+    }
+}
+
+.isPurple{
+    background-color: #724BCB;
 }
