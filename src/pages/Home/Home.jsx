@@ -1,11 +1,10 @@
 import Layout from "../../components/Layout/Layout";
 import NavContainer from "../../containers/NavContainer/NavContainer";
-import "../Home/Home.scss"
-
+import "../Home/Home.scss";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="app-container">
       <NavContainer />
       <Layout>
         <h1>Page Heading</h1>

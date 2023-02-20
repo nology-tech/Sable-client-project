@@ -1,4 +1,18 @@
 import React from 'react'
+import "./NavContainer.scss"
+
+
+const NavContainer = () => {
+  return (
+    <nav className='nav-container'>
+    <div className="nav-container__logo">Logo</div>
+    <div className='nav-container__menu-options'>Menu options</div>
+    <div className="nav-container__line-break">Line break</div>
+    <div className="nav-container__settings">Setting options</div>
+    </nav>
+  )
+}
+import React from 'react'
 import NavItem from '../../components/NavItem/NavItem'
 import "./NavContainer.scss"
 import HomeIcon from "../../assets/images/navbar-icons/home-icon.png"
@@ -32,4 +46,5 @@ const NavContainer = () => {
   )
 }
 
+export default NavContainer
 export default NavContainer
