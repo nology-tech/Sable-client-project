@@ -1,8 +1,11 @@
+@use "../../styles/base/typography" as *;
+@use "../../styles/abstracts/variables" as *;
+
 .login-page,
 .login-form {
   margin: 5%;
   height: 100vh;
-  color: black !important;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,19 +14,18 @@
 
   &__logo {
     height: 50px;
-
     margin-bottom: 10%;
   }
 
   &__title {
-    font-family: "Inter";
+    font-family: $font-homepage;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
     color: #000000;
   }
   &__desc {
-    font-family: "Inter";
+    font-family: $font-homepage;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -42,7 +44,7 @@
   &__label {
     margin-top: 5%;
     align-self: flex-start;
-    font-family: "Inter";
+    font-family: $font-homepage;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -57,9 +59,18 @@
   &__image-container {
     display: none;
   }
+  #validation {
+    &--success {
+      color: lime;
+    }
+
+    &--error {
+      color: red;
+    }
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $desktop-breakpoint) {
   .login-page,
   .login-form {
     flex-direction: row;
@@ -73,7 +84,7 @@
       align-self: stretch;
       background: rgba(217, 217, 217, 0.6);
       overflow: hidden;
-      max-width: 30%;
+      min-width: 30%;
     }
     &__title {
       text-align: left;

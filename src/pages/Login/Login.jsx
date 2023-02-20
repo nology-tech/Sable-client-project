@@ -1,7 +1,7 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
-import presentation from "../../assets/login-image.png";
-import logo from "../../assets/Logo.svg";
+import presentation from "../../assets/images/homepage/homepage-image.png";
+import logo from "../../assets/images/logo/logo-black.png";
 import { auth } from "../../firebase";
 import "./Login.scss";
 const Login = () => {
@@ -21,13 +21,11 @@ const Login = () => {
         setUser(user);
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
         if (errorMessage.includes("invalid-email")) {
-          setError("Invalid email");
+          setError("Invalid Email");
         } else if (errorMessage.includes("wrong-password")) {
-          setError("Wrong password");
+          setError("Wrong Password");
         } else {
           setError(errorMessage);
         }
@@ -58,13 +56,23 @@ const Login = () => {
         </label>
         <input
           className="login-form__input"
-          type="text"
+          type="password"
           name="password"
           id="password-input"
           onChange={(event) => setPassword(event.target.value)}
         />
-        <p>{user.email}</p>
-        <p>{error}</p>
+        {/* If there is a user, display the user email, if there is a wrong user display an error messsage else don't display anything*/}
+        {user ? (
+          <p className="login-form__validation" id="validation--success">
+            {user.email}
+          </p>
+        ) : (
+          error && (
+            <p className="login-form__validation" id="validation--error">
+              {error}
+            </p>
+          )
+        )}
         <button onClick={userLogin}>Login</button>
       </form>
       <figure className="login-form__image-container">
