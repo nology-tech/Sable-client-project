@@ -32,7 +32,7 @@ const DataCard = (props) => {
         <p className="user-card__employed">NO</p>
       )}
       <p className="user-card__course-name">{courseName}</p>
-      <a className="user-card__link">{`>`}</a>
+      <a className="user-card__link" href="#">{`>`}</a>
     </div>
   ) : (
     <div className="resource-card">
@@ -45,7 +45,7 @@ const DataCard = (props) => {
         <p className="resource-card__auto-purchase">NO</p>
       )}
       <p className="resource-card__level">{autoPurchaseLevel}</p>
-      <a className="resource-card__link">{`>`}</a>
+      <a className="resource-card__link" href="#">{`>`}</a>
     </div>
   );
 };

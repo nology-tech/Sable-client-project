@@ -2,25 +2,145 @@
 @use "../../styles/abstracts/variables" as *;
 
 .user-card {
-  display: flex;
+  display: grid;
   background-color: white;
+  border-radius: 8px;
+  margin: 15px auto;
+  width: 80%;
+  box-shadow: 0px 30px 40px rgba(114, 75, 203, 0.06);
 
+  grid-template: 1fr / repeat(7, 1fr);
   &__name {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
     color: #2d3748;
+    text-align: center;
   }
   &__email,
   &__mobile-number,
   &__job,
   &__employed,
   &__course-name {
+    text-align: center;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #95accb;
+  }
+
+  &__employed {
+    font-weight: 800;
+  }
+  &__link {
+    color: black;
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.resource-card {
+  display: grid;
+  grid-template: 1fr / repeat(7, 1fr);
+  background-color: white;
+  border-radius: 8px;
+  margin: 15px auto;
+  width: 80%;
+  align-items: center;
+  box-shadow: 0px 30px 40px rgba(114, 75, 203, 0.06);
+  &__name {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2d3748;
+  }
+  &__quantity,
+  &__cost,
+  &__auto-purchase,
+  &__level {
+    text-align: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #95accb;
+  }
+  &__auto-purchase {
+    font-weight: 800;
+  }
+  &__link {
+    grid-column: 7/ 8;
+    text-align: center;
+    color: black;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: $desktop-breakpoint) {
+  .resource-card {
+    grid-template: 1fr / repeat(3, 1fr);
+    &__name {
+      padding-left: 15px;
+      align-self: center;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 600;
+    }
+    &__quantity,
+    &__cost,
+    &__auto-purchase,
+    &__level {
+      display: none;
+    }
+    &__link {
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: #becbdd;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 15px;
+      grid-column: 3/ 4;
+    }
+  }
+  .user-card {
+    grid-template: 1fr / repeat(3, 1fr);
+    &__name {
+      padding-left: 15px;
+      align-self: center;
+      font-size: 20px;
+      text-align: left;
+      font-weight: 600;
+    }
+    &__email,
+    &__mobile-number,
+    &__job,
+    &__employed,
+    &__course-name {
+      display: none;
+    }
+    &__link {
+      font-size: 2.5rem;
+      font-weight: 400;
+
+      color: #becbdd;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 15px;
+      grid-column: 3/ 4;
+    }
   }
 }

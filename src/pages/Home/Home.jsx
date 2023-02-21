@@ -16,6 +16,13 @@ const Home = () => {
           isEmployed={false}
           courseName={"whatever"}
         />
+        <DataCard
+          resourceName={"Syringes"}
+          quantity={300}
+          cost={"£12.99"}
+          isAutoPurchase={true}
+          autoPurchaseLevel={50}
+        />
         <h1>Page Heading</h1>
         <h2>Section Heading</h2>
         <h3>Panel Heading</h3>
