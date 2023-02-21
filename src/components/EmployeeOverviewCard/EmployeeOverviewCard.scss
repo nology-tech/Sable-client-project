@@ -2,22 +2,32 @@
 @use "../../styles/base/typography" as *;
 
 .employee-overview-card {
-  width: 400px;
-  height: auto;
+  width: 294px;
+  height: 307px;
   display: flex;
   flex-direction: column;
   background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 30px 40px rgba(114, 75, 203, 0.06);
   padding: 20px;
   font-family: $font-modern;
 
   &__title {
-    color: black;
+    color: #102b3f;
     font-family: $font-modern;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  &__divide {
+    margin: 10px 0px;
   }
 
   &__text {
-    color: lightgrey;
+    color: #95accb;
+    font-weight: 400;
     font-family: $font-modern;
+    font-size: 0.63rem;
   }
   &__bottom {
     display: flex;
@@ -30,9 +40,10 @@
     &--date,
     &--course,
     &--manager {
-      color: black;
-      font-weight: bold;
+      color: #102b3f;
+      font-weight: 500;
       font-family: $font-modern;
+      font-size: 0.63rem;
     }
   }
   &__right {
@@ -40,8 +51,10 @@
     &--date,
     &--course,
     &--manager {
-      color: lightgrey;
+      color: #95accb;
       font-family: $font-modern;
+      font-weight: 400;
+      font-size: 0.63rem;
     }
   }
 }

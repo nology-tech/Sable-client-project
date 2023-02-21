@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout/Layout";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "../Home/Home.scss";
-import EmployeeOverviewCard from "../../components/EmployeeOverviewCard/EmployeeOverviewCard";
+
 
 const Home = () => {
   return (
@@ -17,7 +17,6 @@ const Home = () => {
           maxime tempora, temporibus beatae voluptas repellat rerum.
           Dignissimos, necessitatibus.
         </p>
-        <EmployeeOverviewCard />
       </Layout>
     </div>
   );
