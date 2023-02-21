@@ -1,3 +1,6 @@
+@use "../../styles/abstracts/variables" as *;
+
+
 .nav-container {
   display: flex;
   flex-direction: column;
@@ -6,7 +9,7 @@
   height: 100vh;
   width: 20vw;
   border-top-right-radius: 20px;
-  background-color: #8aaae5;
+  background-color: $background-nav-light;
 
   &__logo-container {
     display: flex;
@@ -40,19 +43,3 @@
     width: 16vw;
   }
 }
-
-// @media screen and (min-width: 768px) and (max-width: 1023px) {
-//   .nav-container {
-//     &__line-break {
-//       margin-top: 3vh;
-//     }
-//   }
-// }
-
-// @media screen and (min-width: 1024px) and (max-width: 1439px) {
-//   .nav-container {
-//     &__line-break {
-//       margin-top: 2vh;
-//     }
-//   }
-// }
