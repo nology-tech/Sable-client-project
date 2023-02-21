@@ -42,31 +42,18 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .nav-container {
     &__line-break {
-      margin-top: 2vh;
-    }
-
-    &__settings {
-      margin-top: 2vh;
-    }
-  }
-}
-
-@media screen and (min-width: 1220px) {
-  .nav-container {
-    &__line-break {
-      margin-top: 1vh;
-    }
-
-    &__settings {
       margin-top: 3vh;
     }
-
-    &__menu-options{
-      height: 25vh;
-    }
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .nav-container {
+    &__line-break {
+      margin-top: 2vh;
+    }
+  }
+}
