@@ -1,14 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Login from "./pages/Login/Login.jsx";
 import "./styles/main.scss";
 import UserInfoContainer from "./containers/UserInfoContainer/UserInfoContainer";
 
 const App = () => {
-  return (    
+  return (
     <div>
     <Routes>
-      <Route path="*" element={<Home />}/>  
-    </Routes> 
+      <Route path="*" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
     <div className="input-field-container">
      <UserInfoContainer />
     </div>
