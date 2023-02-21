@@ -1,5 +1,6 @@
 @use "../../styles/base/reset" as *;
 @use "../../styles/base/typography" as *;
+@use "../../styles/abstracts/variables" as*;
 
 .input-field{
     display: flex;
@@ -20,7 +21,7 @@
         border-radius: 7px;
         padding-left: 8px;
         color: black;
-        background: rgba(167, 167, 167, 0.06);
+        background-color: $page-background-light;
 
 
         &::placeholder{
