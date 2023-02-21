@@ -74,8 +74,23 @@ it("should show that their are multiple containers", () => {
   expect(navContainer.children).toHaveLength(4);
 });
 
-it ("should show the line break",()=>{
+it("should show the line break", () => {
   render(<NavContainer />);
-  const lineBreak = screen.getByRole('img', {  name: /divider line/i})
-  expect(lineBreak).toBeInTheDocument()
-})
+  const lineBreak = screen.getByRole("img", { name: /divider line/i });
+  expect(lineBreak).toBeInTheDocument();
+});
+
+it("should render the logo in its own container", () => {
+  render(<NavContainer />);
+  const navContainer = screen.queryByRole("navigation").firstChild;
+  const logo = screen.getByAltText(/company logo/i);
+  expect(navContainer.firstChild).toBe(logo);
+});
+
+it("should render the logo", () => {
+  render(<NavContainer />);
+  const logo = screen.getByRole("img", {
+    name: /company logo/i,
+  });
+  expect(logo).toBeInTheDocument();
+});
