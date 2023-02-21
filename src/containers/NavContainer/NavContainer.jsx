@@ -6,7 +6,8 @@ import BookIcon from "../../assets/images/navbar-icons/bookings-icon.png";
 import StaffIcon from "../../assets/images/navbar-icons/staff-icon.png";
 import ClientIcon from "../../assets/images/navbar-icons/clients-icon.png";
 import ResourcesIcon from "../../assets/images/navbar-icons/resources-icon.png";
-
+import LineBreak from "../../assets/images/functional-icons/calendar-divide-icon.png";
+import SettingsIcon from "../../assets/images/navbar-icons/settings-icon.png";
 
 const NavContainer = () => {
   return (
@@ -19,8 +20,16 @@ const NavContainer = () => {
         <NavItem image={ClientIcon} itemText={"Clients"} />
         <NavItem image={ResourcesIcon} itemText={"Resources"} />
       </main>
-      <div className="nav-container__line-break-container">Line break</div>
-      <div className="nav-container__settings">Setting options</div>
+      <div className="nav-container__line-break-container">
+        <img
+          className="nav-container__line-break"
+          src={LineBreak}
+          alt="Divider Line"
+        />
+      </div>
+      <div className="nav-container__settings">
+        <NavItem image={SettingsIcon} itemText={"Settings"} />
+      </div>
     </nav>
   );
 };
