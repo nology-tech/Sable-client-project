@@ -1,4 +1,5 @@
 @use "../../styles/base/typography" as *;
+@use "../../styles/main.scss" as *;
 
 .nav-item {
   display: flex;
@@ -11,19 +12,24 @@
     padding-left: 4.75vw;
   }
 
-  &__text {
+  &__text-container {
     padding-left: 2vw;
-    font-family: $font-modern;
-    font-size: 0.65rem !important;
-    color: #ffff;
-    opacity: 50%;
   }
+
   &__content {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
+.nav-item__text {
+  font-family: $font-modern;
+  font-size: 0.65rem !important;
+  color: #ffff;
+  opacity: 50%;
+}
+
 .nav-item:hover {
   background-color: #2a5fc280;
 }
