@@ -10,10 +10,11 @@
 
   &__image-container {
     padding-left: 4.75vw;
+    width: 20px;
   }
 
   &__text-container {
-    padding-left: 2vw;
+    padding-left: 3.5vw;
   }
 
   &__content {
@@ -32,4 +33,25 @@
 
 .nav-item:hover {
   background-color: #2a5fc280;
+}
+
+@media screen and (min-width:768px){
+  .nav-item__text {
+    font-size: 0.4rem !important;
+  }
+
+  .nav-item__image{
+    width: 12px;
+  }
+
+}
+
+@media screen and (min-width:1024px){
+  .nav-item__text {
+    font-size: 0.5rem !important;
+  }
+
+  .nav-item__image{
+    width: 15px;
+  }
 }

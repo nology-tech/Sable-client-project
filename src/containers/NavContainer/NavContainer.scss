@@ -27,10 +27,10 @@
   &__settings {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
-    align-items:center;
+    justify-content: flex-start;
+    align-items: center;
     height: 40vh;
-    width:20vw;
+    width: 20vw;
     margin-top: 2vh;
   }
   &__line-break {
@@ -39,6 +39,34 @@
     align-items: center;
     height: 0.1vh;
     width: 16vw;
-
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-container {
+    &__line-break {
+      margin-top: 2vh;
+    }
+
+    &__settings {
+      margin-top: 2vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .nav-container {
+    &__line-break {
+      margin-top: 1vh;
+    }
+
+    &__settings {
+      margin-top: 3vh;
+    }
+
+    &__menu-options{
+      height: 25vh;
+    }
+  }
+}
+
