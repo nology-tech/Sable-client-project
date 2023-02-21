@@ -10,11 +10,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
   &__heading {
     font-size: 1.3rem;
-    color: #102b3f;
+    font-weight: 700;
+    color: $page-sub-heading;
+    font-family: $font-modern;
+    text-align: center;
+    width: 80%;
   }
-}
-.button {
-  font-family: $font-modern;
 }
