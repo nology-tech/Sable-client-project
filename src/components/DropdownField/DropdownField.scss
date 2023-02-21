@@ -22,7 +22,9 @@
         padding-left: 8px;
         color: black;
         background-image: url("../../assets/images/functional-icons/downarrow-icon.png") ;
-       
+        background-repeat: no-repeat;
+        appearance: none;
+        background-position: right 1rem center;
 
 
         &::placeholder{

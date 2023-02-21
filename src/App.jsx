@@ -2,19 +2,15 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login.jsx";
 import "./styles/main.scss";
-import UserInfoContainer from "./containers/UserInfoContainer/UserInfoContainer";
+import NewAppointment from "./pages/NewAppointment/NewAppointment";
 
 const App = () => {
   return (
-    <div>
     <Routes>
       <Route path="*" element={<Home />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/new-appointment" element = {<NewAppointment/>} />
     </Routes>
-    <div className="input-field-container">
-     <UserInfoContainer />
-    </div>
-    </div>
   );
 };
 
