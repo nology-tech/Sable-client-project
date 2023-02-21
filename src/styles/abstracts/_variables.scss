@@ -9,34 +9,38 @@ $extra-large-desktop-breakpoint: 2560px;
 $text-color: #f3f2e8;
 $background-color: #1f1b1b;
 
-$color-white: #FFFFFF;
+// Globals
+$color-white: #ffffff;
 $color-black: #000000;
 
 //login page
-$login-background: #E5E5E5;
-$login-text: #7B7B7B;
+$login-background: #e5e5e5;
+$login-text: #7b7b7b;
 
-//navigation/header
-$background-nav-header-light: #8AAAE5;
-$background-nav-header-dark: #2E485B;
-$background-nav-select: #2A5FC2;
+// header
+$background-header-light: #8aaae5;
+$heading-text: #2d3748;
+$background-header-dark: #2e485b;
+
+//navigation
+$background-nav-light: #8aaae5;
+$background-nav-dark: #2e485b;
+$background-nav-select: #2a5fc2;
 
 //button
-$button-enabled: #E5C58A;
-$button-disabled: #7C768A;
+$button-enabled: #e5c58a;
+$button-disabled: #7c768a;
 $button-logout: #ee6161;
+$button-purple: #724bcb;
+$button-upload: #f5f5f5;
 
 //pages
-$page-heading: #2D3748;
-$page-sub-heading: #102B3F;
-$page-text: #95ACCB;
+$page-sub-heading: #102b3f;
+$page-text: #95accb;
 $page-sub-text: #595959;
-$page-background-light: #F8F8FF;
-$page-background-dark: #6A93B0;
+$page-background-light: #f8f8ff;
+$page-background-dark: #6a93b0;
 $search-bar-background: #ebebf5;
 $blank-client-image: #c4c4c4;
-
-
-
-
-
+$dark-border: #405066;
+$light-border: #e2e8f0;
