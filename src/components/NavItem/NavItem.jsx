@@ -8,8 +8,8 @@ const NavItem = ({ image, itemText }) => {
         <div className="nav-item__image-container">
           <img className="nav-item__image" src={image} alt={itemText} />
         </div>
-        <div className="nav-item__text">
-          <p>{itemText}</p>
+        <div className="nav-item__text-container">
+          <p className="nav-item__text">{itemText}</p>
         </div>
       </div>
     </div>
