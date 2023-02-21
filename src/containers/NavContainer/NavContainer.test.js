@@ -60,20 +60,22 @@ it("should display all 5 items in the item container", () => {
   expect(itemContainer.children).toHaveLength(5);
 });
 
-it("should not have the settings item displayed in the main item container",()=>{
+it("should not have the settings item displayed in the main item container", () => {
   render(<NavContainer />);
   render(<NavItem />);
   const itemContainer = screen.queryByRole("main");
   const settingsItem = screen.getByAltText(/settings/i);
-  expect(settingsItem).not.toBe(itemContainer)
+  expect(settingsItem).not.toBe(itemContainer);
 });
 
-it ("should show that their are multiple containers",()=>{
+it("should show that their are multiple containers", () => {
   render(<NavContainer />);
+  const navContainer = screen.queryByRole("navigation");
+  expect(navContainer.children).toHaveLength(4);
+});
 
-
-
+it ("should show the line break",()=>{
+  render(<NavContainer />);
+  const lineBreak = screen.getByRole('img', {  name: /divider line/i})
+  expect(lineBreak).toBeInTheDocument()
 })
-
-
-
