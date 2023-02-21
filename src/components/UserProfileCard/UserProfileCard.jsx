@@ -1,17 +1,12 @@
 import React from "react";
 import "./UserProfileCard.scss";
-import staffPicture from "../../assets/images/users/staff-picture.png";
 
-const UserProfileCard = () => {
+const UserProfileCard = ({ image, name, role }) => {
   return (
     <div className="card-staff">
-      <img
-        src={staffPicture}
-        alt="staff-picture"
-        className="card-staff__image"
-      ></img>
-      <h1 className="card-staff__name">Staff 01</h1>
-      <h2 className="card-staff__role">Full-Time Employee</h2>
+      <img src={image} alt="staff-picture" className="card-staff__image"></img>
+      <h1 className="card-staff__name">{name}</h1>
+      <h2 className="card-staff__role">{role}</h2>
     </div>
   );
 };
