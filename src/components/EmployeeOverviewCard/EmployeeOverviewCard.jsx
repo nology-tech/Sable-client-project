@@ -10,7 +10,6 @@ const EmployeeOverviewCard = ({
   return (
     <div className="employee-overview-card">
       <div className="employee-overview-card__top">
-        {" "}
         <h3 className="employee-overview-card__top--title">
           Employee Overview
         </h3>
@@ -27,7 +26,6 @@ const EmployeeOverviewCard = ({
           </p>
           <p className="employee-overview-card__left--manager">Manager:</p>
         </div>
-
         <div className="employee-overview-card__right">
           <p className="employee-overview-card__right--date">{startDate}</p>
           <p className="employee-overview-card__right--course">
