@@ -2,6 +2,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import presentation from "../../assets/images/homepage/homepage-image.png";
 import logo from "../../assets/images/logo/logo-black.png";
+import Button from "../../components/Button/Button";
 import { auth } from "../../firebase";
 import "./Login.scss";
 const Login = () => {
@@ -72,7 +73,13 @@ const Login = () => {
             </p>
           )
         )}
-        <button onClick={userLogin}>Login</button>
+        <Button
+          buttonText="Login"
+          handleClick={userLogin}
+          buttonStyle="isLogin"
+          isPlus={false}
+          isInputIncomplete={false}
+        />
       </form>
       <figure className="login-form__image-container">
         <img

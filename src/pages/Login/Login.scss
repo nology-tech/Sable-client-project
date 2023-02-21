@@ -31,6 +31,7 @@
     font-size: 14px;
     color: #7b7b7b;
     margin-bottom: 38px;
+    line-height: 160%;
   }
 
   &__input-container {
@@ -52,6 +53,7 @@
     color: #000000;
   }
   &__input {
+    padding-left: 10px;
     margin-top: 2%;
     margin-bottom: 2%;
     height: 45px;
