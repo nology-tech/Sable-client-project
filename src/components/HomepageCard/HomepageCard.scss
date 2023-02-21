@@ -1,0 +1,20 @@
+@use "../../styles/base/typography" as *;
+@use "../../styles/abstracts/variables" as *;
+
+.homepage-card {
+  background-color: white;
+  height: 310px;
+  width: 270px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &__heading {
+    font-size: 1.3rem;
+    color: #102b3f;
+  }
+}
+.button {
+  font-family: $font-modern;
+}
