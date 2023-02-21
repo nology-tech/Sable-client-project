@@ -1,8 +1,47 @@
 @use "../../styles/abstracts/variables" as *;
+@use "../../styles/base/typography" as *;
 
 .employee-overview-card {
-  background-color: white;
-  padding: 20px;
   width: 400px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  font-family: $font-modern;
+
+  &__title {
+    color: black;
+    font-family: $font-modern;
+  }
+
+  &__text {
+    color: lightgrey;
+    font-family: $font-modern;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__left {
+    text-align: left;
+
+    &--date,
+    &--course,
+    &--manager {
+      color: black;
+      font-weight: bold;
+      font-family: $font-modern;
+    }
+  }
+  &__right {
+    text-align: end;
+    &--date,
+    &--course,
+    &--manager {
+      color: lightgrey;
+      font-family: $font-modern;
+    }
+  }
 }
