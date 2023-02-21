@@ -1,6 +1,6 @@
 import React from "react";
 import "./EmployeeOverviewCard.scss";
-// import divide from "../../assets/images";
+import divide from "../../assets/images/functional-icons/overview-divide-icon.png";
 
 const EmployeeOverviewCard = ({ startDate, courseCompletion, manager }) => {
   return (
@@ -12,6 +12,7 @@ const EmployeeOverviewCard = ({ startDate, courseCompletion, manager }) => {
         voluptate consequatur veritatis ut, quam amet atque ducimus,
         necessitatibus accusamus sequi recusandae perferendis?
       </p>
+      <img src={divide} alt="diving-line" />
       <div className="employee-overview-card__bottom">
         <div className="employee-overview-card__left">
           <p className="employee-overview-card__left--date">
