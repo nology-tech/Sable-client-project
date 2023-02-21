@@ -1,0 +1,48 @@
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/base/typography" as *;
+
+.staff-page {
+  display: flex;
+
+  &__body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 200px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+  }
+
+  &__title {
+    width: auto;
+    color: $color-black;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    align-self: flex-start;
+  }
+  &__dropdown-title {
+    color: $color-black;
+    margin-left: 10%;
+  }
+  &__overview {
+    width: 100%;
+    height: 100%;
+    background-color: #a7a7a7;
+    color: $color-black;
+  }
+}
