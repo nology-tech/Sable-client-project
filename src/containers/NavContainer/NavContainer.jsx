@@ -12,7 +12,7 @@ import SettingsIcon from "../../assets/images/navbar-icons/settings-icon.png";
 const NavContainer = () => {
   return (
     <nav className="nav-container">
-      <div className="nav-container__logo-container">Logo</div>
+      <div className="nav-container__logo-container"></div>
       <main className="nav-container__menu-options">
         <NavItem image={HomeIcon} itemText={"Home"} />
         <NavItem image={BookIcon} itemText={"Book Appointment"} />

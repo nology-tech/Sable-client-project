@@ -1,21 +1,34 @@
 @use "../../styles/base/typography" as *;
 @use "../../styles/abstracts/variables" as *;
 
-
 .nav-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 20vw;
+  width: 22vw;
   justify-content: flex-start;
+  height: 4.3vh;
+  padding: 1vh 0vh;
+  margin: 0.15vh 0vh;
 
   &__image-container {
-    padding-left: 4.75vw;
+    padding-left: 5.15vw;
+    width: 20px;
+  }
+
+  &__image {
     width: 20px;
   }
 
   &__text-container {
-    padding-left: 3.5vw;
+    padding-left: 2.5vw;
+  }
+
+  &__text {
+    font-family: $font-modern;
+    font-size: 0.75rem !important;
+    color: $text-color;
+    opacity: 50%;
   }
 
   &__content {
@@ -25,15 +38,9 @@
   }
 }
 
-.nav-item__text {
-  font-family: $font-modern;
-  font-size: 0.65rem !important;
-  color: $text-color;
-  opacity: 50%;
-}
-
 .nav-item:hover {
   background-color: $background-nav-select;
+  opacity: 50%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -43,13 +50,6 @@
 
   .nav-item__image {
     width: 12px;
-  }
-
-  .nav-item__text-container {
-    padding-left: 1.5vw;
-  }
-  .nav-item__image-container {
-    padding-left: 3.5vw;
   }
 }
 
@@ -61,14 +61,6 @@
   .nav-item__image {
     width: 15px;
   }
-
-  .nav-item__text-container {
-    padding-left: 2.5vw;
-  }
-
-  .nav-item__image-container {
-    padding-left: 3.75vw;
-  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -79,13 +71,4 @@
   .nav-item__image {
     width: 30px;
   }
-
-  .nav-item__text-container {
-    padding-left: 3.5vw;
-  }
-
-  .nav-item__image-container {
-    padding-left: 4.5vw;
-  }
 }
-
