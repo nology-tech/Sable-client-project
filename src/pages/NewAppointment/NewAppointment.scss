@@ -1,13 +1,27 @@
+@use "../../styles/abstracts/variables" as *;
+
+
 .new-appointment{
     width: 80vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: $page-background-light;
+    
 }
 
 .header{
+    top: 0px;
+    position: relative;
     width: 80vw;
     height: 140px;
     background-color: lightblue;
+}
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: max-content;
 }

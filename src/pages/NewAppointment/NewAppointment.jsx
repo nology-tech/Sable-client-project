@@ -10,7 +10,9 @@ const NewAppointment = () => {
         <div className='header'>
             Header
         </div>
+        <div className='info-container'>
         <UserInfoContainer />
+        </div>
     </div>
   )
 }
