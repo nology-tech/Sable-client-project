@@ -30,6 +30,8 @@
     font-weight: 400;
     font-size: 14px;
     color: #7b7b7b;
+    margin-bottom: 38px;
+    line-height: 160%;
   }
 
   &__input-container {
@@ -37,7 +39,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;
+    max-width: 354px;
     align-items: stretch;
   }
 
@@ -51,10 +53,13 @@
     color: #000000;
   }
   &__input {
+    padding-left: 10px;
     margin-top: 2%;
     margin-bottom: 2%;
-    height: 30px;
+    height: 45px;
     color: black;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
   }
   &__image-container {
     display: none;
@@ -106,7 +111,6 @@
     }
     &__input-container {
       margin: 0 10%;
-      max-width: 450px;
     }
   }
 }
