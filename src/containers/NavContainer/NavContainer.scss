@@ -41,3 +41,32 @@
     width: 16vw;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-container {
+    &__line-break {
+      margin-top: 2vh;
+    }
+
+    &__settings {
+      margin-top: 2vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .nav-container {
+    &__line-break {
+      margin-top: 1vh;
+    }
+
+    &__settings {
+      margin-top: 3vh;
+    }
+
+    &__menu-options{
+      height: 25vh;
+    }
+  }
+}
+
