@@ -17,7 +17,6 @@ const Login = () => {
         //Successful signin
         const user = userCredential.user;
         //Change page
-        console.log(user);
         setUser(user);
       })
       .catch((error) => {
