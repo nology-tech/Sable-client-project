@@ -19,7 +19,7 @@ const UserInfoContainer = () => {
 
 
   return (
-    <div>
+    <div className='input-field-container'>
       <InputField id="first-name" label="First Name" placeholderText="Mark" handleInput={handleName}  />
       <InputField id="last-name" label="Last Name" placeholderText="Birchall" handleInput={handleName}  />
       <InputField id="email" label="Email Address" placeholderText="thiel90@hotmail.com" handleInput={handleEmail}  />

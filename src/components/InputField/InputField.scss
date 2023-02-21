@@ -1,0 +1,30 @@
+@use "../../styles/base/reset" as *;
+@use "../../styles/base/typography" as *;
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    font-family: $font-modern;
+    font-size: 14px;
+    gap: 13px;
+
+    &__label{
+        font-weight: 600;
+        color: black;
+    }
+
+    &__input{
+        height: 49px;
+        width: 349px;
+        border: 1px solid #E2E8F0;
+        border-radius: 7px;
+        padding-left: 8px;
+        color: black;
+
+
+        &::placeholder{
+            color: #95ACCB;
+            font-weight: 400;
+        }
+    }
+}
