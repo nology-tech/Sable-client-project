@@ -47,7 +47,7 @@ const DataCard = (props) => {
         <p className="resource-card__auto-purchase">NO</p>
       )}
       <p className="resource-card__level">{autoPurchaseLevel}</p>
-      <figure>
+      <figure className="resource-card__image-container">
         <img
           src={blackArrow}
           className="resource-card__image"
