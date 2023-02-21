@@ -6,7 +6,9 @@ const HomepageCard = ({ heading }) => {
   return (
     <div className="homepage-card">
       <h2 className="homepage-card__heading">{heading}</h2>
-      <Button buttonText={"Go"} />
+      <div className="homepage-card__button">
+        <Button buttonText={"Go"} />
+      </div>
     </div>
   );
 };
