@@ -4,11 +4,11 @@ import "./styles/main.scss";
 import InputField from "./components/InputField/InputField";
 
 const App = () => {
-  return (
+  return (    
     <div>
     <Routes>
-      <Route path="*" element={<Home />} />
-    </Routes>
+      <Route path="*" element={<Home />}/>  
+    </Routes> 
     <div className="input-field-container">
       <InputField id="first-name" label="First Name" />
     </div>
