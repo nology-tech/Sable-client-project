@@ -6,20 +6,21 @@
   align-items: center;
   width: 100%;
   justify-content: flex-start;
-  margin-right: 1vw;
-  
+  margin-left: 1.25vw;
+
   &__image-container {
-    padding-left: 50px;
+    padding-left: 3.5vw;
   }
 
   &__text {
-    padding-left: 30px;
-    font-family:$font-modern;
-//    font-size:  1px !important;
-
+    padding-left: 2vw;
+    font-family: $font-modern;
+    font-size: 0.65rem !important;
+    color: #ffff;
+    opacity: 50%;
   }
-  &__content{
-    display:flex;
+  &__content {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
