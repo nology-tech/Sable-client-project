@@ -74,8 +74,8 @@ it("should show that their are multiple containers", () => {
   expect(navContainer.children).toHaveLength(4);
 });
 
-it ("should show the line break",()=>{
+it("should show the line break", () => {
   render(<NavContainer />);
-  const lineBreak = screen.getByRole('img', {  name: /divider line/i})
-  expect(lineBreak).toBeInTheDocument()
-})
+  const lineBreak = screen.getByRole("img", { name: /divider line/i });
+  expect(lineBreak).toBeInTheDocument();
+});
