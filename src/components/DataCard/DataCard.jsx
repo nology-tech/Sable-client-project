@@ -1,6 +1,6 @@
 import React from "react";
+import blackArrow from "../../assets/images/functional-icons/rightarrow-black-icon.png";
 import "./DataCard.scss";
-
 const DataCard = (props) => {
   const {
     name,
@@ -32,7 +32,9 @@ const DataCard = (props) => {
         <p className="user-card__employed">NO</p>
       )}
       <p className="user-card__course-name">{courseName}</p>
-      <a className="user-card__link" href="#">{`>`}</a>
+      <figure className="user-card__image-container">
+        <img src={blackArrow} className="user-card__image" alt="right array image" />
+      </figure>
     </div>
   ) : (
     <div className="resource-card">
@@ -45,7 +47,13 @@ const DataCard = (props) => {
         <p className="resource-card__auto-purchase">NO</p>
       )}
       <p className="resource-card__level">{autoPurchaseLevel}</p>
-      <a className="resource-card__link" href="#">{`>`}</a>
+      <figure>
+        <img
+          src={blackArrow}
+          className="resource-card__image"
+          alt="right array image"
+        />
+      </figure>
     </div>
   );
 };
