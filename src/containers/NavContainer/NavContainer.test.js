@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import NavContainer from "./NavContainer";
 import NavItem from "../../components/NavItem/NavItem";
-import { BrowserRouter, Router } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import userEvent from "@testing-library/user-event";
 import App from "../../App";
 
