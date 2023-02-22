@@ -43,4 +43,22 @@
   }
 }
 
+@media screen and (max-width: $tablet-breakpoint) {
+  .homepage-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+
+
+
+
+
+    &__button-container{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
 
