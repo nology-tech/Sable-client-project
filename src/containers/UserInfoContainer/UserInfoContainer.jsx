@@ -31,16 +31,19 @@ const UserInfoContainer = () => {
         <div className='input-field-container__staff-dropdown'>
           <DropdownField id="staff" label="Staff Member" handleInput={handleDropdown}  />
         </div>
-        <div className='buttons'>
+        <div className='input-field-container__buttons'>
           <Button buttonText = "Cancel" handleSubmit = {handleSubmit} buttonStyle="isCancel--grey"/>
           <Button buttonText = "Save" handleSubmit = {handleSubmit}/>
         </div>
-        <img className='calendar' src= {Calendar} alt="Calendar"/>
+        <img className='input-field-container__calendar' src= {Calendar} alt="Calendar"/>
         <div className="input-field-container__date-dropdown">
           <DropdownField  id="date" label="Date:" handleInput={handleDropdown}  />
         </div>
         <div className="input-field-container__time-dropdown">
           <DropdownField  id="time" label="Time:" handleInput={handleDropdown}  />
+        </div>
+        <div className='input-field-container__submit'>
+        <Button buttonText = "Submit" handleSubmit = {handleSubmit} buttonStyle="isSubmit"/>
         </div>
     </div>
   )

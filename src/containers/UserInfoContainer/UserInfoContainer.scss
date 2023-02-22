@@ -9,29 +9,22 @@
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
-}
 
-.buttons{
-    margin-top: 0px;
-    display: none;
-    gap: 20px;
-}
-
-.calendar{
-    display: none;
-    margin-top: 30px;
-    width: 339px;
+    &__buttons{
+        margin-top: 0px;
+        display: none;
+        gap: 20px;
+    }
+    &__calendar{
+        display: none;
+        margin-top: 30px;
+        width: 339px;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    .buttons{
-        display: flex;
-        margin-top: 30px;
-        gap: 20px;
-        
-    }
-
-    .input-field-container{
+  
+      .input-field-container{
         flex-direction: column;
         flex-wrap: wrap;
         padding: 20px;
@@ -45,22 +38,23 @@
         &__staff-dropdown{
             width: 349px;
         }
-    
         &__time-dropdown{
             width: 275px;
             margin-right: 60px;
         }
-
         &__date-dropdown{
             display: none;
         }
-    }
-
-    .buttons{
-        display: flex;
-    }
-
-    .calendar{
-        display: flex;
+        &__submit{
+            display: none;
+        }
+        &__buttons{
+            display: flex;
+            margin-top: 30px;
+            gap: 20px;
+        }
+        &__calendar{
+            display: flex;
+        }
     }
 }
