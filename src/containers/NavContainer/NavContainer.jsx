@@ -16,7 +16,7 @@ const NavContainer = () => {
       <div className="nav-container__logo-container"></div>
       <main className="nav-container__menu-options">
         <NavLink
-          to=""
+          to="/"
           className={({ isActive }) => (isActive ? "link-active" : "link")}
         >
           <NavItem image={HomeIcon} itemText={"Home"} />
