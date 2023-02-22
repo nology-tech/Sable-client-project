@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Button.scss"
+import Plus from "../../assets/images/functional-icons/plus-icon.png";
 
 const Button = (props) => {
 const {buttonText, handleClick, handleSubmit, buttonStyle, isPlus, isInputIncomplete} = props;
@@ -24,7 +25,7 @@ buttonName += " " + buttonStyle
     className= {buttonName} 
     onClick= {handleClick}
     onSubmit= {handleSubmit}>
-    <span className={plus}>+</span>
+    <span className={plus}><img src={Plus} alt="" /></span>
     {buttonText}
    </button>
   )
