@@ -6,7 +6,7 @@ import "./PageHeader.scss";
 const PageHeader = ({ headerType, heading, text, optionsArr }) => {
   const optionsJSX = optionsArr.map((option, index) => {
     return (
-      <option value={option} key={index}>
+      <option className="option" value={option} key={index}>
         {option}
       </option>
     );
@@ -27,11 +27,16 @@ const PageHeader = ({ headerType, heading, text, optionsArr }) => {
 
   const HeadingButtonDropdownJSX = () => (
     <div className="heading-button-dropdown">
-      <h1 className="heading-button-dropdown__heading">{heading}</h1>
-      <Button buttonText={text} />
+      <div className="heading-button-dropdown__main">
+        <h1 className="heading-button-dropdown__heading">{heading}</h1>
+        <Button buttonText={text} />
+      </div>
+
       <div className="heading-button-dropdown__dropdown">
         <select id="dropdown">
-          <option value="">select option</option>
+          <option className="option" value="">
+            Select
+          </option>
           {optionsJSX}
         </select>
       </div>

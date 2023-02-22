@@ -9,12 +9,11 @@ const Home = () => {
       <NavContainer />
       <Layout>
         <PageHeader
-          heading="resources"
+          heading="Staff"
           text="edit"
-          headerType="headingButton"
-          optionsArr={[""]}
+          headerType="headingButtonDropdown"
+          optionsArr={["1", "2"]}
         />
-        <PageHeader heading="Home" headerType="headingOnly" optionsArr={[""]} />
 
         <h1>Page Heading</h1>
         <h2>Section Heading</h2>

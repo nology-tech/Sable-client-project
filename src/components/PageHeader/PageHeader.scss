@@ -24,7 +24,7 @@
 }
 //desktop view style
 @media screen and (min-width: 1440px) {
-  .page-header {
+  .heading-only {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,9 +32,51 @@
     height: 160px;
     padding: 0 110px;
     background-color: $color-white;
-
+    &__heading {
+      color: $heading-text;
+      font-family: $font-modern;
+      font-weight: 700;
+      font-size: 2rem;
+    }
     &__logo {
       display: none;
+    }
+  }
+
+  .heading-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 160px;
+    padding: 0 110px;
+    background-color: $color-white;
+    &__heading {
+      color: $heading-text;
+      font-family: $font-modern;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    &__logo {
+      display: none;
+    }
+  }
+  .heading-button-dropdown {
+    display: flex;
+    flex-direction: column;
+
+    width: auto;
+    height: 160px;
+    padding: 0 110px;
+    background-color: $color-white;
+    &__main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 85%;
+      padding-top: 20px;
     }
     &__heading {
       color: $heading-text;
@@ -42,6 +84,28 @@
       font-weight: 700;
       font-size: 2rem;
     }
+    &__dropdown {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      height: 15%;
+      color: $heading-text;
+    }
+    &__logo {
+      display: none;
+    }
+  }
+  #dropdown {
+    color: $heading-text;
+    font-size: 1.1rem;
+    font-family: $font-modern;
+    font-weight: 700;
+    border: none;
+    width: fit-content;
+    padding: 10px 0;
+  }
+  .option {
+    color: $heading-text;
   }
   .button {
     display: flex;
