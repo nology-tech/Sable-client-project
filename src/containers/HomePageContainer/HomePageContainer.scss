@@ -1,9 +1,9 @@
 .homepage-container {
   display: grid;
-  margin:6vw 5vw;
+  margin: 4vh 5vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 6vw 9vw;
+  gap: 6vh 9vw;
   grid-auto-flow: row;
   grid-template-areas:
     "new-appointment new-appointment staff-details staff-details client-details client-details"
@@ -11,21 +11,34 @@
 
   &__new-appointment {
     grid-area: new-appointment;
+    justify-self: center;
+    align-self: center;
   }
 
   &__staff-details {
     grid-area: staff-details;
+    justify-self: center;
+    align-self: center;
   }
 
   &__client-details {
     grid-area: client-details;
+    justify-self: center;
+    align-self: center;
   }
 
   &__resources {
     grid-area: resources;
+    justify-self: center;
+    align-self: center;
   }
 
   &__settings {
     grid-area: settings;
+    justify-self: center;
+    align-self: center;
   }
 }
+
+// height: 19.375rem;
+//     width: 16.875rem;

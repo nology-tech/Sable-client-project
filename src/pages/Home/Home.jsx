@@ -8,6 +8,7 @@ const Home = () => {
     <div className="app-container">
       <NavContainer />
       <Layout>
+        <div className="header">Header</div>
         <HomePageContainer/>
       </Layout>
     </div>
