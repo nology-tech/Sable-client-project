@@ -9,6 +9,8 @@
     width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 150px;
+  
 
     &__buttons{
         margin-top: 0px;
@@ -19,6 +21,10 @@
         display: none;
         margin-top: 30px;
         width: 339px;
+    }
+    &__submit{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 

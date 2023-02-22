@@ -6,8 +6,8 @@
   box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
   border-radius: 7px;
   border-color: transparent;
-  width: 165px;
-  height: 50px;
+  width: 145px;
+  height: 43px;
   font-size: 16px;
   font-weight: 600;
   display: flex;
@@ -23,10 +23,11 @@
   height: 46px;
   width: 100%;
   border-radius: 4px;
-  box-shadow: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 12px;
   font-weight: 500;
 }
+
 //all the button in the headers on each page ( save , create , edit etc.)
 .isHeader {
   height: 50px;
@@ -106,14 +107,49 @@
 .isPurple {
   background-color: $button-purple;
 }
-
 //save button disable
 .inputIncomplete {
   background: rgba(229, 197, 138, 0.3);
   box-shadow: none;
 }
-
-.isSubmit{
-  width: 335px;
+.isMobileDefault{
+  width:100%;
+  height: 66px;
   border-radius: 5px;
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+.isMobilePopup{
+  width: 132px; 
+  height: 38px;
+  border-radius: 5.54167px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.isLogoutPopup{
+  
+  &--logout{
+    width:132px;
+    height:38px;
+    background:#EE6161;
+    box-shadow:0px 20px 40px rgba(114, 75, 203, 0.2);
+    border-radius: 7px;
+  }
+  &--back{
+    width:132px;
+    height:38px;
+    box-shadow:0px 20px 40px rgba(114, 75, 203, 0.2);
+    border-radius: 7px;
+  }
+}
+@media screen and (min-width: 768px){
+  .isLogin{
+    box-shadow: none;
+  }
+  .button{
+    box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
+    width: 165px;
+    height: 50px;
+  }
 }

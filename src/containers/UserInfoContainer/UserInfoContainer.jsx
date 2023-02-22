@@ -43,7 +43,7 @@ const UserInfoContainer = () => {
           <DropdownField  id="time" label="Time:" handleInput={handleDropdown}  />
         </div>
         <div className='input-field-container__submit'>
-        <Button buttonText = "Submit" handleSubmit = {handleSubmit} buttonStyle="isSubmit"/>
+          <Button buttonText = "Submit" handleSubmit = {handleSubmit} buttonStyle="isMobileDefault"/>
         </div>
     </div>
   )
