@@ -129,21 +129,27 @@ it("should redirect and update dom", () => {
       <App />
     </BrowserRouter>
   );
-
   userEvent.click(screen.getByText(/Home/));
-
   expect(location.pathname).toEqual("/");
 });
 
 it("should render the logo in its own container", () => {
-  render(<NavContainer />);
+  render(
+    <BrowserRouter>
+      <NavContainer />
+    </BrowserRouter>
+  );
   const navContainer = screen.queryByRole("navigation").firstChild;
   const logo = screen.getByAltText(/company logo/i);
   expect(navContainer.firstChild).toBe(logo);
 });
 
 it("should render the logo", () => {
-  render(<NavContainer />);
+  render(
+    <BrowserRouter>
+      <NavContainer />
+    </BrowserRouter>
+  );
   const logo = screen.getByRole("img", {
     name: /company logo/i,
   });
