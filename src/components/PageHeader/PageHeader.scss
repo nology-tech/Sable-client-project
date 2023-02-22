@@ -1,0 +1,30 @@
+@use '../../styles/abstracts/variables.scss' as *;
+@use '../../styles/base/typography.scss' as *;
+
+//mobile view style
+.page-header {
+background-color: $color-white;
+}
+
+//desktop view style
+@media screen and (min-width:$large-desktop-breakpoint){
+    
+    .page-header{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+        height: 160px;
+        padding: 0 110px;
+        &__logo{
+            display: none;
+        }
+        &__heading{
+            color: $heading-text;
+            font-family: $font-modern;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+}
