@@ -32,8 +32,8 @@ const Home = () => {
     <div className="app-container">
       <NavContainer />
       <Layout>
-        <DataCard cardType={"student"} cardObject={studentTestObject} />
         <DataCard cardType={"resource"} cardObject={resourceTestObject} />
+        <DataCard cardType={"student"} cardObject={studentTestObject} />
         <DataCard cardType={"booking"} cardObject={bookingTestObject} />
         <h1>Page Heading</h1>
         <h2>Section Heading</h2>
