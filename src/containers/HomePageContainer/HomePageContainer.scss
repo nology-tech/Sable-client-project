@@ -1,15 +1,17 @@
 @use "../../styles/abstracts/variables" as *;
 
 .homepage-container {
+  min-height:80vh;
+  height:auto;
+  background-color:$page-background-light;
   display: grid;
   margin: 4vh 5vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 6vh 9vw;
+  gap: 5vh 5vw;
   grid-auto-flow: row;
   grid-template-areas:
     "new-appointment new-appointment staff-details staff-details client-details client-details"
     ". resources resources settings settings .";
-  height: auto;
   &__new-appointment {
     grid-area: new-appointment;
     justify-self: center;
@@ -41,9 +43,3 @@
   }
 }
 
-@media screen and (min-width:$tablet-breakpoint) and (max-width:1439px) {
-  .homepage-container__card{
-    height: 29vh;
-    width: 22vw;
-  }
-}
