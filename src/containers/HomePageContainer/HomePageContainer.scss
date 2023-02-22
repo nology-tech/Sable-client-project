@@ -1,0 +1,30 @@
+.homepage-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "new-appointment new-appointment staff-details staff-details client-details client-details"
+    ". resources resources settings settings .";
+
+  &__new-appointment {
+    grid-area: new-appointment;
+  }
+
+  &__staff-details {
+    grid-area: staff-details;
+  }
+
+  &__client-details {
+    grid-area: client-details;
+  }
+
+  &__resources {
+    grid-area: resources;
+  }
+
+  &__settings {
+    grid-area: settings;
+  }
+}
