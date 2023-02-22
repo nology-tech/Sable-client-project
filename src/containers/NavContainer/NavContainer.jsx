@@ -23,6 +23,7 @@ const NavContainer = () => {
         <NavItem image={ClientIcon} itemText={"Clients"} />
         <NavItem image={ResourcesIcon} itemText={"Resources"} />
       </main>
+      <div></div
       <div className="nav-container__line-break-container">
         <img
           className="nav-container__line-break"
