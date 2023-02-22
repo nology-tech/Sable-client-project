@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@700&family=Lato:ital@1&family=Mulish:wght@600&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap");
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #f3f2e8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+button {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 120%;
+  }
+}
+.card-staff {
+  background-color: white;
+  width: 270px;
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+}
+.card-staff__name {
+  font-weight: 700;
+  color: #102b3f;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  margin: 0;
+}
+.card-staff__role {
+  color: #95accb;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  margin: 0;
+}
+.card-staff__image {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=UserProfileCard.css.map */

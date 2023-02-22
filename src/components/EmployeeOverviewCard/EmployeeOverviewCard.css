@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@700&family=Lato:ital@1&family=Mulish:wght@600&family=Poppins:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap");
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #f3f2e8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0.5rem 0;
+  display: inline-block;
+  width: 100%;
+}
+
+button {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.1rem;
+}
+
+h2 {
+  font-size: 1.65rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 120%;
+  }
+}
+.employee-overview-card {
+  width: 295px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 30px 40px rgba(114, 75, 203, 0.06);
+  font-family: "Poppins", sans-serif;
+  gap: 1px;
+}
+.employee-overview-card__top {
+  background-color: white;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  padding: 20px;
+}
+.employee-overview-card__top--title {
+  color: #102b3f;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.employee-overview-card__top--text {
+  color: #95accb;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6rem;
+}
+.employee-overview-card__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  padding: 20px;
+}
+.employee-overview-card__left {
+  text-align: left;
+}
+.employee-overview-card__left--date, .employee-overview-card__left--course, .employee-overview-card__left--manager {
+  color: #102b3f;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6rem;
+}
+.employee-overview-card__right {
+  text-align: end;
+}
+.employee-overview-card__right--date, .employee-overview-card__right--course, .employee-overview-card__right--manager {
+  color: #95accb;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.6rem;
+}/*# sourceMappingURL=EmployeeOverviewCard.css.map */

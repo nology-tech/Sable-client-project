@@ -1,30 +1,45 @@
-@use '../../styles/abstracts/variables.scss' as *;
-@use '../../styles/base/typography.scss' as *;
+@use "../../styles/abstracts/variables.scss" as *;
+@use "../../styles/base/typography.scss" as *;
 
 //mobile view style
 .page-header {
-background-color: $color-white;
+  background-color: $background-header-light;
+  width: 420px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  &__logo {
+    width: 40%;
+  }
+  &__heading {
+    padding: 0 20px;
+    font-size: 2.6rem;
+  }
 }
-
+.button {
+  display: none;
+}
 //desktop view style
-@media screen and (min-width:$large-desktop-breakpoint){
-    
-    .page-header{
+@media screen and (min-width: $large-desktop-breakpoint) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 160px;
+    padding: 0 110px;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-        height: 160px;
-        padding: 0 110px;
-        &__logo{
-            display: none;
-        }
-        &__heading{
-            color: $heading-text;
-            font-family: $font-modern;
-            font-weight: 700;
-            font-size: 2rem;
-        }
+    &__logo {
+      display: none;
     }
+    &__heading {
+      color: $heading-text;
+      font-family: $font-modern;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
 }
