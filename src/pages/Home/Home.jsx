@@ -1,4 +1,5 @@
 import Layout from "../../components/Layout/Layout";
+import PageHeader from "../../components/PageHeader/PageHeader";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "../Home/Home.scss";
 
@@ -7,6 +8,12 @@ const Home = () => {
     <div className="app-container">
       <NavContainer />
       <Layout>
+        <PageHeader
+          headerType="headingButtonDropdown"
+          heading="Home"
+          text="edit"
+          optionsArr={[1, 2, 3]}
+        />
         <h1>Page Heading</h1>
         <h2>Section Heading</h2>
         <h3>Panel Heading</h3>

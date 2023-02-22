@@ -25,7 +25,6 @@
 }
 .heading-button-dropdown {
   &__main {
-    background-color: $background-header-light;
     width: 420px;
     height: 210px;
     display: flex;
@@ -53,15 +52,16 @@
 }
 
 //desktop view style
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .heading-only {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 160px;
-    padding: 0 110px;
+    padding: 0 105px;
+    width: 100%;
+    min-height: 160px;
     background-color: $color-white;
+
     &__heading {
       color: $heading-text;
       font-family: $font-modern;
@@ -75,11 +75,12 @@
 
   .heading-button {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 160px;
-    padding: 0 110px;
+    width: 100%;
+    min-height: 160px;
+    padding: 0 105px;
     background-color: $color-white;
     &__heading {
       color: $heading-text;
@@ -94,10 +95,9 @@
   .heading-button-dropdown {
     display: flex;
     flex-direction: column;
-
-    width: auto;
-    height: 160px;
-    padding: 0 110px;
+    width: 100%;
+    min-height: 160px;
+    padding: 0 105px;
     background-color: $color-white;
     &__main {
       display: flex;
@@ -105,7 +105,6 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      height: 85%;
       padding-top: 20px;
     }
     &__heading {
@@ -118,21 +117,29 @@
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
-      height: 15%;
       color: $heading-text;
+      padding: 0px 15px;
     }
     &__logo {
       display: none;
     }
   }
   #dropdown {
+    -webkit-appearance: none;
     color: $heading-text;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: $font-modern;
     font-weight: 700;
     border: none;
-    width: fit-content;
-    padding: 10px 0;
+    width: 130px;
+    padding: 5px 0px;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
   }
   .option {
     color: $heading-text;
