@@ -4,13 +4,12 @@
   display: grid;
   margin: 4vh 5vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 6vh 9vw;
   grid-auto-flow: row;
   grid-template-areas:
     "new-appointment new-appointment staff-details staff-details client-details client-details"
     ". resources resources settings settings .";
-
+  height: auto;
   &__new-appointment {
     grid-area: new-appointment;
     justify-self: center;

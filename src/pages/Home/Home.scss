@@ -1,9 +1,12 @@
 .app-container{
     display:flex;
     flex-direction: row;
+    min-height: 100vh;
+    height: auto;
 }
 
 .header{
-    height: 16.5vh;
+    height: 20vh;
     border: 2px solid blue;
+
 }
