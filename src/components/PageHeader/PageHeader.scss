@@ -23,7 +23,7 @@
   display: none;
 }
 //desktop view style
-@media screen and (min-width: $large-desktop-breakpoint) {
+@media screen and (min-width: 1440px) {
   .page-header {
     display: flex;
     justify-content: space-between;
@@ -31,6 +31,7 @@
     width: auto;
     height: 160px;
     padding: 0 110px;
+    background-color: $color-white;
 
     &__logo {
       display: none;
@@ -41,5 +42,8 @@
       font-weight: 700;
       font-size: 2rem;
     }
+  }
+  .button {
+    display: flex;
   }
 }
