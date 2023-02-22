@@ -50,3 +50,10 @@
     padding-bottom: 1.5vh;
   }
 }
+.link {
+  color: $text-color;
+}
+.link-active {
+  color: $text-color;
+  background: $background-nav-select;
+}
