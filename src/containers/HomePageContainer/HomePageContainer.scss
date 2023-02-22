@@ -1,3 +1,5 @@
+@use "../../styles/abstracts/variables" as *;
+
 .homepage-container {
   display: grid;
   margin: 4vh 5vw;
@@ -40,5 +42,9 @@
   }
 }
 
-// height: 19.375rem;
-//     width: 16.875rem;
+@media screen and (min-width:$tablet-breakpoint) and (max-width:1439px) {
+  .homepage-container__card{
+    height: 29vh;
+    width: 22vw;
+  }
+}

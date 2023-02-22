@@ -6,19 +6,19 @@ const HomePageContainer = () => {
   return (
     <div className="homepage-container">
       <div className="homepage-container__new-appointment">
-        <HomepageCard heading={"New Appointment"} />
+        <HomepageCard className="homepage-container__card" heading={"New Appointment"} />
       </div>
       <div className="homepage-container__staff-details">
-        <HomepageCard heading={"Staff Details"} />
+        <HomepageCard className="homepage-container__card" heading={"Staff Details"} />
       </div>
       <div className="homepage-container__client-details">
-        <HomepageCard heading={"Client Details"} />
+        <HomepageCard className="homepage-container__card" heading={"Client Details"} />
       </div>
       <div className="homepage-container__resources">
-        <HomepageCard heading={"Resources"} />
+        <HomepageCard className="homepage-container__card" heading={"Resources"} />
       </div>
       <div className="homepage-container__settings">
-        <HomepageCard heading={"Settings"} />
+        <HomepageCard className="homepage-container__card" heading={"Settings"} />
       </div>
     </div>
   );
