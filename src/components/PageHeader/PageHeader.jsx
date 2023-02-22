@@ -3,17 +3,45 @@ import Button from '../Button/Button'
 import Logo from '../../assets/images/logo/logo-white.png'
 import './PageHeader.scss'
 
-const PageHeader = ({heading}) => {
+const PageHeader = ({headerType, heading, text }) => {
+
+    const SingleJSX = () => {
+        <div className='single-header'>
+            <h1 className='header__heading'>{heading}</h1>
+        </div>
+    }
+
+    const DoubleJSX = () => {
+        <div className='double-header'>
+            <h1 className='header__heading'>{heading}</h1>
+            <Button buttonText = {text}/>
+        </div>
+    }
+
+    const TripleJSX = () => {
+        <div className='double-header'>
+            <h1 className='header__heading'>{heading}</h1>
+            <Button buttonText = {text}/>
+            <div>
+                <select>
+                    <option value = "">
+                        select option
+                    </option>
+                </select>
+            </div>
+        </div>
+    }
 
   return (
-    <div className='page-header'>
-        <img src = {Logo} alt='Logo' className='page-header__logo'/>
-        <h1 className='page-header__heading'>{heading}Staff</h1>
-        <Button buttonText={"Edit"} isPlus={true}/>
-        {/* <div className='page-header_dropdown'>
-            <select/>
-        </div> */}
-    </div>
+    <>
+      {headerType === "home" || "book appointment" || "settings" || "edit resource" || "request resource"
+        ? SingleJSX()
+        : headerType === "clients" || "resources" || "add client" || "edit client"
+        ? DoubleJSX()
+        : headerType === "staff"
+        ? TripleJSX()
+        : alert("Unkown card")}
+    </>
   )
 }
 
