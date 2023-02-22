@@ -54,3 +54,9 @@
   color: $text-color;
   background: $background-nav-select;
 }
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .nav-container {
+    display: none;
+  }
+}
