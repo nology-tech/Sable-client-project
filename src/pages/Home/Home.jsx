@@ -8,7 +8,14 @@ const Home = () => {
     <div className="app-container">
       <NavContainer />
       <Layout>
-        <PageHeader text="fhgldfg" headerType="home" optionsArr={["1", "2"]} />
+        <PageHeader
+          heading="resources"
+          text="edit"
+          headerType="headingButton"
+          optionsArr={[""]}
+        />
+        <PageHeader heading="Home" headerType="headingOnly" optionsArr={[""]} />
+
         <h1>Page Heading</h1>
         <h2>Section Heading</h2>
         <h3>Panel Heading</h3>

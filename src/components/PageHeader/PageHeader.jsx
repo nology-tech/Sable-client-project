@@ -12,49 +12,40 @@ const PageHeader = ({ headerType, heading, text, optionsArr }) => {
     );
   });
 
-  const SingleJSX = () => {
-    <div className="single-header">
-      <h1 className="header__heading">{heading}skjsfdhksd</h1>
-    </div>;
-    console.log("test");
-  };
+  const HeadingOnlyJSX = () => (
+    <div className="heading-only">
+      <h1 className="heading-only__heading">{heading}</h1>
+    </div>
+  );
 
-  const DoubleJSX = () => {
-    <div className="double-header">
-      <h1 className="header__heading">{heading}</h1>
+  const HeadingButtonJSX = () => (
+    <div className="heading-button">
+      <h1 className="heading-button__heading">{heading}</h1>
       <Button buttonText={text} />
-    </div>;
-  };
+    </div>
+  );
 
-  const TripleJSX = () => {
-    <div className="double-header">
-      <h1 className="header__heading">{heading}ssds</h1>
+  const HeadingButtonDropdownJSX = () => (
+    <div className="heading-button-dropdown">
+      <h1 className="heading-button-dropdown__heading">{heading}</h1>
       <Button buttonText={text} />
-      <div>
+      <div className="heading-button-dropdown__dropdown">
         <select id="dropdown">
           <option value="">select option</option>
           {optionsJSX}
         </select>
       </div>
-    </div>;
-    console.log("test");
-  };
+    </div>
+  );
 
   return (
     <>
-      {headerType === "home"
-        ? //   headerType === "book appointment" ||
-          //   headerType === "settings" ||
-          //   headerType === "edit resource" ||
-          //   headerType === "request resource"
-          SingleJSX()
-        : headerType === "clients"
-        ? //   headerType === "resources" ||
-          //   headerType === "add client" ||
-          //   headerType === "edit client"
-          DoubleJSX()
-        : headerType === "staff"
-        ? TripleJSX()
+      {headerType === "headingOnly"
+        ? HeadingOnlyJSX()
+        : headerType === "headingButton"
+        ? HeadingButtonJSX()
+        : headerType === "headingButtonDropdown"
+        ? HeadingButtonDropdownJSX()
         : alert("unknown header")}
     </>
   );
