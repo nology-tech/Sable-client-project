@@ -3,81 +3,26 @@
 
 .client-page {
   display: flex;
+
   &__content {
     min-height: 100vh;
     height: auto;
     width: 100%;
-    background-color: rgba(167, 167, 167, 0.06);
+    background-color: $color-white;
     display: flex;
     flex-direction: column;
   }
+
   &__header {
-    display: flex;
-  }
-  &__filters {
-    display: flex;
+    height: 200px;
     margin: 0 10%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-
-    &--label {
-      font-family: $font-modern;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 15px;
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.03em;
-      color: #2d3748;
-    }
-
-    &--search,
-    &--sort,
-    &--filter {
-      font-family: $font-modern;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 15px;
-      /* identical to box height */
-
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.03em;
-
-      color: $page-text;
-    }
   }
-  &__label-container {
-    display: grid;
-    margin: 0 10%;
-    grid-template: 1fr / repeat(7, 1fr);
-    justify-items: center;
-    p {
-      width: auto;
-      font-family: $font-modern;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 8px;
-      line-height: 12px;
-      /* identical to box height */
 
-      display: flex;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.03em;
-
-      color: $page-sub-text;
-    }
-  }
-  &__cards-container {
-    overflow-y: scroll;
-    height: auto;
-    max-height: 800px;
-  }
-  &__card-container::-webkit-scrollbar {
-    display: none;
+  &__title {
+    width: auto;
+    color: $color-black;
   }
 }
