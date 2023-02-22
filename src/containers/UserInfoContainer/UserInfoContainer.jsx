@@ -24,17 +24,21 @@ const UserInfoContainer = () => {
 
   return (
     <div className='input-field-container'>
-        <InputField id="first-name" label="First Name" placeholderText="Mark" handleInput={handleName}  />
-        <InputField id="last-name" label="Last Name" placeholderText="Birchall" handleInput={handleName}  />
-        <InputField id="email" label="Email Address" placeholderText="thiel90@hotmail.com" handleInput={handleEmail}  />
-        <InputField id="number" label="Mobile Number" placeholderText="+44 1234 567890" handleInput={handleNumber}  />
-        <DropdownField id="staff" label="Staff Member" handleInput={handleDropdown}  />
+        <InputField id="first-name" label="First Name" handleInput={handleName}  />
+        <InputField id="last-name" label="Last Name"  handleInput={handleName}  />
+        <InputField id="email" label="Email Address"  handleInput={handleEmail}  />
+        <InputField id="number" label="Mobile Number"  handleInput={handleNumber}  />
+        <div className='input-field-container__staff-dropdown'>
+          <DropdownField id="staff" label="Staff Member" handleInput={handleDropdown}  />
+        </div>
         <div className='buttons'>
           <Button buttonText = "Cancel" handleSubmit = {handleSubmit} buttonStyle="isCancel--grey"/>
           <Button buttonText = "Save" handleSubmit = {handleSubmit}/>
         </div>
         <img className='calendar' src= {Calendar} alt="Calendar"/>
-        <DropdownField id="time" label="Time" handleInput={handleDropdown}  />
+        <div className="input-field-container__time-dropdown">
+          <DropdownField  id="time" label="Time" handleInput={handleDropdown}  />
+        </div>
     </div>
   )
 }
