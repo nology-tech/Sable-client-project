@@ -3,14 +3,20 @@ import Button from '../Button/Button'
 import Logo from '../../assets/images/logo/logo-white.png'
 import './PageHeader.scss'
 
-const PageHeader = ({heading}) => {
+const PageHeader = ({headerType, headerObject}) => {
+
+    const HomeJSX = () => {
+        <div className='home-header'>
+            <h1>{headerObject.title}Home</h1>
+        </div>
+    }
 
   return (
     <div className='page-header'>
-        <img src = {Logo} alt='Logo' className='page-header__logo'/>
+        {/* <img src = {Logo} alt='Logo' className='page-header__logo'/>
         <h1 className='page-header__heading'>{heading}Staff</h1>
         <Button buttonText={"Edit"} isPlus={true}/>
-        {/* <div className='page-header_dropdown'>
+        <div className='page-header_dropdown'>
             <select/>
         </div> */}
     </div>
