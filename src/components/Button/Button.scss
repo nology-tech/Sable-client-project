@@ -8,9 +8,9 @@
   box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
   border-radius: 7px;
   border-color: transparent;
-  width: 145px;
-  height: 43px;
-  font-size: 16px;
+  width: 9.063rem;
+  height: 2.688rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -22,29 +22,29 @@
 
 //Login page button, it has screen size responsiveness
 .isLogin {
-  height: 46px;
+  height: 2.875rem;
   width: 100%;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 //majority of the mobile buttons have the same properties, so this is the default
 .isMobileDefault{
   width:100%;
-  height: 66px;
+  height: 4.125rem;
   border-radius: 5px;
   box-shadow: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 //this is for the buttons on the popups of the mobile display, "booking confirmed" and "Logged out"
 .isMobilePopup{
-  width: 132px; 
-  height: 38px;
+  width: 8.25rem; 
+  height: 2.375rem;
   border-radius: 5.54167px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 
@@ -56,15 +56,15 @@
 //for the button on the mobile popup asking "do you want to log out, the red and the yellow buttons"
 .isLogoutPopup{
   &--logout{
-    width:132px;
-    height:38px;
+    width:8.25rem;
+    height:2.375rem;
     background:#EE6161;
     box-shadow:0px 20px 40px rgba(114, 75, 203, 0.2);
     border-radius: 7px;
   }
   &--back{
-    width:132px;
-    height:38px;
+    width:8.25rem;
+    height:2.375rem;
     box-shadow:0px 20px 40px rgba(114, 75, 203, 0.2);
     border-radius: 7px;
   }
@@ -76,14 +76,14 @@
   //on the settings front page, there is an apply button, this is responsiveness for that button
   .button{
     box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
-    width: 165px;
-    height: 50px;
+    width: 10.313rem;
+    height: 2.6rem;
   }
 
   //all the button in the headers on each page ( save , create , edit etc.)
 .isHeader {
-  height: 50px;
-  width: 130px;
+  height: 3.125rem;
+  width: 8.125rem;
 }
 
 .noPlus {
@@ -94,29 +94,29 @@
   position: relative;
   color: $color-white;
   right: 10%;
-  font-size: 25px;
-  bottom: 2px;
+  font-size: 1.563rem;
+  bottom: 0.125rem;
 }
 //Request Resource pop-up - Home button
 .isRequestComplete {
-  width: 132px;
-  height: 38px;
-  font-size: 14px;
+  width: 8.25rem;
+  height: 2.375rem;
+  font-size: 0.875rem;
   border-radius: 5.5px;
   font-weight: 700;
   box-shadow: none;
 }
 //Edit/Request Resorce, Save button
 .isResourceSave {
-  width: 167.89px;
-  height: 58.4px;
+  width: 10.493rem;
+  height: 3.65rem;
 }
 // add client upload image button
 .isUpload {
   background: $button-upload;
-  width: 145px;
-  height: 39px;
-  font-size: 12px;
+  width: 9.063rem;
+  height: 2.438rem;
+  font-size: 0.75rem;
   color: $color-black;
   box-shadow: none;
 }
@@ -140,18 +140,18 @@
   &--cancel {
     border: 0.804878px solid $button-logout;
     color: $button-logout;
-    font-size: 11.27px;
-    width: 132px;
-    height: 38px;
+    font-size: 0.704rem;
+    width: 8.25rem;
+    height: 2.375rem;
     border-radius: 5.6px;
     background-color: $color-white;
     box-shadow: none;
   }
   &--confirm {
     background: $button-logout;
-    font-size: 14px;
-    width: 132px;
-    height: 38px;
+    font-size: 0.875rem;
+    width: 8.25rem;
+    height:2.375rem;
     border-radius: 5.6px;
     box-shadow: none;
   }
