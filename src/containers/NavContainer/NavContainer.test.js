@@ -134,3 +134,18 @@ it("should redirect and update dom", () => {
 
   expect(location.pathname).toEqual("/");
 });
+
+it("should render the logo in its own container", () => {
+  render(<NavContainer />);
+  const navContainer = screen.queryByRole("navigation").firstChild;
+  const logo = screen.getByAltText(/company logo/i);
+  expect(navContainer.firstChild).toBe(logo);
+});
+
+it("should render the logo", () => {
+  render(<NavContainer />);
+  const logo = screen.getByRole("img", {
+    name: /company logo/i,
+  });
+  expect(logo).toBeInTheDocument();
+});
