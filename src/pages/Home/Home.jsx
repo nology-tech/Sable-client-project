@@ -8,12 +8,7 @@ const Home = () => {
     <div className="app-container">
       <NavContainer />
       <Layout>
-        <PageHeader
-          headerType="headingButtonDropdown"
-          heading="Home"
-          text="edit"
-          optionsArr={[1, 2, 3]}
-        />
+        <PageHeader headerType="headingOnly" heading="Home" />
         <h1>Page Heading</h1>
         <h2>Section Heading</h2>
         <h3>Panel Heading</h3>
