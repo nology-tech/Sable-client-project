@@ -3,13 +3,11 @@
 .input-field-container{
     display: flex;
     flex-direction: column;
-    padding-top: 33px;
     gap: 16px;
     background-color: white;  
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 150px;
+    margin: 20px;
+    margin-top: 33px;
   
 
     &__buttons{
@@ -33,10 +31,11 @@
       .input-field-container{
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 20px;
-        padding-left: 35px;
+        margin: 20px;
+        margin-top: 50px;
+        margin-bottom: 0;
         gap: 16px;
-        height: 600px;
+        height: 570px;
         width: 982px;
         align-items: center;  
         background-color: $page-background-light;  
