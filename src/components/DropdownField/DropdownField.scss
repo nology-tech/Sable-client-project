@@ -15,7 +15,7 @@
     }
 
     &__input{
-        height: 49px;
+        height: 45px;
         width: 100%;
         border: 1px solid #E2E8F0;
         border-radius: 7px;
@@ -25,12 +25,21 @@
         background-repeat: no-repeat;
         appearance: none;
         background-position: right 1rem center;
-        background-color: $page-background-light;
+        background-color: white;
 
         &::placeholder{
             color: #95ACCB;
             font-weight: 400;
             padding-right: 10px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .dropdown-field{    
+        &__input{
+            background-color: $page-background-light;
         }
     }
 }

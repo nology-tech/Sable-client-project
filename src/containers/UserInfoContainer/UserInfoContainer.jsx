@@ -36,8 +36,11 @@ const UserInfoContainer = () => {
           <Button buttonText = "Save" handleSubmit = {handleSubmit}/>
         </div>
         <img className='calendar' src= {Calendar} alt="Calendar"/>
+        <div className="input-field-container__date-dropdown">
+          <DropdownField  id="date" label="Date:" handleInput={handleDropdown}  />
+        </div>
         <div className="input-field-container__time-dropdown">
-          <DropdownField  id="time" label="Time" handleInput={handleDropdown}  />
+          <DropdownField  id="time" label="Time:" handleInput={handleDropdown}  />
         </div>
     </div>
   )
