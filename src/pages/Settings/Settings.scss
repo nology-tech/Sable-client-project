@@ -1,0 +1,17 @@
+@use '../../styles/abstracts/variables.scss' as *;
+@use '../../styles/base/typography' as *;
+
+.settings-container{
+    width: 33vw;
+    height: 27vh;
+    border-radius: 7px;
+    background-color: $color-white;
+    box-shadow: 0px 30px 30px rgba(114, 75, 203, 0.06);
+    margin: 20px 
+}
+.settings-card {
+    &__option {
+        font-size: 1rem;
+        color: $heading-text;
+    }
+}
