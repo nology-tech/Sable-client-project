@@ -5,7 +5,7 @@
   height: auto;
   background-color: $page-background-light;
   display: grid;
-  margin: 4vh 5vw;
+  margin: 3vh 5vw;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 5vh 5vw;
   grid-auto-flow: row;
@@ -37,29 +37,29 @@
     justify-self: center;
     align-self: center;
   }
-  &__button-container{
-    display:none;
+  &__button-container {
+    display: none;
   }
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .homepage-content{
+  .homepage-content {
     display: flex;
     justify-content: space-evenly;
     margin: 2vh;
     flex-direction: column;
     min-height: 76vh;
   }
-  .homepage-container{
-    display:flex;
+  .homepage-container {
+    display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
     min-height: 60vh;
     gap: 15px;
     margin: 0;
 
-    &__button-container{
-      display:flex;
+    &__button-container {
+      display: flex;
       justify-content: center;
       align-items: center;
     }
