@@ -6,6 +6,7 @@ import sortIcon from "../../assets/images/functional-icons/sort-icon.png";
 import DataCard from "../../components/DataCard/DataCard";
 import "./ClientOverview.scss";
 const Client = () => {
+  //Will replace with real data passed through props later
   const studentTestObject = {
     name: "Test",
     email: "hello@test.com",
@@ -43,23 +44,6 @@ const Client = () => {
         <p className="client-overview__label">Staff Name</p>
       </div>
       <div className="client-overview__cards-container">
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
-        <DataCard cardType="student" cardObject={studentTestObject} />
         <DataCard cardType="student" cardObject={studentTestObject} />
         <DataCard cardType="student" cardObject={studentTestObject} />
         <DataCard cardType="student" cardObject={studentTestObject} />
