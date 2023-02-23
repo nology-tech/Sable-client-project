@@ -27,19 +27,17 @@ When you want to change the options in the dropdown menu give it you desired opt
 
 Examples
 
-HeadingOnlyJSX - empty optionsArr needs to be included
+HeadingOnlyJSX
 <PageHeader
 heading="Home"
 headerType="headingOnly"
-optionsArr={[]}
 />
 
-HeadingButtonJSX - empty optionsArr needs to be included
+HeadingButtonJSX
 <PageHeader
 heading="resources"
 text="edit"
 headerType="headingButton"
-optionsArr={[]}
 />
 
 HeadingButtonDropdownJSX
@@ -47,5 +45,5 @@ HeadingButtonDropdownJSX
 heading="staff"
 text="edit"
 headerType="headingButton"
-optionsArr={[option 1, option 2]}
+optionsArr={[option1, option2]}
 />

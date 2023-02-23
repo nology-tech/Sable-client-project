@@ -1,5 +1,6 @@
 @use "../../styles/abstracts/variables.scss" as *;
 @use "../../styles/base/typography.scss" as *;
+//@import '../../assets/images/functional-icons/downarrow-grey-icon.png'
 
 //mobile view style
 .heading-only,
@@ -59,7 +60,7 @@
     align-items: center;
     padding: 0 105px;
     width: 100%;
-    min-height: 160px;
+    max-height: 165px;
     background-color: $color-white;
 
     &__heading {
@@ -79,7 +80,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 160px;
+    max-height: 165px;
     padding: 0 105px;
     background-color: $color-white;
     &__heading {
@@ -96,7 +97,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 160px;
+    max-height: 165px;
     padding: 0 105px;
     background-color: $color-white;
     &__main {
@@ -125,21 +126,21 @@
     }
   }
   #dropdown {
-    -webkit-appearance: none;
     color: $heading-text;
     font-size: 1rem;
     font-family: $font-modern;
     font-weight: 700;
     border: none;
-    width: 130px;
-    padding: 5px 0px;
-    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
-      linear-gradient(135deg, gray 50%, transparent 50%),
-      linear-gradient(to right, #ccc, #ccc);
-    background-position: calc(100% - 20px) calc(1em + 2px),
-      calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
-    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    width: 120px;
+    padding: 8px 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('../../assets/images/functional-icons/downarrow-grey-icon.png');
+    background-position: 98% center;
     background-repeat: no-repeat;
+    outline: none;
   }
   .option {
     color: $heading-text;

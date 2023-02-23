@@ -40,9 +40,6 @@ const PageHeader = ({ headerType, heading, text, optionsArr }) => {
         </div>
         <div className="heading-button-dropdown__dropdown">
           <select id="dropdown">
-            <option className="option" value="">
-              Select
-            </option>
             {optionsJSX}
           </select>
         </div>
