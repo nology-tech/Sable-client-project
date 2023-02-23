@@ -1,12 +1,12 @@
 @use "../../styles/abstracts/variables" as *;
 
-
 .nav-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 22vw;
   border-top-right-radius: 30px;
   background-color: $background-nav-light;
@@ -19,24 +19,23 @@
     align-items: center;
   }
 
-  &__logo{
-    height:7.25vh;
+  &__logo {
+    height: 8vh;
   }
 
   &__menu-options {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 33vh;
     justify-content: center;
     width: 22vw;
+    height: 30vh;
   }
   &__settings {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 39.5vh;
     width: 22vw;
     margin: 2vh 0vh;
   }
@@ -44,9 +43,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 0.1vh;
     width: 18vw;
-    padding-top: 1.9vh;
+    padding-top: 2vh;
     padding-bottom: 1.5vh;
+  }
+}
+.link {
+  color: $text-color;
+}
+.link-active {
+  color: $text-color;
+  background: $background-nav-select;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .nav-container {
+    display: none;
   }
 }
