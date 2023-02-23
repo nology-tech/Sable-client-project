@@ -17,9 +17,9 @@
     }
     &__calendar{
         display: none;
-        margin-top: 1.4rem;
-        margin-right: 4rem;
-        width: 17.6rem;
+        margin-top: 3vh;
+        margin-right: 5vw;
+        width: 23vw;
     }
     &__submit{
         margin-left: 1.25rem;
@@ -32,22 +32,22 @@
       .input-field-container{
         flex-direction: column;
         flex-wrap: wrap;
-        margin: 1.25rem;
-        margin-top: 1.4rem;
-        padding-top: 1rem;
+        margin-top: 4vh;
+        padding-top: 2vh;
         margin-bottom: 0;
-        gap: 0.7rem;
-        height: 29rem;
-        width: 55rem;
+        gap: 1.5vh;
+        height: 70vh;
+        width: 68vw;
         align-items: center;  
         background-color: $page-background-light;  
+        border-radius: 7px;
     
         &__staff-dropdown{
-            width: 21.813rem;
+            width: 28.5vw;
         }
         &__time-dropdown{
-            width: 17.2rem;
-            margin-right: 3.75rem;
+            width: 16.5vw;
+            margin-right: 10vw;
         }
         &__date-dropdown{
             display: none;
@@ -57,8 +57,8 @@
         }
         &__buttons{
             display: flex;
-            margin-top: 1rem;
-            gap: 1.25rem;
+            margin-top: 3vh;
+            gap: 1vw;
         }
         &__calendar{
             display: flex;
