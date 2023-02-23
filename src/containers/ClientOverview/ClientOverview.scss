@@ -4,7 +4,7 @@
 .client-overview {
   background-color: $data-page-background;
   height: 100%;
-  min-height: 90vh;
+  min-height: 80vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -105,11 +105,22 @@
   &__cards-container {
     overflow-y: scroll;
     height: auto;
-    max-height: 800px;
+    max-height: 700px;
     &:nth-child(1) {
       margin: 0;
     }
     &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .client-overview {
+    &__filters {
+      display: none;
+    }
+    &__label-container {
       display: none;
     }
   }

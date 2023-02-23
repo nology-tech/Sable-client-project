@@ -25,4 +25,30 @@
     width: auto;
     color: $color-black;
   }
+
+  &__button {
+    display: none;
+  }
+  &__footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .client-page {
+    &__button {
+      margin-bottom: 5%;
+      display: flex;
+      background-color: #fffbfb;
+      align-items: center;
+      justify-content: center;
+    }
+    &__footer {
+      display: flex;
+      height: 100px;
+      background-color: #fffbfb;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
