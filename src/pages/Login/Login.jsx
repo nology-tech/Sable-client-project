@@ -1,5 +1,6 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import presentation from "../../assets/images/homepage/homepage-image.png";
 import logo from "../../assets/images/logo/logo-black.png";
 import Button from "../../components/Button/Button";
@@ -25,9 +26,13 @@ const Login = () => {
       .catch((error) => {
         const errorMessage = error.message;
         if (errorMessage.includes("invalid-email")) {
-          setError("Invalid Email");
+          setError(
+            `A problem has occured while submitting your data (Invalid Email)`
+          );
         } else if (errorMessage.includes("wrong-password")) {
-          setError("Wrong Password");
+          setError(
+            `A problem has occured while submitting your data (Invalid Password)`
+          );
         } else {
           setError(errorMessage);
         }
@@ -65,9 +70,7 @@ const Login = () => {
         />
         {/* If there is a user, display the user email, if there is a wrong user display an error messsage else don't display anything*/}
         {user ? (
-          <p className="login-form__validation" id="validation--success">
-            {user.email}
-          </p>
+          <Navigate replace to="/home" />
         ) : (
           error && (
             <p className="login-form__validation" id="validation--error">
