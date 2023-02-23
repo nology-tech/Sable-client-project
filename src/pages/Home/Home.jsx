@@ -1,5 +1,4 @@
 import Layout from "../../components/Layout/Layout";
-import PageHeader from "../../components/PageHeader/PageHeader";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "../Home/Home.scss";
 import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
