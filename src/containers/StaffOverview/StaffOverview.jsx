@@ -9,6 +9,15 @@ import EmployeeOverviewCard from "../../components/EmployeeOverviewCard/Employee
 import UserProfile from "../../components/UserProfileCard/UserProfileCard.jsx";
 import "./StaffOverview.scss";
 const StaffOverview = () => {
+  const testObject = {
+    name: "Mark Rusell",
+    email: "mrussel@gmail.com",
+    mobileNumber: "+44012423789",
+    bookingDate: "09/05/2023",
+    bookingTime: "16:45",
+    cost: "£12.99",
+    courseName: "whatever",
+  };
   return (
     <div className="staff-overview">
       <h2 className="staff-overview__title">Overview</h2>
@@ -79,18 +88,7 @@ const StaffOverview = () => {
             courseName: "whatever",
           }}
         />
-        <DataCard
-          cardType="booking"
-          cardObject={{
-            name: "Mark Rusell",
-            email: "mrussel@gmail.com",
-            mobileNumber: "+44012423789",
-            bookingDate: "09/05/2023",
-            bookingTime: "16:45",
-            cost: "£12.99",
-            courseName: "whatever",
-          }}
-        />
+        <DataCard cardType="booking" cardObject={testObject} />
       </div>
     </div>
   );

@@ -213,7 +213,7 @@
   }
 }
 
-@media screen and (max-width: $desktop-breakpoint) {
+@media screen and (max-width: $tablet-breakpoint) {
   .resource-card {
     transition: 0;
     display: flex;
