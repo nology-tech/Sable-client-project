@@ -10,7 +10,7 @@
   border-color: transparent;
   width: 9.063rem;
   height: 2.688rem;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@
   width: 100%;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 0.75rem;
+  font-size: 12px;
   font-weight: 500;
 }
 //majority of the mobile buttons have the same properties, so this is the default
@@ -35,7 +35,7 @@
   height: 4.125rem;
   border-radius: 5px;
   box-shadow: none;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -44,8 +44,21 @@
   width: 8.25rem; 
   height: 2.375rem;
   border-radius: 5.54167px;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 700;
+}
+
+.noPlus {
+  display: none;
+}
+
+//add plus to the button
+.isPlus {
+  position: relative;
+  color: $color-white;
+  right: 10%;
+  font-size: 25px;
+  bottom: 0.125rem;
 }
 
 //for the "Logout" button on the settings front page
@@ -77,92 +90,81 @@
   .button{
     box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
     width: 13.8vw;
-    height: 6vh;
+    height: 6.2vh;
   }
 
   //all the button in the headers on each page ( save , create , edit etc.)
-.isHeader {
-  height: 3.125rem;
-  width: 8.125rem;
-}
+  .isHeader {
+    height: 3.125rem;
+    width: 8.125rem;
+  }
 
-.noPlus {
-  display: none;
-}
-//add plus to the button
-.isPlus {
-  position: relative;
-  color: $color-white;
-  right: 10%;
-  font-size: 1.563rem;
-  bottom: 0.125rem;
-}
-//Request Resource pop-up - Home button
-.isRequestComplete {
-  width: 8.25rem;
-  height: 2.375rem;
-  font-size: 0.875rem;
-  border-radius: 5.5px;
-  font-weight: 700;
-  box-shadow: none;
-}
-//Edit/Request Resorce, Save button
-.isResourceSave {
-  width: 10.493rem;
-  height: 3.65rem;
-}
-// add client upload image button
-.isUpload {
-  background: $button-upload;
-  width: 9.063rem;
-  height: 2.438rem;
-  font-size: 0.75rem;
-  color: $color-black;
-  box-shadow: none;
-}
-// cancel buttons. booking pages, nav bar page , staff page, client page.
-.isCancel {
-  &--grey {
-    background-color: rgba(124, 118, 138, 0.25);
-    box-shadow: none;
-    font-weight: 700;
-  }
-  &--purple {
-    background: $color-white;
-    border: 1px solid $button-purple;
-    color: $button-purple;
-    box-shadow: none;
-    font-weight: 700;
-  }
-}
-// delite client page pop-up buttons
-.isDelete {
-  &--cancel {
-    border: 0.804878px solid $button-logout;
-    color: $button-logout;
-    font-size: 0.704rem;
+  //Request Resource pop-up - Home button
+  .isRequestComplete {
     width: 8.25rem;
     height: 2.375rem;
-    border-radius: 5.6px;
-    background-color: $color-white;
+    font-size: 14px;
+    border-radius: 5.5px;
+    font-weight: 700;
     box-shadow: none;
   }
-  &--confirm {
-    background: $button-logout;
-    font-size: 0.875rem;
-    width: 8.25rem;
-    height:2.375rem;
-    border-radius: 5.6px;
+  //Edit/Request Resorce, Save button
+  .isResourceSave {
+    width: 10.493rem;
+    height: 3.65rem;
+  }
+  // add client upload image button
+  .isUpload {
+    background: $button-upload;
+    width: 9.063rem;
+    height: 2.438rem;
+    font-size: 12px;
+    color: $color-black;
     box-shadow: none;
   }
-}
-//Turns any button purple
-.isPurple {
-  background-color: $button-purple;
-}
-//save button disable
-.inputIncomplete {
-  background: rgba(229, 197, 138, 0.3);
-  box-shadow: none;
-}
+  // cancel buttons. booking pages, nav bar page , staff page, client page.
+  .isCancel {
+    &--grey {
+      background-color: rgba(124, 118, 138, 0.25);
+      box-shadow: none;
+      font-weight: 700;
+    }
+    &--purple {
+      background: $color-white;
+      border: 1px solid $button-purple;
+      color: $button-purple;
+      box-shadow: none;
+      font-weight: 700;
+    }
+  }
+  // delite client page pop-up buttons
+  .isDelete {
+    &--cancel {
+      border: 0.804878px solid $button-logout;
+      color: $button-logout;
+      font-size: 14px;
+      width: 8.25rem;
+      height: 2.375rem;
+      border-radius: 5.6px;
+      background-color: $color-white;
+      box-shadow: none;
+    }
+    &--confirm {
+      background: $button-logout;
+      font-size: 14px;
+      width: 8.25rem;
+      height:2.375rem;
+      border-radius: 5.6px;
+      box-shadow: none;
+    }
+  }
+  //Turns any button purple
+  .isPurple {
+    background-color: $button-purple;
+  }
+  //save button disable
+  .inputIncomplete {
+    background: rgba(229, 197, 138, 0.3);
+    box-shadow: none;
+  }
 }
