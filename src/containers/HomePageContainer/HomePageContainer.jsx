@@ -5,8 +5,8 @@ import Button from "../../components/Button/Button.jsx";
 
 const HomePageContainer = () => {
   return (
-    <>
-      <div className="homepage-container">
+    <main className="homepage-content">
+      <section className="homepage-container">
         <div className="homepage-container__new-appointment">
           <HomepageCard
             className="homepage-container__card"
@@ -37,11 +37,11 @@ const HomePageContainer = () => {
             heading={"Settings"}
           />
         </div>
-      </div>
+      </section>
       <div className="homepage-container__button-container">
-        <Button className="homepage-container__button" />
+        <Button className="homepage-container__button" buttonText={"Log Out"} />
       </div>
-    </>
+    </main>
   );
 };
 

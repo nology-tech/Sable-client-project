@@ -5,7 +5,7 @@ import HomePageContainer from "../../containers/HomePageContainer/HomePageContai
 
 const Home = () => {
   return (
-    <div className="app-container">
+    <div className="home-container">
       <NavContainer />
       <Layout>
         <div className="header">Header</div>

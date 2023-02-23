@@ -37,19 +37,29 @@
     justify-self: center;
     align-self: center;
   }
-  &__button-container {
-    display: none;
+  &__button-container{
+    display:none;
   }
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .homepage-container {
+  .homepage-content{
     display: flex;
+    justify-content: space-evenly;
+    margin: 2vh;
     flex-direction: column;
-    justify-content: flex-start;
+    min-height: 76vh;
+  }
+  .homepage-container{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    min-height: 60vh;
+    gap: 15px;
+    margin: 0;
 
-    &__button-container {
-      display: flex;
+    &__button-container{
+      display:flex;
       justify-content: center;
       align-items: center;
     }
