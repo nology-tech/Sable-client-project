@@ -6,7 +6,7 @@ import ContactDetailsCard from "../../components/ContactDetailsCard/ContactDetai
 import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 const Home = () => {
-  const cardObject = [{"birthDates": "10/10/2000" ,"email":"mikolaj@gmail.com" , "mobileNumber" : "07424020033","bookingDate":"20/10/2000" ,"bookingTime":"11:20","staffMember":"staff01"}]
+  // const cardObject = [{"birthDates": "10/10/2000" ,"email":"mikolaj@gmail.com" , "mobileNumber" : "07424020033","bookingDate":"20/10/2000" ,"bookingTime":"11:20","staffMember":"staff01"}]
 
   return (
     <div className="home-container">
@@ -15,8 +15,8 @@ const Home = () => {
         <PageHeader heading="Home" headerType="headingOnly" />
         <HomePageContainer />
         <div>
-        <BookingDetailsCard cardObject = {cardObject} />
-      <ContactDetailsCard cardObject = {cardObject} />
+        <BookingDetailsCard  />
+      <ContactDetailsCard  />
       </div>
       </Layout>
     </div>
