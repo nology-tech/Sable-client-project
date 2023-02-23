@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import ClientHeadCard from "./ClientHeadCard";
+import UserProfileCard from "./UserProfileCard";
 
 it("should render client card on the page", () => {
   //arrange
-  render(<ClientHeadCard name="name" />);
+  render(<UserProfileCard name="name" />);
 
   //act
   const card = screen.getByText("name", { name: /name/i });
