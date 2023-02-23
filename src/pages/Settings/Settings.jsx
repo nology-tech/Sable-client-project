@@ -3,6 +3,9 @@ import './Settings.scss'
 import NavContainer from '../../containers/NavContainer/NavContainer'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import Button from '../../components/Button/Button'
+import Sun from '../../assets/images/lightmode/sun-light.png'
+import Moon from '../../assets/images/lightmode/monn-light.png'
+import Toggle from '../../assets/images/lightmode/toggle-light-icon.png'
 
 const Settings = () => {
 
