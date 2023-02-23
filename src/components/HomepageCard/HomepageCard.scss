@@ -47,14 +47,17 @@
 @media screen and (max-width: $tablet-breakpoint) {
   .homepage-card{
     display:flex;
-    height: 4vh;
-    width: 12vw;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0px;
+    height: 6vh;
+    width: 80vw;
     border-radius: 7px;
-
 
     &__heading{
       padding-left: 15px;
       align-self: center;
+      justify-content: flex-start;
       font-size: 20px;
       text-align: left;
       font-weight: 600;
@@ -62,7 +65,14 @@
     &__button{
       display:none;
     }
-
+    &__arrow {
+      flex-shrink: 0;
+      width: 30px;
+      margin-right: 10px;
+      height: 30px;
+      background-image: url(../../assets/images/functional-icons/rightarrow-grey-icon.png);
+      background-size: contain;
   }
+}
 }
 

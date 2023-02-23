@@ -9,6 +9,9 @@ const HomepageCard = ({ heading }) => {
       <div className="homepage-card__button">
         <Button buttonText={"Go"} />
       </div>
+      <div className="homepage-card__arrow">
+        
+      </div>
     </div>
   );
 };
