@@ -1,7 +1,6 @@
 @use "../../styles/base/typography" as *;
 @use "../../styles/abstracts/variables" as *;
 
-
 //default button
 .button {
   background-color: $button-enabled;
@@ -38,7 +37,6 @@
   font-size: 16px;
   font-weight: 700;
 }
-
 //this is for the buttons on the popups of the mobile display, "booking confirmed" and "Logged out"
 .isMobilePopup{
   width: 8.25rem; 
