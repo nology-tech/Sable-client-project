@@ -10,7 +10,6 @@ const HomepageCard = ({ heading }) => {
         <Button buttonText={"Go"} />
       </div>
       <div className="homepage-card__arrow">
-        
       </div>
     </div>
   );
