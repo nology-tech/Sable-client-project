@@ -1,19 +1,5 @@
 @use "../../styles/abstracts/variables" as *;
 
-<<<<<<< HEAD
-.home-container{
-    display:flex;
-    flex-direction: row;
-    min-height: 100vh;
-    height: auto;
-    background-color:$page-background-light
-}
-
-.header{
-    height: 20vh;
-    border: 2px solid blue;
-}
-=======
 .home-container {
   display: flex;
   flex-direction: row;
@@ -21,4 +7,3 @@
   height: auto;
   background-color: $page-background-light;
 }
->>>>>>> 763dbaf3c9e5f5bd7b99e6fdee59baf7d5eedf1d
