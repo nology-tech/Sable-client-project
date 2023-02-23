@@ -1,18 +1,25 @@
-import React from 'react'
-import "./BookingDetailsCard.scss"
+import React from "react";
+import "./ContactDetailsCard.scss";
 
-const BookingDetailsCard = (props) => {
-
+const ContactDetailsCard = (props) => {
+    const cardObject = props
   return (
-    <div className='card-container'>
-      <h1 className='card-container__contact-detals'>contact details</h1>
-      <h2 className='card-container__dob'> Date of Birth:</h2>
-      <p className='card-container__dob-data'>{cardObject[].dateOfBirth}</p>
-      <h2 className='card-container__email'>Email Address:</h2>
-      <p className='card-container__email-data'>{cardObject[].email}</p>
-      <h2 className='card-container__number'>Mobile Number:</h2>
-      <p className='card-container__number-data'>{cardObject[].number}</p>
+    <div className="contact-card">
+      <h1 className="contact-card__heading">Contact Details</h1>
+
+      <div className="contact-card__birth-date">
+        <h2 className="contact-card__subheading"> Date of Birth:</h2>
+        <p className="contact-card__data">{cardObject[0].birthDates}</p>
+      </div>
+      <div className="contact-card_email">
+        <h2 className="contact-card__subheading">Email Address:</h2>
+        <p className="contact-card__data">{cardObject[0].email}</p>
+      </div>
+      <div className="contact-card__number">
+        <h2 className="contact-card__subheading">Mobile Number:</h2>
+        <p className="contact-card__data">{cardObject[0].mobileNumber}</p>
+      </div>
     </div>
-  )
-}
-export default BookingDetailsCard
+  );
+};
+export default ContactDetailsCard;
