@@ -44,10 +44,20 @@
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
+  .homepage-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh;
+    flex-direction: column;
+    min-height: 76vh;
+  }
   .homepage-container{
     display:flex;
     flex-direction: column;
     justify-content:flex-start;
+    min-height: 60vh;
+    gap: 15px;
+    margin: 0;
 
     &__button-container{
       display:flex;
