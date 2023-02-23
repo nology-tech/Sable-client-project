@@ -3,6 +3,7 @@ import NavContainer from "../../containers/NavContainer/NavContainer";
 import "../Home/Home.scss";
 import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
+import HomeButton from "../../components/HomeButton/HomeButton";
 const Home = () => {
   return (
     <div className="home-container">
@@ -10,6 +11,7 @@ const Home = () => {
       <Layout>
         <PageHeader heading="Home" headerType="headingOnly" />
         <HomePageContainer />
+        <HomeButton/>
       </Layout>
     </div>
   );
