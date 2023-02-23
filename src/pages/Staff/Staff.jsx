@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/Button/Button";
+import PageHeader from "../../components/PageHeader/PageHeader";
 import StaffOverview from "../../containers/StaffOverview/StaffOverview";
 
 import NavContainer from "../../containers/NavContainer/NavContainer";
@@ -11,14 +11,13 @@ const Staff = () => {
       <NavContainer />
       <main className="staff-page__body">
         <div className="staff-page__container">
-          <header className="staff-page__header">
-            <h1 className="staff-page__title">Staff</h1>
-            <Button
-              buttonText={"Edit"}
-              handleClick={() => console.log("Get to Edit")}
-              isPlus={true}
-            />
-          </header>
+          <PageHeader
+            heading="Staff"
+            text="Edit"
+            headerType="headingButtonDropdown"
+            optionsArr={["Staff 01", "Staff 02", "Staff 03"]}
+          />
+
           <StaffOverview />
         </div>
       </main>
