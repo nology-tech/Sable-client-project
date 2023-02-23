@@ -1,7 +1,6 @@
 @use "../../styles/base/typography" as *;
 @use "../../styles/abstracts/variables" as *;
 
-//default button
 .button {
   background-color: $button-enabled;
   box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
@@ -17,9 +16,7 @@
   color: $color-white;
   font-family: $font-modern;
 }
-//go,save,cancel, and the apply are default width and height
 
-//Login page button, it has screen size responsiveness
 .isLogin {
   height: 2.875rem;
   width: 100%;
@@ -28,7 +25,7 @@
   font-size: 12px;
   font-weight: 500;
 }
-//majority of the mobile buttons have the same properties, so this is the default
+
 .isMobileDefault{
   width:100%;
   height: 4.125rem;
@@ -37,7 +34,7 @@
   font-size: 16px;
   font-weight: 700;
 }
-//this is for the buttons on the popups of the mobile display, "booking confirmed" and "Logged out"
+
 .isMobilePopup{
   width: 8.25rem; 
   height: 2.375rem;
@@ -50,7 +47,6 @@
   display: none;
 }
 
-//add plus to the button
 .isPlus {
   position: relative;
   color: $color-white;
@@ -59,12 +55,10 @@
   bottom: 0.125rem;
 }
 
-//for the "Logout" button on the settings front page
 .isLogout{
   background-color: #EE6161;
 }
 
-//for the button on the mobile popup asking "do you want to log out, the red and the yellow buttons"
 .isLogoutPopup{
   &--logout{
     width:8.25rem;
@@ -80,24 +74,22 @@
     border-radius: 7px;
   }
 }
+
 @media screen and (min-width: 768px){
   .isLogin{
     box-shadow: none;
   }
-  //on the settings front page, there is an apply button, this is responsiveness for that button
   .button{
     box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
     width: 13.8vw;
     height: 6.2vh;
   }
 
-  //all the button in the headers on each page ( save , create , edit etc.)
   .isHeader {
     height: 3.125rem;
     width: 8.125rem;
   }
 
-  //Request Resource pop-up - Home button
   .isRequestComplete {
     width: 8.25rem;
     height: 2.375rem;
@@ -106,12 +98,12 @@
     font-weight: 700;
     box-shadow: none;
   }
-  //Edit/Request Resorce, Save button
+
   .isResourceSave {
     width: 10.493rem;
     height: 3.65rem;
   }
-  // add client upload image button
+
   .isUpload {
     background: $button-upload;
     width: 9.063rem;
@@ -120,7 +112,7 @@
     color: $color-black;
     box-shadow: none;
   }
-  // cancel buttons. booking pages, nav bar page , staff page, client page.
+
   .isCancel {
     &--grey {
       background-color: rgba(124, 118, 138, 0.25);
@@ -135,7 +127,7 @@
       font-weight: 700;
     }
   }
-  // delite client page pop-up buttons
+
   .isDelete {
     &--cancel {
       border: 0.804878px solid $button-logout;
@@ -156,11 +148,11 @@
       box-shadow: none;
     }
   }
-  //Turns any button purple
+
   .isPurple {
     background-color: $button-purple;
   }
-  //save button disable
+
   .inputIncomplete {
     background: rgba(229, 197, 138, 0.3);
     box-shadow: none;
