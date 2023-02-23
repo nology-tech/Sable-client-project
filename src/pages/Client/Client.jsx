@@ -1,6 +1,7 @@
 import React from "react";
 import home from "../../assets/images/functional-icons/black-home-icon.png";
 import Button from "../../components/Button/Button";
+import PageHeader from "../../components/PageHeader/PageHeader";
 import ClientOverview from "../../containers/ClientOverview/ClientOverview";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "./Client.scss";
@@ -9,14 +10,8 @@ const Client = () => {
     <div className="client-page">
       <NavContainer />
       <main className="client-page__content">
-        <header className="client-page__header">
-          <h1 className="client-page__title">Clients</h1>
-          <Button
-            buttonText={"Create"}
-            handleClick={() => console.log("Create")}
-            isPlus={true}
-          />
-        </header>
+        <PageHeader heading="Client" text="Edit" headerType="headingButton" />
+
         <ClientOverview />
         <div className="client-page__button">
           <Button
