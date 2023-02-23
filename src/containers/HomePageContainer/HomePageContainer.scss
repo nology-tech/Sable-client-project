@@ -1,6 +1,6 @@
 @use "../../styles/abstracts/variables" as *;
 
-.homepage-container{
+.homepage-container {
   min-height: 80vh;
   height: auto;
   background-color: $page-background-light;
@@ -37,28 +37,21 @@
     justify-self: center;
     align-self: center;
   }
-  &__button-container{
-    // grid-area:button;
-    display:none;
+  &__button-container {
+    display: none;
   }
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .homepage-container{
-    display:flex;
+  .homepage-container {
+    display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content: flex-start;
 
-
-
-
-
-    &__button-container{
-      display:flex;
+    &__button-container {
+      display: flex;
       justify-content: center;
       align-items: center;
     }
   }
 }
-
-
