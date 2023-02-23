@@ -73,9 +73,43 @@
     text-align: center;
     gap: 25px;
   }
+  &__mobile-subheader {
+    display: none;
+  }
 }
 .booking-container__label {
   align-self: center;
   color: $page-sub-text;
   font-size: 8px;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .staff-overview {
+    &__card-container {
+      margin: 40px 0 24px;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+      align-items: center;
+    }
+    &__booking-container--labels {
+      display: none;
+    }
+    &__display-view {
+      display: none;
+    }
+    &__title {
+      display: none;
+    }
+    &__mobile-subheader {
+      margin: 0 10% 40px;
+      display: block;
+      color: $page-sub-heading;
+      text-decoration: underline;
+      font-family: $font-modern;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 3%;
+    }
+  }
 }

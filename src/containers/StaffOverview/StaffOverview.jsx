@@ -63,6 +63,7 @@ const StaffOverview = () => {
         <p className="booking-container__label">Booking Date</p>
         <p className="booking-container__label">Booking Time</p>
       </div>
+      <div className="staff-overview__mobile-subheader">Staff 01 Bookings</div>
       <div className="staff-overview__booking-container">
         <DataCard
           cardType="booking"
@@ -88,6 +89,14 @@ const StaffOverview = () => {
             courseName: "whatever",
           }}
         />
+        <DataCard cardType="booking" cardObject={testObject} />
+        <DataCard cardType="booking" cardObject={testObject} />
+        <DataCard cardType="booking" cardObject={testObject} />{" "}
+        <DataCard cardType="booking" cardObject={testObject} />{" "}
+        <DataCard cardType="booking" cardObject={testObject} />{" "}
+        <DataCard cardType="booking" cardObject={testObject} />{" "}
+        <DataCard cardType="booking" cardObject={testObject} />{" "}
+        <DataCard cardType="booking" cardObject={testObject} />{" "}
         <DataCard cardType="booking" cardObject={testObject} />
       </div>
     </div>
