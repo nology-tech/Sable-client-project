@@ -49,13 +49,13 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 0px;
     height: 6vh;
     width: 80vw;
     border-radius: 7px;
 
     &__heading{
       padding-left: 15px;
+      padding-top: 0px;
       align-self: center;
       justify-content: flex-start;
       font-size: 20px;
