@@ -4,7 +4,7 @@ export const usersData = [
     email: "mariahchan@gmail.com",
     mobile: "+441234567891",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Mariana",
   },
   {
@@ -12,7 +12,7 @@ export const usersData = [
     email: "markwilson@gmail.com",
     mobile: "+441234567892",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Oliver",
   },
   {
@@ -20,7 +20,7 @@ export const usersData = [
     email: "lilapatel@gmail.com",
     mobile: "+441234567893",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Anthony",
   },
   {
@@ -28,7 +28,7 @@ export const usersData = [
     email: "ashleywilliams@gmail.com",
     mobile: "+441234567894",
     query: "consultant",
-    isEmployed: true,
+    rsvp: true,
     staff: "Nikhil",
   },
   {
@@ -36,7 +36,7 @@ export const usersData = [
     email: "johnlee@gmail.com",
     mobile: "+441234567895",
     query: "consumer",
-    isEmployed: false,
+    rsvp: false,
     staff: "Jessica",
   },
   {
@@ -44,7 +44,7 @@ export const usersData = [
     email: "karenchen@gmail.com",
     mobile: "+441234567896",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Oliver",
   },
   {
@@ -52,7 +52,7 @@ export const usersData = [
     email: "seanbaker@gmail.com",
     mobile: "+441234567897",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Mariana",
   },
   {
@@ -60,7 +60,7 @@ export const usersData = [
     email: "sophiekim@gmail.com",
     mobile: "+441234567898",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -68,7 +68,7 @@ export const usersData = [
     email: "adamjohnson@gmail.com",
     mobile: "+441234567899",
     query: "consultant",
-    isEmployed: true,
+    rsvp: true,
     staff: "Anthony",
   },
   {
@@ -76,7 +76,7 @@ export const usersData = [
     email: "ethanchen@gmail.com",
     mobile: "+441234567900",
     query: "consumer",
-    isEmployed: false,
+    rsvp: false,
     staff: "Nikhil",
   },
   {
@@ -84,7 +84,7 @@ export const usersData = [
     email: "melaniewong@gmail.com",
     mobile: "+441234567901",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -92,7 +92,7 @@ export const usersData = [
     email: "peterbrown@gmail.com",
     mobile: "+441234567902",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Oliver",
   },
   {
@@ -100,7 +100,7 @@ export const usersData = [
     email: "jasminewang@gmail.com",
     mobile: "+441234567903",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Mariana",
   },
   {
@@ -108,7 +108,7 @@ export const usersData = [
     email: "davidchen@gmail.com",
     mobile: "+441234567904",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Anthony",
   },
   {
@@ -116,7 +116,7 @@ export const usersData = [
     email: "alicelee@gmail.com",
     mobile: "+441234567905",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Nikhil",
   },
   {
@@ -124,7 +124,7 @@ export const usersData = [
     email: "rachelkim@gmail.com",
     mobile: "+441234567906",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -132,7 +132,7 @@ export const usersData = [
     email: "alexnguyen@gmail.com",
     mobile: "+441234567907",
     query: "consultant",
-    isEmployed: true,
+    rsvp: true,
     staff: "Oliver",
   },
   {
@@ -140,7 +140,7 @@ export const usersData = [
     email: "emilybrown@gmail.com",
     mobile: "+441234567908",
     query: "consumer",
-    isEmployed: false,
+    rsvp: false,
     staff: "Mariana",
   },
   {
@@ -148,7 +148,7 @@ export const usersData = [
     email: "jasonlee@gmail.com",
     mobile: "+441234567909",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -156,7 +156,7 @@ export const usersData = [
     email: "ericachen@gmail.com",
     mobile: "+441234567910",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Nikhil",
   },
   {
@@ -164,7 +164,7 @@ export const usersData = [
     email: "bryankim@gmail.com",
     mobile: "+441234567911",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Anthony",
   },
   {
@@ -172,7 +172,7 @@ export const usersData = [
     email: "chloewong@gmail.com",
     mobile: "+441234567912",
     query: "consumer",
-    isEmployed: false,
+    rsvp: false,
     staff: "Oliver",
   },
   {
@@ -180,7 +180,7 @@ export const usersData = [
     email: "daniellee@gmail.com",
     mobile: "+441234567913",
     query: "consultant",
-    isEmployed: true,
+    rsvp: true,
     staff: "Mariana",
   },
   {
@@ -188,7 +188,7 @@ export const usersData = [
     email: "gracepark@gmail.com",
     mobile: "+441234567914",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -196,7 +196,7 @@ export const usersData = [
     email: "isabellakim@gmail.com",
     mobile: "+441234567916",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Anthony",
   },
   {
@@ -204,7 +204,7 @@ export const usersData = [
     email: "jackwang@gmail.com",
     mobile: "+441234567917",
     query: "consultant",
-    isEmployed: true,
+    rsvp: true,
     staff: "Oliver",
   },
   {
@@ -212,7 +212,7 @@ export const usersData = [
     email: "katherinelee@gmail.com",
     mobile: "+441234567918",
     query: "consumer",
-    isEmployed: false,
+    rsvp: false,
     staff: "Mariana",
   },
   {
@@ -220,7 +220,7 @@ export const usersData = [
     email: "lukechen@gmail.com",
     mobile: "+441234567919",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -228,7 +228,7 @@ export const usersData = [
     email: "megankim@gmail.com",
     mobile: "+441234567920",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Nikhil",
   },
   {
@@ -236,7 +236,7 @@ export const usersData = [
     email: "nathanwong@gmail.com",
     mobile: "+441234567921",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Anthony",
   },
   {
@@ -244,7 +244,7 @@ export const usersData = [
     email: "olivialeexx@gmail.com",
     mobile: "+441234567922",
     query: "consumer",
-    isEmployed: false,
+    rsvp: false,
     staff: "Oliver",
   },
   {
@@ -252,7 +252,7 @@ export const usersData = [
     email: "patrickpark@gmail.com",
     mobile: "+441234567923",
     query: "consultant",
-    isEmployed: true,
+    rsvp: true,
     staff: "Mariana",
   },
   {
@@ -260,7 +260,7 @@ export const usersData = [
     email: "rachelwang@gmail.com",
     mobile: "+441234567924",
     query: "consumer",
-    isEmployed: true,
+    rsvp: true,
     staff: "Jessica",
   },
   {
@@ -268,7 +268,7 @@ export const usersData = [
     email: "henrynguyen@gmail.com",
     mobile: "+441234567915",
     query: "consultant",
-    isEmployed: false,
+    rsvp: false,
     staff: "Nikhil",
   },
 ];
