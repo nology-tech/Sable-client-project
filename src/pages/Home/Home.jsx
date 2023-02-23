@@ -6,17 +6,17 @@ import ContactDetailsCard from "../../components/ContactDetailsCard/ContactDetai
 import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 const Home = () => {
-  // const cardObject = [{"birthDates": "10/10/2000" ,"email":"mikolaj@gmail.com" , "mobileNumber" : "07424020033","bookingDate":"20/10/2000" ,"bookingTime":"11:20","staffMember":"staff01"}]
-
+  const cardObject1 = {birthDate: "10/10/2000" , email:"mikolaj@gmail.com" , number: "07424020033"}
+  const cardObject2 = {date: "10/10/2022", time:"12:40", staff: "Rob"}
   return (
     <div className="home-container">
-      <NavContainer />
+      <NavContainer /> 
       <Layout>
         <PageHeader heading="Home" headerType="headingOnly" />
         <HomePageContainer />
         <div>
-        <BookingDetailsCard  />
-      <ContactDetailsCard  />
+        <BookingDetailsCard cardObject={cardObject2} />
+        <ContactDetailsCard cardObject={cardObject1} />
       </div>
       </Layout>
     </div>

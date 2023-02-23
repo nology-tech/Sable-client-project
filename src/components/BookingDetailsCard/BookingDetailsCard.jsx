@@ -1,24 +1,18 @@
 import React from "react";
 import "./BookingDetailsCard.scss";
 
-const BookingDetailsCard = () => {
-    // const cardObject = props
+const BookingDetailsCard = (props) => {
+   const {cardObject} = props;
   return (
-    <div className="booking-card">
-      <h1 className="booking-card__heading">Booking Details</h1>
+    <div className="booking-details-card">
+      <h1 className="booking-details-card__heading">Booking Details</h1>
+        <h2 className="booking-details-card__subheading"> Date:</h2>
+        <p className="booking-details-card__data">{cardObject.date}</p>
+        <h2 className="booking-details-card__subheading">Time:</h2>
+        <p className="booking-details-card__data">{cardObject.time}</p>
+        <h2 className="booking-details-card__subheading">Staff Member:</h2>
+        <p className="booking-details-card__data">{cardObject.staff}</p>
 
-      <div className="booking-card__section booking-card__date">
-        <h2 className="booking-card__subheading"> Date:</h2>
-        <p className="booking-card__data">11.11.2000</p>
-      </div>
-      <div className="booking-card__section booking-card_time">
-        <h2 className="booking-card__subheading">Time:</h2>
-        <p className="booking-card__data">10;20</p>
-      </div>
-      <div className="booking-card__section booking-card__staff">
-        <h2 className="booking-card__subheading">Staff Member:</h2>
-        <p className="booking-card__data">staff 01</p>
-      </div>
     </div>
   );
 };
