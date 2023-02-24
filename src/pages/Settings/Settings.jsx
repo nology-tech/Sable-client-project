@@ -1,35 +1,71 @@
-import React from 'react'
-import './Settings.scss'
+import React from "react";
+import "./Settings.scss";
 //import NavContainer from '../../containers/NavContainer/NavContainer'
 //import PageHeader from '../../components/PageHeader/PageHeader'
-import Button from '../../components/Button/Button'
+import Button from "../../components/Button/Button";
 //import Layout from "../../components/Layout/Layout";
-import Sun from '../../assets/images/lightmode/sun-light.png'
-import Moon from '../../assets/images/lightmode/moon-light.png'
-import Toggle from '../../assets/images/lightmode/toggle-light-icon.png'
+import Sun from "../../assets/images/lightmode/sun-light.png";
+import Moon from "../../assets/images/lightmode/moon-light.png";
+// import Toggle from "src/assets/images/lightmode/toggle-light-icon.png";
 
 const Settings = () => {
-    
   return (
-    <div className='settings-container'>
-        {/* <NavContainer/> */}
-        
-            {/* <PageHeader headerType="headingButton" heading="Settings" text = 'Apply' /> */}
-            <div className='setings-card'>
-            <div className='setings-card__mode'>
-                <h1 className='settings-card__option'>Light/Dark Mode:</h1>
-                <div toggle-container>
-                    
-                </div>
-            </div>
-            <div className='setings-card__theme'>
-                <h1 className='settings-card__option'>Select Theme:</h1>
-            </div>
-            <Button buttonText={"Apply"}/>
+    <div className="settings-container">
+      <div className="settings-card">
+        <div className="settings-card__mode">
+          <h1 className="settings-card__option">Light/Dark Mode:</h1>
+          <div className="settings-card__toggle-container">
+            <img className="settings-card__toggle-sun" src={Sun} alt="Sun" />
+
+            <label className="switch">
+              <input type="checkbox" />
+              <span className="slider round"></span>
+            </label>
+
+            <img className="settings-card__toggle-moon" src={Moon} alt="Moon" />
+          </div>
         </div>
-       
+        <div className="settings-card__theme">
+          <h1 className="settings-card__option">Select Theme:</h1>
+          <div className="settings-card__checkbox-container">
+            <label
+              htmlFor="settings-card__optionOne"
+              className="settings-card__checkbox-label"
+            >
+              Modern
+            </label>
+            <input
+              className="settings-card__checkbox"
+              id="settings-card__optionOne"
+              type="radio"
+            />
+            <label
+              htmlFor="settings-card__optionTwo"
+              className="settings-card__checkbox-label"
+            >
+              Tech
+            </label>
+            <input
+              className="settings-card__checkbox"
+              id="settings-card__optionTwo"
+              type="radio"
+            />
+          </div>
+        </div>
+        <div className="settings-card__button-container">
+          <Button buttonText={"Apply"} />
+        </div>
+      </div>
     </div>
-  )
+  );
+};
+
+export default Settings;
+
+{
+  /* <NavContainer/> */
 }
 
-export default Settings
+{
+  /* <PageHeader headerType="headingButton" heading="Settings" text = 'Apply' /> */
+}
