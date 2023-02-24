@@ -18,6 +18,7 @@
   border-radius: 7px;
   box-shadow: 0px 30px 30px rgba(114, 75, 203, 0.06);
   padding: 3vh 3vw;
+  background-color: $color-white;
 
   &__content {
     height: 12vh;
@@ -128,6 +129,25 @@ input:checked + .slider:before {
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
+  .settings-card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .settings-card{
+    height: 35vh;
+    width: 90%;
+    &__mode {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+    &__theme {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  }
 }
 @media screen and (min-width: $tablet-breakpoint) and (max-width: 1023px) {
   .settings-card__option {

@@ -4,6 +4,7 @@ import NavContainer from "../../containers/NavContainer/NavContainer";
 import SettingsCard from "../../components/SettingsCard/SettingsCard";
 import "../Settings/Settings.scss";
 import Button from "../../components/Button/Button";
+import HomeButton from "../../components/HomeButton/HomeButton";
 
 const Settings = () => {
   return (
@@ -14,10 +15,17 @@ const Settings = () => {
         <div className="settings-page__content">
           <SettingsCard />
           <div className="settings-page__button-container">
-            <Button className="settings-page__button" buttonText="Log out" buttonStyle="isLogout" />
+            <Button
+              className="settings-page__button"
+              buttonText="Log out"
+              buttonStyle="isLogout"
+            />
           </div>
+          
         </div>
-        <
+        <div className="home-button-container">
+            <HomeButton />
+          </div>
       </Layout>
     </div>
   );

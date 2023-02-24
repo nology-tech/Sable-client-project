@@ -24,3 +24,30 @@
     width: 75%;
   }
 }
+// .home-button-container {
+//     display: flex;
+//     justify-content: end;
+// }
+@media screen and (max-width: $tablet-breakpoint) {
+    .settings-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .settings-page__content {
+        min-height: 70vh;
+        width: 100vw;
+        padding: 0;
+    }
+    .settings-page__button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 0;
+        .button {
+            width: 35%;
+            height: 4vh;
+        }
+    }
+
+  }
