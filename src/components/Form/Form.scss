@@ -18,12 +18,15 @@
 
   &__category {
     grid-area: category;
+    padding: 10px;
   }
   &__staff {
     grid-area: staff;
+    padding: 10px;
   }
   &__resource {
     grid-area: resource;
+    padding: 10px;
   }
   &__checkbox {
     grid-area: checkbox;
@@ -32,11 +35,13 @@
     justify-content: flex-start;
     align-items: center;
     color: $page-sub-heading;
+    padding: 10px;
 
-    &--label{
-    font-family: $font-modern;
-    font-weight: 600;
-    font-size: 0.8rem;
+    &--label {
+      font-family: $font-modern;
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: $page-sub-heading;
     }
 
     &--yes,
@@ -46,20 +51,21 @@
       font-size: 0.8rem;
     }
   }
-  &__checkboxes{
+  &__checkboxes {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    gap: 50px;
   }
   &__auto-purchase {
     grid-area: auto-purchase;
+    padding: 10px;
   }
   &__quantity-remaining {
     grid-area: quantity-remaining;
+    padding: 10px;
   }
-
 }
-
-
 
 label {
   color: $page-sub-heading;
