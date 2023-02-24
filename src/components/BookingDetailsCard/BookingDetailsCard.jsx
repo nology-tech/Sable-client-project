@@ -1,8 +1,7 @@
 import React from "react";
 import "./BookingDetailsCard.scss";
 
-const BookingDetailsCard = (props) => {
-   const {cardObject} = props;
+const BookingDetailsCard = ({cardObject}) => {
   return (
     <div className="booking-details-card">
       <h1 className="booking-details-card__heading">Booking Details</h1>

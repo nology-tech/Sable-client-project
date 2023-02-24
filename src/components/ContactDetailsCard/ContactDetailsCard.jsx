@@ -1,8 +1,7 @@
 import React from "react";
 import "./ContactDetailsCard.scss";
 
-const ContactDetailsCard = (props) => {
-  const {cardObject} = props
+const ContactDetailsCard = ({cardObject}) => {
   return (
     <div className="contact-card">
       <h1 className="contact-card__heading">Contact Details</h1>
