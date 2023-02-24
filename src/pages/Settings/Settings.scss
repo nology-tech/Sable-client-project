@@ -1,5 +1,10 @@
+
+@use "../../styles/abstracts/variables" as *;
+
 .settings-container {
+    display: flex;
+    flex-direction: row;
     min-height: 100vh;
-    height:auto;
-    
-}
+    height: auto;
+    background-color: $page-background-light;
+  }
