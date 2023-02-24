@@ -5,18 +5,20 @@ import SettingsCard from "../../components/SettingsCard/SettingsCard";
 import "../Settings/Settings.scss";
 import Button from "../../components/Button/Button";
 
-
-
 const Settings = () => {
   return (
     <div className="settings-container">
-    <NavContainer /> 
-    <Layout>
-      <PageHeader heading="Settings" headerType="headingOnly" />
-      <SettingsCard/>
-      <Button buttonText='Log out'/> 
-    </Layout>
-  </div>
+      <NavContainer />
+      <Layout>
+        <PageHeader heading="Settings" headerType="headingOnly" />
+        <div className="settings-page__content">
+          <SettingsCard />
+          <div className="settings-page__button-container">
+            <Button className="settings-page__button" buttonText="Log out" buttonStyle="isLogout" />
+          </div>
+        </div>
+      </Layout>
+    </div>
   );
 };
 
