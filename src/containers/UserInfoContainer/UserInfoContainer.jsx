@@ -1,11 +1,16 @@
-import React from "react";
-import "./UserInfoContainer.scss";
-import InputField from "../../components/InputField/InputField";
-import DropdownField from "../../components/DropdownField/DropdownField";
+import React, { useState } from "react";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 import Button from "../../components/Button/Button";
-import Calendar from "../../assets/images/appointments-temporary/Calendar.png";
+import DropdownField from "../../components/DropdownField/DropdownField";
+import InputField from "../../components/InputField/InputField";
+import "./UserInfoContainer.scss";
 
 const UserInfoContainer = () => {
+  const [day, setDay] = useState(new Date());
+
+  console.log(day);
+
   const handleName = () => {};
 
   const handleEmail = () => {};
@@ -21,11 +26,7 @@ const UserInfoContainer = () => {
       <InputField id="first-name" label="First Name" handleInput={handleName} />
       <InputField id="last-name" label="Last Name" handleInput={handleName} />
       <InputField id="email" label="Email Address" handleInput={handleEmail} />
-      <InputField
-        id="number"
-        label="Mobile Number"
-        handleInput={handleNumber}
-      />
+      <InputField id="number" label="Mobile Number" handleInput={handleNumber} />
       <div className="input-field-container__staff-dropdown">
         <DropdownField
           id="staff"
@@ -41,11 +42,7 @@ const UserInfoContainer = () => {
         />
         <Button buttonText="Save" handleSubmit={handleSubmit} />
       </div>
-      <img
-        className="input-field-container__calendar"
-        src={Calendar}
-        alt="Calendar"
-      />
+      <Calendar onChange={setDay} value={day} />
       <div className="input-field-container__date-dropdown">
         <DropdownField id="date" label="Date:" handleInput={handleDropdown} />
       </div>

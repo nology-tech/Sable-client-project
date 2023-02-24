@@ -1,4 +1,5 @@
 @use "../../styles/abstracts/variables" as *;
+@use "../../styles/base/typography" as *;
 
 .input-field-container {
   display: flex;
@@ -16,10 +17,6 @@
   }
   &__calendar {
     display: none;
-    margin-top: 3vh;
-    margin-right: 5vw;
-    //width: 23vw;
-    height: 38.5vh;
   }
   &__submit {
     margin-left: 1.25rem;
@@ -41,6 +38,72 @@
     background-color: $page-background-light;
     border-radius: 7px;
 
+    .react-calendar {
+      background-color: transparent;
+      border: none;
+      width: 420px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      margin: 10px 0 100px;
+      & * {
+        color: black;
+        font-family: $font-calendar;
+      }
+      &__navigation {
+        margin: 0;
+        padding-bottom: 1em;
+        border-bottom: 1px solid $blank-client-image;
+      }
+      &
+        *:not(.react-calendar__navigation):not(.react-calendar__month-view__weekdays):not(.react-calendar__tile) {
+        height: 100%;
+      }
+
+      &__tile {
+        transition: 300ms ease-in;
+        &--active {
+          background-color: $background-nav-light;
+          & > * {
+            color: $color-white;
+          }
+          &:enabled:hover {
+            font-size: 1.2rem;
+            font-weight: 800;
+            background-color: $background-nav-light;
+            & > * {
+              color: $color-white;
+            }
+          }
+          &:enabled:focus {
+            background-color: $background-nav-light;
+          }
+          & > * {
+            color: $color-white;
+          }
+        }
+
+        &:enabled:hover {
+          font-size: 1.2rem;
+          font-weight: 800;
+        }
+        &--now {
+          &:hover {
+            background-color: $button-enabled;
+            font-size: 1.2rem;
+            font-weight: 800;
+          }
+          background-color: rgba(221, 133, 51, 0.637);
+          transition: 300ms ease-in;
+          & * {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: $color-white;
+          }
+        }
+      }
+    }
+
     &__staff-dropdown {
       width: 28.5vw;
     }
@@ -58,9 +121,6 @@
       display: flex;
       margin-top: 3vh;
       gap: 1vw;
-    }
-    &__calendar {
-      display: flex;
     }
   }
 }
