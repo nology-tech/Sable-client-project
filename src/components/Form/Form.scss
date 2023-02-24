@@ -6,37 +6,73 @@
   margin: 20px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 50px;
-  padding: 40px;
+  padding: 10px 20px;
   height: 340px;
   width: 840px;
+  box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
 
   &__left {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-evenly;
+    width: 50%;
   }
   &__right {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 30px;
+    width: 50%;
   }
 }
-.auto-purchase-container__label {
-  color: $page-sub-heading;
-}
-label {
-  color: $page-sub-heading;
-}
-.input-field {
+.auto-purchase-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
   &__label {
     color: $page-sub-heading;
+    font-family: $font-modern;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  &__checkbox {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    &--yes,
+    &--no {
+      display: flex;
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+label {
+  color: $page-sub-heading;
+  font-family: $font-modern;
+  font-size: 0.8rem;
+}
+.input-field {
+  width: 100%;
+
+  &__label {
+    color: $page-sub-heading;
+    font-family: $font-modern;
+  }
+  &__input {
+    width: auto;
   }
 }
 .dropdown-field {
+  width: 100%;
   &__label {
     color: $page-sub-heading;
+    font-family: $font-modern;
   }
 }

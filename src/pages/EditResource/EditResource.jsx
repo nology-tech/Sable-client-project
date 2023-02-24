@@ -9,7 +9,13 @@ const EditResource = () => {
   return (
     <div>
       <NavContainer />
-      <PageHeader headerType="headingOnly" heading="Edit Resource" />
+      <PageHeader
+        headerType="headingButton"
+        heading="Edit Resource"
+        buttonStyle="isHeader"
+        text="Save"
+        isPlus={true}
+      />
       <Form />
       <HomeButton />
     </div>
