@@ -2,48 +2,43 @@
 @use "../../styles/base/typography" as *;
 
 .form-container {
-  background-color: $color-white;
-  margin: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   gap: 50px;
   padding: 10px 20px;
   height: 340px;
   width: 840px;
   box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "category checkbox"
+    "staff auto-purchase"
+    "resource quantity-remaining";
 
-  &__left {
+  &__category {
+    grid-area: category;
+  }
+  &__staff {
+    grid-area: staff;
+  }
+  &__resource {
+    grid-area: resource;
+  }
+  &__checkbox {
+    grid-area: checkbox;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
-  }
-  &__right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 30px;
-    width: 50%;
-  }
-}
-.auto-purchase-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  &__label {
+    justify-content: flex-start;
+    align-items: center;
     color: $page-sub-heading;
+
+    &--label{
     font-family: $font-modern;
     font-weight: 600;
     font-size: 0.8rem;
-  }
-  &__checkbox {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+    }
+
     &--yes,
     &--no {
       display: flex;
@@ -51,7 +46,20 @@
       font-size: 0.8rem;
     }
   }
+  &__checkboxes{
+    display: flex;
+    flex-direction: row;
+  }
+  &__auto-purchase {
+    grid-area: auto-purchase;
+  }
+  &__quantity-remaining {
+    grid-area: quantity-remaining;
+  }
+
 }
+
+
 
 label {
   color: $page-sub-heading;
@@ -76,3 +84,80 @@ label {
     font-family: $font-modern;
   }
 }
+
+// .form-container {
+//   background-color: $color-white;
+//   margin: 20px;
+//   // display: flex;
+//   // flex-direction: row;
+//   // justify-content: space-between;
+
+//   gap: 50px;
+//   padding: 10px 20px;
+//   height: 340px;
+//   width: 840px;
+//   box-shadow: 0px 20px 40px rgba(114, 75, 203, 0.2);
+
+//   &__left {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     width: 50%;
+//   }
+//   &__right {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-evenly;
+//     align-items: flex-start;
+//     gap: 30px;
+//     width: 50%;
+//   }
+// }
+// .auto-purchase-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+
+//   &__label {
+//     color: $page-sub-heading;
+//     font-family: $font-modern;
+//     font-weight: 600;
+//     font-size: 0.8rem;
+//   }
+//   &__checkbox {
+//     display: flex;
+//     justify-content: space-around;
+//     gap: 30px;
+//     &--yes,
+//     &--no {
+//       display: flex;
+//       gap: 10px;
+//       font-size: 0.8rem;
+//     }
+//   }
+// }
+
+// label {
+//   color: $page-sub-heading;
+//   font-family: $font-modern;
+//   font-size: 0.8rem;
+// }
+// .input-field {
+//   width: 100%;
+
+//   &__label {
+//     color: $page-sub-heading;
+//     font-family: $font-modern;
+//   }
+//   &__input {
+//     width: auto;
+//   }
+// }
+// .dropdown-field {
+//   width: 100%;
+//   &__label {
+//     color: $page-sub-heading;
+//     font-family: $font-modern;
+//   }
+// }

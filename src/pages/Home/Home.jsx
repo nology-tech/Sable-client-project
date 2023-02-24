@@ -1,7 +1,6 @@
-import Form from "../../components/Form/Form";
 import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
-// import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
+import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "../Home/Home.scss";
 
@@ -11,8 +10,7 @@ const Home = () => {
       <NavContainer />
       <Layout>
         <PageHeader heading="Home" headerType="headingOnly" />
-        {/* <HomePageContainer /> */}
-        <Form />
+        <HomePageContainer />
       </Layout>
     </div>
   );
