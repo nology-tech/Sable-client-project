@@ -1,18 +1,18 @@
-import Layout from "../../components/Layout/Layout";
+//import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import SettingsCard from "../../components/SettingsCard/SettingsCard";
-import "../Home/Home.scss";
-const Home = () => {
+import "../Settings/Settings.scss";
+const Settings = () => {
   return (
-    <div className="home-container">
+    <div className="settings-container">
       <NavContainer />
-      <Layout>
-        <PageHeader heading="Home" headerType="headingOnly" />
+      
+        <PageHeader heading="Setttings" headerType="headingOnly" />
         <SettingsCard/>
-      </Layout>
+     
     </div>
   );
 };
 
-export default Home;
+export default Settings;
