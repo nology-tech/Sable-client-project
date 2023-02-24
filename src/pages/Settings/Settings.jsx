@@ -17,6 +17,7 @@ const Settings = () => {
             <Button className="settings-page__button" buttonText="Log out" buttonStyle="isLogout" />
           </div>
         </div>
+        <
       </Layout>
     </div>
   );
