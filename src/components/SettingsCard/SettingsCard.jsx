@@ -1,12 +1,9 @@
 import React from "react";
-import "./Settings.scss";
-//import NavContainer from '../../containers/NavContainer/NavContainer'
-//import PageHeader from '../../components/PageHeader/PageHeader'
-import Button from "../../components/Button/Button";
-//import Layout from "../../components/Layout/Layout";
+import "./SettingsCard.scss";
+import Button from "../Button/Button";
 import Sun from "../../assets/images/lightmode/sun-light.png";
 import Moon from "../../assets/images/lightmode/moon-light.png";
-// import Toggle from "src/assets/images/lightmode/toggle-light-icon.png";
+
 
 const Settings = () => {
   return (
@@ -61,11 +58,3 @@ const Settings = () => {
 };
 
 export default Settings;
-
-{
-  /* <NavContainer/> */
-}
-
-{
-  /* <PageHeader headerType="headingButton" heading="Settings" text = 'Apply' /> */
-}
