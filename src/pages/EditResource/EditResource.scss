@@ -6,4 +6,10 @@
   min-height: 100vh;
   height: auto;
   background-color: $page-background-light;
+
+  &__form{
+    min-height: 81%;
+    margin-top: 5%;
+    margin-left: 10%;
+  }
 }

@@ -18,7 +18,9 @@ const EditResource = () => {
           text="Save"
           isPlus={true}
         />
+        <div className="edit-resource-container__form">
         <Form />
+        </div>
       </Layout>
       <HomeButton />
     </div>
