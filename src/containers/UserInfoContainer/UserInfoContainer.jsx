@@ -9,9 +9,9 @@ import InputField from "../../components/InputField/InputField";
 import "./UserInfoContainer.scss";
 
 const UserInfoContainer = () => {
+  //You can use the day from the calendar with this useState
   const [day, setDay] = useState(new Date());
-
-  console.log(day);
+  //console.log(day);
 
   const handleName = () => {};
 
@@ -44,7 +44,14 @@ const UserInfoContainer = () => {
         />
         <Button buttonText="Save" handleSubmit={handleSubmit} />
       </div>
-      <div className="input-field-container__date-picker">
+
+      <div id="datePicker" className="input-field-container__date-picker">
+        <label
+          htmlFor="datePicker"
+          className="input-field-container__date-picker--label"
+        >
+          Date
+        </label>
         <DatePicker
           onChange={setDay}
           value={day}
