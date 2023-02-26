@@ -76,7 +76,7 @@ const UserInfoContainer = () => {
         />
       </div>
       <div className="input-field-container__time-dropdown">
-        <DropdownField id="time" label="Time:" handleInput={handleDropdown} />
+        <DropdownField id="time" label="Time" handleInput={handleDropdown} />
       </div>
       <div className="input-field-container__submit">
         <Button
