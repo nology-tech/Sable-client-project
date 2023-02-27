@@ -1,10 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import RequestResource from "./RequestResource"
+import EditResource from "./EditResource";
 import { BrowserRouter } from "react-router-dom";
 
 it("should render the checkboxes on the page", ()=>{
     //arrange
-    render(<BrowserRouter><RequestResource/></BrowserRouter>)
+    render(<BrowserRouter><EditResource/></BrowserRouter>)
 
     //act
     const checkBoxYes = screen.getByRole('checkbox', {
@@ -22,19 +22,19 @@ it("should render the checkboxes on the page", ()=>{
 
 it("should render all the input fields", ()=>{
     //arrange
-    render(<BrowserRouter><RequestResource/></BrowserRouter>)
+    render(<BrowserRouter><EditResource/></BrowserRouter>)
 
     //act
     const inputBoxes = screen.getAllByRole('textbox');
 
     //assert
-    expect(inputBoxes).toHaveLength(3); 
+    expect(inputBoxes).toHaveLength(5); 
 
 })
 
 it("should render the form headings", ()=>{
     //arrange
-    render(<BrowserRouter><RequestResource/></BrowserRouter>)
+    render(<BrowserRouter><EditResource/></BrowserRouter>)
 
     //act
     const purchaseLevel = screen.getByText(/auto\-purchase level/i)
@@ -51,6 +51,3 @@ it("should render the form headings", ()=>{
     expect(resourceName).toBeInTheDocument();
     
 })
-
-
-
