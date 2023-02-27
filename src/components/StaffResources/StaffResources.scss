@@ -37,3 +37,21 @@
         display: none;
     }
 }
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .staff-resources{
+        &__labels{
+            display: none;
+        }
+
+        &__staff-member{
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+
+        &__cards{
+            max-height: none;
+        }
+    }
+}

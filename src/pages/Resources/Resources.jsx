@@ -16,8 +16,12 @@ const Resource = () => {
           headerType="headingButton"
           />
           </div>
+          <div className='resources-page__cards-container'>
+
+          
           <ResourcesOverview isAdmin={false}/>
           <ResourcesOverview isAdmin={true}/>
+          </div>
       </main>
     </div>
     </>
