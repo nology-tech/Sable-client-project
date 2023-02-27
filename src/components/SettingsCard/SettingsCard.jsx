@@ -7,9 +7,9 @@ import Moon from "../../assets/images/lightmode/moon-light.png";
 
 const Settings = () => {
 
-  const [selectRadio, setSelectRadio] = useState(false)
+  const [selectRadio, setSelectRadio] = useState("modern")
   const changeRadio = (e) => {
-    setSelectRadio = true
+    setSelectRadio(e.target.value)
   }
   return (
     <main className="settings-card-container">
@@ -43,7 +43,10 @@ const Settings = () => {
                 <input
                   className="settings-card__checkbox"
                   id="settings-card__optionOne"
-                  type="radio" onChange={changeRadio} selectRadio= {}
+                  type="radio" 
+                  onChange={changeRadio} 
+                  value="modern"
+                  checked = {selectRadio === "modern"}
                 />
               </div>
               <div className="settings-card__tech">
@@ -56,7 +59,10 @@ const Settings = () => {
                 <input
                   className="settings-card__checkbox"
                   id="settings-card__optionTwo"
-                  type="radio" onChange={changeRadio} selectRadio= {}
+                  type="radio" 
+                  onChange={changeRadio} 
+                  value = "tech"
+                  checked = {selectRadio === "tech"}
                 />
               </div>
             </div>
