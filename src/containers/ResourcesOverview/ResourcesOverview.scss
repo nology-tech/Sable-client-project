@@ -19,7 +19,7 @@
   }
 
   &__filters {
-    margin-top: 59px; 
+    margin-top: 59px;
     display: flex;
     width: 98%;
     justify-content: space-between;
@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .resources-overview{
+  .resources-overview {
     &__sort,
     &__filter,
     &__display--icons,
