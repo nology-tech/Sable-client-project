@@ -14,6 +14,8 @@ const Resource = () => {
               heading="Resources"
               text="Create"
               headerType="headingButton"
+              buttonStyle="isHeader"
+              isPlus={true}
             />
           </div>
           <div className="resources-page__cards-container">

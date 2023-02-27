@@ -18,14 +18,15 @@ margin-bottom: 25px;
   &__labels {
     position: relative;
     top: 19px;
-    margin: 15px auto;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 0;
-    width: 80%;
-    max-width: 916px;
+    width: 100%;
     display: grid;
-    grid-template: 1fr / repeat(7, 1fr);
+    grid-template: 1fr / repeat(9, 1fr);
     text-align: center;
     gap: 25px;
+    padding-left: 1%;
   }
 
   &__cards {
@@ -68,6 +69,7 @@ margin-bottom: 25px;
 
     &__cards {
       max-height: none;
+      display: none;
     }
   }
 }
