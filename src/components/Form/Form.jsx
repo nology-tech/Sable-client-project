@@ -22,7 +22,6 @@ const Form = ({
           id="category"
         />
       </div>
-
       <div className="form-container__staff">
         <InputField
           label="Staff Member"
@@ -37,7 +36,6 @@ const Form = ({
           readOnly={true}
         />
       </div>
-
       <div className="form-container__checkbox">
         <h2 className="form-container__checkbox--label">Auto-Purchase</h2>
         <div className="form-container__checkboxes">
@@ -51,7 +49,6 @@ const Form = ({
           </div>
         </div>
       </div>
-
       <div className="form-container__auto-purchase">
         <InputField label="Auto-Purchase Level" placeholderText="50" />
       </div>
@@ -80,7 +77,6 @@ const Form = ({
           optionsJSX={optionsJSX}
         />
       </div>
-
       <div className="form-container__staff">
         <InputField
           label="Staff Member"
@@ -95,7 +91,6 @@ const Form = ({
           optionsJSX={optionsJSX}
         />
       </div>
-
       <div className="form-container__checkbox">
         <h2 className="form-container__checkbox--label">Auto-Purchase</h2>
         <div className="form-container__checkboxes">
@@ -109,7 +104,6 @@ const Form = ({
           </div>
         </div>
       </div>
-
       <div className="form-container__auto-purchase">
         <InputField label="Auto-Purchase Level" placeholderText="50" />
       </div>
