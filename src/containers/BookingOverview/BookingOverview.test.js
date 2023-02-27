@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import "jest-canvas-mock";
-import BookingOverview from "./BookingOverview.test";
+import BookingOverview from "./BookingOverview";
 
 it("should render the user booking container overview", () => {
   render(<BookingOverview />);
