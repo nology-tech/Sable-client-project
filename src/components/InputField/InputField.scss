@@ -11,6 +11,7 @@
 
   &__label {
     font-weight: 600;
+<<<<<<< HEAD
     color: black;
   }
 
@@ -26,18 +27,42 @@
 
     &::placeholder {
       color: $page-text;
+=======
+    color: $color-black;
+    font-family: $font-modern;
+  }
+
+  &__input {
+    height: 3.063rem;
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+    padding-left: 0.5rem;
+    color: black;
+    background-color: white;
+
+    &::placeholder {
+      color: #95accb;
+>>>>>>> 917a303adad1394ade282af8a7c18269a27c02a2
       font-weight: 400;
     }
   }
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 768px) {
+=======
+@media screen and (min-width: $tablet-breakpoint) {
+>>>>>>> 917a303adad1394ade282af8a7c18269a27c02a2
   .input-field {
     &__input {
       height: 5.7vh;
       width: 28.5vw;
       background-color: $page-background-light;
+<<<<<<< HEAD
       font-family: $font-modern;
+=======
+>>>>>>> 917a303adad1394ade282af8a7c18269a27c02a2
     }
   }
 }
