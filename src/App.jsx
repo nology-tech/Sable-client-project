@@ -18,6 +18,7 @@ const App = () => {
       <Route path="/staff" element={<Staff />} />
       <Route path="/client" element={<Client />} />
       <Route path="/resources" element={<Resources />} />
+      <Route path="/settings" element={<Settings />} />
     </Routes>
   );
 };
