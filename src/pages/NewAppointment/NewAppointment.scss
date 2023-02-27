@@ -25,16 +25,12 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .new-appointment {
     display: flex;
-
-    row-gap: 0px;
+    justify-content: stretch;
 
     background-color: $page-background-light;
   }
-  .header {
-    height: 21vh;
-    width: 78vw;
-  }
   .info-container {
+    width: 100%;
     justify-content: flex-start;
     align-items: center;
   }

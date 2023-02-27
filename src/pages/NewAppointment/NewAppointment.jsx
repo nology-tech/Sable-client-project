@@ -1,8 +1,8 @@
 import React from "react";
 import HomeButton from "../../components/HomeButton/HomeButton";
 import PageHeader from "../../components/PageHeader/PageHeader";
+import BookingOverview from "../../containers/BookingOverview/BookingOverview";
 import NavContainer from "../../containers/NavContainer/NavContainer";
-import UserInfoContainer from "../../containers/UserInfoContainer/UserInfoContainer";
 import "./NewAppointment.scss";
 
 const NewAppointment = () => {
@@ -13,7 +13,7 @@ const NewAppointment = () => {
         <div className="header">
           <PageHeader headerType="headingOnly" heading="Book Appointments" />
         </div>
-        <UserInfoContainer />
+        <BookingOverview />
       </div>
       <HomeButton />
     </div>

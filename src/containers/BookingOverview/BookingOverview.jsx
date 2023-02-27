@@ -6,10 +6,9 @@ import Button from "../../components/Button/Button";
 import DropdownField from "../../components/DropdownField/DropdownField";
 import InputField from "../../components/InputField/InputField";
 
-import "./UserInfoContainer.scss";
+import "./BookingOverview.scss";
 
 const UserInfoContainer = () => {
-  //You can use the day from the calendar with this useState
   const [day, setDay] = useState(new Date());
 
   const handleName = () => {};

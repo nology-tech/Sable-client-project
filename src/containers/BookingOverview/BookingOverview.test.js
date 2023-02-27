@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import "jest-canvas-mock";
-import UserInfoContainer from "./UserInfoContainer";
+import BookingOverview from "./BookingOverview.test";
 
 it("should render the user booking container overview", () => {
-  render(<UserInfoContainer />);
+  render(<BookingOverview />);
 
   const monday = screen.getByText(/mon/i);
   const wednesday = screen.getByText(/wed/i);
@@ -15,7 +15,7 @@ it("should render the user booking container overview", () => {
 });
 
 it("should render days of the month", () => {
-  render(<UserInfoContainer />);
+  render(<BookingOverview />);
 
   const firstDay = screen.getByRole("button", { name: /march 2, 2023/i });
   const lastDay = screen.getByRole("button", { name: /february 28, 2023/i });
@@ -25,7 +25,7 @@ it("should render days of the month", () => {
 });
 
 it("should not render a day that is not in the current month", () => {
-  render(<UserInfoContainer />);
+  render(<BookingOverview />);
 
   const testDay = screen.queryByRole("button", { name: /march 2, 2025/i });
 
@@ -33,7 +33,7 @@ it("should not render a day that is not in the current month", () => {
 });
 
 it("Should render year and month", () => {
-  const { container } = render(<UserInfoContainer />);
+  const { container } = render(<BookingOverview />);
 
   const navigationLabel = container.getElementsByClassName(
     "react-calendar__navigation__label"
@@ -43,7 +43,7 @@ it("Should render year and month", () => {
 });
 
 it("should render the calendar", () => {
-  const { container } = render(<UserInfoContainer />);
+  const { container } = render(<BookingOverview />);
 
   const calendar = container.getElementsByClassName(
     "input-field-container__calendar"
@@ -52,7 +52,7 @@ it("should render the calendar", () => {
 });
 
 it("should render the submit buttons", () => {
-  render(<UserInfoContainer />);
+  render(<BookingOverview />);
 
   const saveBtn = screen.getByRole("button", { name: /save/i });
 
@@ -60,7 +60,7 @@ it("should render the submit buttons", () => {
 });
 
 it("should render the inputs", () => {
-  render(<UserInfoContainer />);
+  render(<BookingOverview />);
 
   const emailInput = screen.getByRole("textbox", { name: /email address/i });
   const mobileNumberInput = screen.getByRole("textbox", { name: /mobile number/i });

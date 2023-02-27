@@ -114,7 +114,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-breakpoint) {
   .input-field-container {
     display: grid;
     background-color: $page-background-light;
@@ -177,7 +177,8 @@
     .react-calendar {
       background-color: transparent;
       border: none;
-      width: 420px;
+      max-width: 420px;
+      width: 100%;
       height: 360px;
       display: flex;
       flex-direction: column;
