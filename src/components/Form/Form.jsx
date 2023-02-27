@@ -16,6 +16,7 @@ const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
           id="category"
         />
       </div>
+
       <div className="form-container__staff">
         <InputField label="Staff Member" placeholderText={staff} readOnly={true}/>
       </div>
@@ -64,6 +65,7 @@ const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
           optionsJSX={optionsJSX}
         />
       </div>
+      
       <div className="form-container__staff">
         <InputField label="Staff Member" />
       </div>

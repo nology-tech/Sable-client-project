@@ -4,22 +4,22 @@ import HomeButton from "../../components/HomeButton/HomeButton";
 import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import NavContainer from "../../containers/NavContainer/NavContainer";
-import "./EditResource.scss";
+import "./RequestResource.scss";
 
-const EditResource = () => {
+const RequestResource = () => {
   return (
-    <div className="edit-resource-container">
+    <div className="request-resource-container">
       <NavContainer />
       <Layout>
         <PageHeader
           headerType="headingButton"
-          heading="Edit Resource"
+          heading="Request Resource"
           buttonStyle="isHeader"
           text="Save"
           isPlus={true}
         />
-        <div className="edit-resource-container__form">
-        <Form formPage={"editResource"} staff={"Staff 01"} category={"Health"} resourceName={"Syringe"} optionsArr={[]}/>
+        <div className="request-resource-container__form">
+        <Form formPage={"requestResource"} staff={"Staff 01"} category={"Health"} resourceName={"Syringe"} optionsArr={["Staff", "Health"]}/>
         </div>
       </Layout>
       <HomeButton />
@@ -27,4 +27,4 @@ const EditResource = () => {
   );
 };
 
-export default EditResource;
+export default RequestResource;
