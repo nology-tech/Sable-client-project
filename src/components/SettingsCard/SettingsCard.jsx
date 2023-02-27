@@ -13,12 +13,10 @@ const Settings = () => {
             <h1 className="settings-card__option">Light/Dark Mode:</h1>
             <div className="settings-card__toggle-container">
               <img className="settings-card__toggle-sun" src={Sun} alt="Sun" />
-
               <label className="settings-card__toggle-switch">
                 <input type="checkbox" id = "toggle-switch"/>
                 <span className="settings-card__toggle-slider round"></span>
               </label>
-
               <img
                 className="settings-card__toggle-moon"
                 src={Moon}
@@ -30,7 +28,6 @@ const Settings = () => {
             <h1 className="settings-card__option">Select Theme:</h1>
             <div className="settings-card__checkbox-container">
               <div className="settings-card__modern">
-              
                 <label
                   htmlFor="settings-card__optionOne"
                   className="settings-card__checkbox-label"

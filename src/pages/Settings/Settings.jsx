@@ -21,7 +21,6 @@ const Settings = () => {
               buttonStyle="isLogout"
             />
           </div>
-          
         </div>
         <div className="home-button-container">
             <HomeButton />
