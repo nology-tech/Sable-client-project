@@ -6,16 +6,16 @@ import Moon from "../../assets/images/lightmode/moon-light.png";
 
 const Settings = () => {
   return (
-    <div className="settings-card-container">
+    <main className="settings-card-container">
       <div className="settings-card">
         <div className="settings-card__content">
-          <div className="settings-card__mode">
+          <section className="settings-card__mode">
             <h1 className="settings-card__option">Light/Dark Mode:</h1>
             <div className="settings-card__toggle-container">
               <img className="settings-card__toggle-sun" src={Sun} alt="Sun" />
 
               <label className="settings-card__toggle-switch">
-                <input type="checkbox" />
+                <input type="checkbox" id = "toggle-switch"/>
                 <span className="settings-card__toggle-slider round"></span>
               </label>
 
@@ -25,8 +25,8 @@ const Settings = () => {
                 alt="Moon"
               />
             </div>
-          </div>
-          <div className="settings-card__theme">
+          </section>
+          <section className="settings-card__theme">
             <h1 className="settings-card__option">Select Theme:</h1>
             <div className="settings-card__checkbox-container">
               <div className="settings-card__modern">
@@ -57,13 +57,13 @@ const Settings = () => {
                 />
               </div>
             </div>
-          </div>
+          </section>
         </div>
-        <div className="settings-card__button-container">
+        <section className="settings-card__button-container">
           <Button buttonText={"Apply"} />
-        </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 };
 
