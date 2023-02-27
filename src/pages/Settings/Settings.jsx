@@ -26,10 +26,12 @@ const Settings = () => {
         <div className="home-button-container">
           <HomeButton />
         </div> */}
-        <ConfirmationOverlay overlayType={"overlayOneButton"} text={"booking"} buttonStyle={"isPurple"} buttonText={"book"}/>
+        <ConfirmationOverlay overlayType="overlayOneButton" text="booking" buttonStyleOne="isPurple" buttonTextOne="book" />
       </Layout>
     </div>
   );
 };
 
 export default Settings;
+
+// text="booking" buttonStyleOne="isPurple" buttonTextOne="book"

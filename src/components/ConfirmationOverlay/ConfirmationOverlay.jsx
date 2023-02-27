@@ -4,35 +4,37 @@ import "./ConfirmationOverlay.scss";
 
 const ConfirmationOverlay = ({
   overlayType,
-  buttonText,
-  buttonStyle,
   text,
+  buttonTextOne,
+  buttonTextTwo,
+  buttonStyleOne,
+  buttonStyleTwo,
 }) => {
-  const overlayOneButtonJSX = () => {
+  const overlayOneButtonJSX = () => (
     <div className="overlayOneButton">
       <h1 className="overlay-text">{text}</h1>
       <div>
-        <Button buttonText={buttonText} buttonStyle={buttonStyle} />
+        <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />
       </div>
-    </div>;
-  };
+    </div>
+  );
 
-  const overlayTwoButtonsJSX = () => {
+  const overlayTwoButtonsJSX = () => (
     <div className="overlayTwoButtons">
       <h1 className="overlay-text">{text}</h1>
       <div>
-        <Button buttonText={buttonText} buttonStyle={buttonStyle} />
-        <Button buttonText={buttonText} buttonStyle={buttonStyle} />
+        <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />
+        <Button buttonText={buttonTextTwo} buttonStyle={buttonStyleTwo} />
       </div>
-    </div>;
-  };
+    </div>
+  );
   return (
     <>
       {overlayType === "overlayOneButton"
         ? overlayOneButtonJSX()
         : overlayType === "overlayTwoButtons"
         ? overlayTwoButtonsJSX()
-        : alert("unknown")}
+        : alert("unknown header")}
     </>
   );
 };
