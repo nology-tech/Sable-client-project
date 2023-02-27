@@ -136,8 +136,8 @@ input:checked + .settings-card__toggle-slider:before {
   }
   .settings-card {
     margin-top: 3vh;
-    height: 25vh;
-    width: 80%;
+    height: 30vh;
+    width: 92.5%;
     padding: 1.5vh 7vw;
     justify-content: space-between;
  
@@ -145,18 +145,21 @@ input:checked + .settings-card__toggle-slider:before {
       display: flex;
       flex-direction: column;
       align-items: start;
-      padding-bottom: 2.5vh;
+      padding-bottom: 3.75vh;
     }
     &__theme {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
+    &__option { 
+      padding-bottom: 0.75vh;
+    }
     &__checkbox-label {
       padding-right: 4vw;
     }
     &__checkbox-container {
-      width: 77.5%;
+      width: 70%;
       display: flex;
       justify-content: space-between;
     }
@@ -176,14 +179,15 @@ input:checked + .settings-card__toggle-slider:before {
     }
 
     &__button-container {
-      padding-bottom: 1.75vh;
+      padding-bottom: 2.5vh;
       width: 40vw;
       .button {
         height: 4vh;
       }
     }
     &__toggle-container {
-      width: 20vw;
+      width: 22.5vw;
+      padding-top: 1vh;
     }
 
     &__toggle-switch {
@@ -196,16 +200,16 @@ input:checked + .settings-card__toggle-slider:before {
     }
     &__toggle-slider:before {
       width: 2.5vw;
-      height: 1.5vh;
+      height: 1.4vh;
       left: 0.6vw;
       bottom: 0.2vh;
       -webkit-transition: 0.6s;
       transition: 0.6s;
     }
     input:checked + .settings-card__toggle-slider:before {
-      -webkit-transform: translateX(5.9vw);
-      -ms-transform: translateX(5.9vw);
-      transform: translateX(5.9vw);
+      -webkit-transform: translateX(6vw);
+      -ms-transform: translateX(6vw);
+      transform: translateX(6vw);
     }
   }
 }

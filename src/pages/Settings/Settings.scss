@@ -36,16 +36,21 @@
     min-height: 70vh;
     width: 100vw;
     padding: 0;
+
   }
   .settings-page__button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5vh 0;
-    box-shadow: 0px -20px 40px rgba(97, 65, 65, 0.07);
+    box-shadow: 0px 20px 40px rgba(97, 65, 65, 0.07);
     .button {
       width: 35%;
       height: 4vh;
     }
+  }
+  .home-button-container{
+
+    
   }
 }
