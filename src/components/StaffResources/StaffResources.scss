@@ -2,9 +2,7 @@
 @use "../../styles/base/typography" as *;
 
 .staff-resources {
-  
-  
-margin-bottom: 25px;
+  margin-bottom: 25px;
   font-family: $font-modern;
 
   &__staff-member {
@@ -36,23 +34,19 @@ margin-bottom: 25px;
     margin-left: 10%;
     margin-right: 10%;
     scrollbar-color: red;
-
   }
-   
-  &__cards::-webkit-scrollbar {
 
-    width: 10px; left: -120px;
-    
-  } 
+  &__cards::-webkit-scrollbar {
+    width: 10px;
+    left: -120px;
+  }
   &__cards::-webkit-scrollbar-track {
-    
     background: rgba(167, 167, 167, 0.06);
-  } 
+  }
   &__cards::-webkit-scrollbar-thumb {
-    
     background: gray;
     border-radius: 3px;
-  } 
+  }
 }
 
 @media screen and (max-width: $tablet-breakpoint) {

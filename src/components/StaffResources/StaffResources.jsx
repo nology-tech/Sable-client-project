@@ -5,7 +5,11 @@ import DataCard from "../DataCard/DataCard";
 
 const StaffResources = ({ staffName, renderLabels, cardsArray }) => {
   const cardJSX = cardsArray.map((object, index) => {
-    return <div key={index} className="staff-resources__cards-card"><DataCard cardType="resource" cardObject={object} /></div>;
+    return (
+      <div key={index} className="staff-resources__cards-card">
+        <DataCard cardType="resource" cardObject={object} />
+      </div>
+    );
   });
 
   return (
