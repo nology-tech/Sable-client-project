@@ -45,8 +45,13 @@ it("should render the home footer on the page in mobile view", () => {
     );
   
     //act
-    const logOutButton = screen.getByRole('button', { name: /log out/i})
+    window.matchMedia = jest.fn().mockImplementation((query) => ({
+        matches: query == "(min-width: 240px) and (max-width: 767px)",
+      }));
+    const homeMobile = screen.getByRole('img', {name: /home icon/i})
   
     // assert
-    expect(logOutButton).toBeInTheDocument();
+    expect(homeMobile).toBeInTheDocument();
 });
+
+
