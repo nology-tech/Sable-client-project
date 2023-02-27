@@ -1,7 +1,14 @@
 @use "../../styles/base/reset" as *;
 @use "../../styles/base/typography" as *;
 @use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/variables" as *;
 
+.input-field {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-modern;
+  font-size: 0.875rem;
+  gap: 1.1vh;
 .input-field {
   display: flex;
   flex-direction: column;
@@ -41,3 +48,4 @@
     }
   }
 }
+

@@ -2,17 +2,18 @@
 @use "../../styles/base/typography" as *;
 @use "../../styles/abstracts/variables" as *;
 
-.dropdown-field{
-    display: flex;
-    flex-direction: column;
-    font-family: $font-modern;
-    font-size: 0.875rem;
-    gap: 1.1vh;
+.dropdown-field {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-modern;
+  font-size: 0.875rem;
+  gap: 1.1vh;
 
-    &__label{
-        font-weight: 600;
-        color: black;
-    }
+  &__label {
+    font-weight: 600;
+    color: $color-black;
+    font-family: $font-modern;
+  }
 
     &__input{
         font-family: $font-modern;
