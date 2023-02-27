@@ -6,7 +6,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "./RequestResource.scss";
 
-const RequestResource = () => {
+const RequestResource = ({ staff, category, resourceName, optionsArr }) => {
   return (
     <div className="request-resource-container">
       <NavContainer />
@@ -21,10 +21,10 @@ const RequestResource = () => {
         <div className="request-resource-container__form">
           <Form
             formPage={"requestResource"}
-            staff={"Staff 01"}
-            category={"Health"}
-            resourceName={"Syringe"}
-            optionsArr={["Staff", "Health"]}
+            staff={staff}
+            category={category}
+            resourceName={resourceName}
+            optionsArr={optionsArr}
             text="Request"
           />
         </div>

@@ -6,7 +6,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "./EditResource.scss";
 
-const EditResource = () => {
+const EditResource = ({ staff, category, resourceName, optionsArr }) => {
   return (
     <div className="edit-resource-container">
       <NavContainer />
@@ -21,10 +21,10 @@ const EditResource = () => {
         <div className="edit-resource-container__form">
           <Form
             formPage={"editResource"}
-            staff={"Staff 01"}
-            category={"Health"}
-            resourceName={"Syringe"}
-            optionsArr={[]}
+            staff={staff}
+            category={category}
+            resourceName={resourceName}
+            optionsArr={optionsArr}
             text="Save"
           />
         </div>
