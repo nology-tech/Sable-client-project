@@ -1,7 +1,6 @@
 @use "../../styles/base/reset" as *;
 @use "../../styles/base/typography" as *;
 @use "../../styles/abstracts/variables" as *;
-@use "../../styles/abstracts/variables" as *;
 
 .input-field {
   display: flex;
@@ -16,9 +15,9 @@
   }
 
   &__input {
-    height: 3.063rem;
+    height: 50px;
     width: 100%;
-    border: 1px solid #e2e8f0;
+    border: 1px solid $light-border;
     border-radius: 7px;
     padding-left: 0.5rem;
     color: $color-black;
@@ -30,7 +29,7 @@
       font-family: $font-modern;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet-breakpoint) {
       .input-field {
         &__input {
           height: 5.7vh;

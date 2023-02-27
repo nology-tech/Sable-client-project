@@ -6,8 +6,10 @@
   min-height: 100vh;
   height: auto;
   background-color: $page-background-light;
+}
 
-  &__form {
+@media screen and (min-width: $tablet-breakpoint) {
+  .edit-resource-container__form {
     margin-top: 5%;
     margin-left: 10%;
   }
