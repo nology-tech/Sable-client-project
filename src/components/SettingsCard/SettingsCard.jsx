@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "./SettingsCard.scss";
 import Button from "../Button/Button";
 import Sun from "../../assets/images/lightmode/sun-light.png";
 import Moon from "../../assets/images/lightmode/moon-light.png";
 
+
 const Settings = () => {
+
+  const [selectRadio, setSelectRadio] = useState(false)
+  const changeRadio = (e) => {
+    setSelectRadio = true
+  }
   return (
     <main className="settings-card-container">
       <div className="settings-card">
@@ -14,7 +20,7 @@ const Settings = () => {
             <div className="settings-card__toggle-container">
               <img className="settings-card__toggle-sun" src={Sun} alt="Sun" />
               <label className="settings-card__toggle-switch">
-                <input type="checkbox" id = "toggle-switch"/>
+                <input type="checkbox" id = "toggle-switch" />
                 <span className="settings-card__toggle-slider round"></span>
               </label>
               <img
@@ -37,7 +43,7 @@ const Settings = () => {
                 <input
                   className="settings-card__checkbox"
                   id="settings-card__optionOne"
-                  type="radio"
+                  type="radio" onChange={changeRadio} selectRadio= {}
                 />
               </div>
               <div className="settings-card__tech">
@@ -50,7 +56,7 @@ const Settings = () => {
                 <input
                   className="settings-card__checkbox"
                   id="settings-card__optionTwo"
-                  type="radio"
+                  type="radio" onChange={changeRadio} selectRadio= {}
                 />
               </div>
             </div>
