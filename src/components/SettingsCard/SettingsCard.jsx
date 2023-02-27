@@ -14,9 +14,9 @@ const Settings = () => {
             <div className="settings-card__toggle-container">
               <img className="settings-card__toggle-sun" src={Sun} alt="Sun" />
 
-              <label className="switch">
+              <label className="settings-card__toggle-switch">
                 <input type="checkbox" />
-                <span className="slider round"></span>
+                <span className="settings-card__toggle-slider round"></span>
               </label>
 
               <img
@@ -29,28 +29,33 @@ const Settings = () => {
           <div className="settings-card__theme">
             <h1 className="settings-card__option">Select Theme:</h1>
             <div className="settings-card__checkbox-container">
-              <label
-                htmlFor="settings-card__optionOne"
-                className="settings-card__checkbox-label"
-              >
-                Modern
-              </label>
-              <input
-                className="settings-card__checkbox"
-                id="settings-card__optionOne"
-                type="radio"
-              />
-              <label
-                htmlFor="settings-card__optionTwo"
-                className="settings-card__checkbox-label"
-              >
-                Tech
-              </label>
-              <input
-                className="settings-card__checkbox"
-                id="settings-card__optionTwo"
-                type="radio"
-              />
+              <div className="settings-card__modern">
+              
+                <label
+                  htmlFor="settings-card__optionOne"
+                  className="settings-card__checkbox-label"
+                >
+                  Modern
+                </label>
+                <input
+                  className="settings-card__checkbox"
+                  id="settings-card__optionOne"
+                  type="radio"
+                />
+              </div>
+              <div className="settings-card__tech">
+                <label
+                  htmlFor="settings-card__optionTwo"
+                  className="settings-card__checkbox-label"
+                >
+                  Tech
+                </label>
+                <input
+                  className="settings-card__checkbox"
+                  id="settings-card__optionTwo"
+                  type="radio"
+                />
+              </div>
             </div>
           </div>
         </div>
