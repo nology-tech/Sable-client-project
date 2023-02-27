@@ -11,7 +11,6 @@ import "./UserInfoContainer.scss";
 const UserInfoContainer = () => {
   //You can use the day from the calendar with this useState
   const [day, setDay] = useState(new Date());
-  //console.log(day);
 
   const handleName = () => {};
 
@@ -25,10 +24,18 @@ const UserInfoContainer = () => {
 
   return (
     <form className="input-field-container">
-      <InputField id="first-name" label="First Name" handleInput={handleName} />
-      <InputField id="last-name" label="Last Name" handleInput={handleName} />
-      <InputField id="email" label="Email Address" handleInput={handleEmail} />
-      <InputField id="number" label="Mobile Number" handleInput={handleNumber} />
+      <div className="input-field-container__firstName">
+        <InputField id="first-name" label="First Name" handleInput={handleName} />
+      </div>
+      <div className="input-field-container__lastName">
+        <InputField id="last-name" label="Last Name" handleInput={handleName} />
+      </div>
+      <div className="input-field-container__email">
+        <InputField id="email" label="Email Address" handleInput={handleEmail} />
+      </div>
+      <div className="input-field-container__mobile">
+        <InputField id="number" label="Mobile Number" handleInput={handleNumber} />
+      </div>
       <div className="input-field-container__staff-dropdown">
         <DropdownField
           id="staff"
@@ -36,15 +43,6 @@ const UserInfoContainer = () => {
           handleInput={handleDropdown}
         />
       </div>
-      <div className="input-field-container__buttons">
-        <Button
-          buttonText="Cancel"
-          handleSubmit={handleSubmit}
-          buttonStyle="isCancel--grey"
-        />
-        <Button buttonText="Save" handleSubmit={handleSubmit} />
-      </div>
-
       <div id="datePicker" className="input-field-container__date-picker">
         <label
           htmlFor="datePicker"
@@ -84,6 +82,14 @@ const UserInfoContainer = () => {
           handleSubmit={handleSubmit}
           buttonStyle="isMobileDefault"
         />
+      </div>
+      <div className="input-field-container__buttons">
+        <Button
+          buttonText="Cancel"
+          handleSubmit={handleSubmit}
+          buttonStyle="isCancel--grey"
+        />
+        <Button buttonText="Save" handleSubmit={handleSubmit} />
       </div>
     </form>
   );

@@ -2,14 +2,11 @@
 @use "../../styles/base/typography" as *;
 
 .input-field-container {
-  display: flex;
-  flex-direction: column;
+  display: block;
   gap: 1rem;
   background-color: $color-white;
-  width: 100%;
-  margin: 1.25rem;
-  margin-top: 2rem;
-
+  width: 90%;
+  margin: 16px 0;
   &__buttons {
     margin-top: 0px;
     display: none;
@@ -19,8 +16,7 @@
     display: none;
   }
   &__submit {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
+    margin: 20px 1.25rem 0px;
   }
 
   &__date-picker {
@@ -28,16 +24,16 @@
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    margin: 5px 0 10px;
     &--label {
       font-family: $font-modern;
       font-weight: 600;
       font-size: 14px;
-      margin: 3px 0 10px;
+      margin: 5px 0 10px;
     }
     .react-date-picker {
       width: 100%;
       height: 3.063rem;
-
       &__wrapper {
         border: 1px solid #e2e8f0;
         justify-content: space-between;
@@ -120,20 +116,35 @@
 
 @media screen and (min-width: 768px) {
   .input-field-container {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 4vh;
-    padding-top: 2vh;
-    margin-bottom: 0;
-    gap: 1.5vh;
-    height: 70vh;
-    width: 68vw;
-    align-items: center;
+    display: grid;
     background-color: $page-background-light;
-    border-radius: 7px;
-
+    grid-template-areas:
+      "firstName calendar"
+      "lastName calendar"
+      "email calendar"
+      "mobile time"
+      "staff time"
+      "button button";
     &__calendar {
       display: block;
+      grid-area: calendar;
+      justify-self: center;
+    }
+    &__firstName {
+      grid-area: firstName;
+    }
+
+    &__lastName {
+      grid-area: lastName;
+    }
+
+    &__email {
+      grid-area: email;
+    }
+
+    &__mobile {
+      grid-area: mobile;
+      margin-bottom: 44px;
     }
 
     .react-calendar {
@@ -143,11 +154,13 @@
       display: none;
     }
     &__staff-dropdown {
+      grid-area: staff;
       width: 28.5vw;
     }
     &__time-dropdown {
+      justify-self: center;
+      grid-area: time;
       width: 16.5vw;
-      margin-right: 10vw;
     }
     &__date-dropdown {
       display: none;
@@ -156,6 +169,7 @@
       display: none;
     }
     &__buttons {
+      grid-area: button;
       display: flex;
       margin-top: 3vh;
       gap: 1vw;
