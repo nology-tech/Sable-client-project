@@ -1,10 +1,11 @@
 import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 import NavContainer from "../../containers/NavContainer/NavContainer";
-import SettingsCard from "../../components/SettingsCard/SettingsCard";
+//import SettingsCard from "../../components/SettingsCard/SettingsCard";
 import "../Settings/Settings.scss";
-import Button from "../../components/Button/Button";
-import HomeButton from "../../components/HomeButton/HomeButton";
+//import Button from "../../components/Button/Button";
+//import HomeButton from "../../components/HomeButton/HomeButton";
+import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
 
 const Settings = () => {
   return (
@@ -12,7 +13,7 @@ const Settings = () => {
       <NavContainer />
       <Layout>
         <PageHeader heading="Settings" headerType="headingOnly" />
-        <div className="settings-page__content">
+        {/* <div className="settings-page__content">
           <SettingsCard />
           <div className="settings-page__button-container">
             <Button
@@ -21,11 +22,11 @@ const Settings = () => {
               buttonStyle="isLogout"
             />
           </div>
-          
         </div>
         <div className="home-button-container">
-            <HomeButton />
-          </div>
+          <HomeButton />
+        </div> */}
+        <ConfirmationOverlay overlayType={"overlayOneButton"} text={"booking"} buttonStyle={"isPurple"} buttonText={"book"}/>
       </Layout>
     </div>
   );
