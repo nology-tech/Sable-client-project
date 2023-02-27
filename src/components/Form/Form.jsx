@@ -1,10 +1,17 @@
 import React from "react";
+import Button from "../Button/Button";
 import DropdownField from "../DropdownField/DropdownField";
 import InputField from "../InputField/InputField";
 import "./Form.scss";
 
-const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
-
+const Form = ({
+  formPage,
+  staff,
+  category,
+  resourceName,
+  optionsArr,
+  text,
+}) => {
   const editResourceJSX = () => (
     <div className="form-container">
       <div className="form-container__category">
@@ -17,10 +24,18 @@ const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
       </div>
 
       <div className="form-container__staff">
-        <InputField label="Staff Member" placeholderText={staff} readOnly={true}/>
+        <InputField
+          label="Staff Member"
+          placeholderText={staff}
+          readOnly={true}
+        />
       </div>
       <div className="form-container__resource">
-        <InputField label="Resource Name" placeholderText={resourceName} readOnly={true}/>
+        <InputField
+          label="Resource Name"
+          placeholderText={resourceName}
+          readOnly={true}
+        />
       </div>
 
       <div className="form-container__checkbox">
@@ -43,8 +58,9 @@ const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
       <div className="form-container__quantity-remaining">
         <InputField label="Quantity Remaining" placeholderText="500" />
       </div>
+      <Button buttonText={text} />
     </div>
-  )
+  );
 
   const optionsJSX = optionsArr.map((option, index) => {
     return (
@@ -64,12 +80,20 @@ const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
           optionsJSX={optionsJSX}
         />
       </div>
-      
+
       <div className="form-container__staff">
-        <InputField label="Staff Member" />
+        <InputField
+          label="Staff Member"
+          placeholderText={staff}
+          readOnly={true}
+        />
       </div>
       <div className="form-container__resource">
-        <InputField label="Resource Name" placeholderText="Syringe" />
+        <DropdownField
+          label="Resource Name"
+          placeholderText="Syringe"
+          optionsJSX={optionsJSX}
+        />
       </div>
 
       <div className="form-container__checkbox">
@@ -92,8 +116,9 @@ const Form = ({formPage, staff, category, resourceName, optionsArr}) => {
       <div className="form-container__quantity-remaining">
         <InputField label="Quantity Remaining" placeholderText="500" />
       </div>
+      <Button buttonText={text} />
     </div>
-  )
+  );
 
   return (
     <>

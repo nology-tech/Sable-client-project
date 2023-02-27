@@ -19,10 +19,17 @@ const RequestResource = () => {
           isPlus={true}
         />
         <div className="request-resource-container__form">
-        <Form formPage={"requestResource"} staff={"Staff 01"} category={"Health"} resourceName={"Syringe"} optionsArr={["Staff", "Health"]}/>
+          <Form
+            formPage={"requestResource"}
+            staff={"Staff 01"}
+            category={"Health"}
+            resourceName={"Syringe"}
+            optionsArr={["Staff", "Health"]}
+            text="Request"
+          />
         </div>
+        <HomeButton />
       </Layout>
-      <HomeButton />
     </div>
   );
 };

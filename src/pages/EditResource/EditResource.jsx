@@ -19,10 +19,17 @@ const EditResource = () => {
           isPlus={true}
         />
         <div className="edit-resource-container__form">
-        <Form formPage={"editResource"} staff={"Staff 01"} category={"Health"} resourceName={"Syringe"} optionsArr={[]}/>
+          <Form
+            formPage={"editResource"}
+            staff={"Staff 01"}
+            category={"Health"}
+            resourceName={"Syringe"}
+            optionsArr={[]}
+            text="Save"
+          />
         </div>
+        <HomeButton />
       </Layout>
-      <HomeButton />
     </div>
   );
 };
