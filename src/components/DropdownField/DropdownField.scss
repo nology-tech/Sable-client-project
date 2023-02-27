@@ -15,11 +15,14 @@
     font-family: $font-modern;
   }
 
+<<<<<<< HEAD
     &__label{
         font-weight: 600;
         color: black;
     }
 
+=======
+>>>>>>> 8306a5ece89382b465993ab47f7543737d7fc97e
     &__input{
         font-family: $font-modern;
         height: 3.063rem;
@@ -40,6 +43,7 @@
             padding-right: 0.625rem;
             font-family: $font-modern;
         }
+<<<<<<< HEAD
   &__input {
     height: 3.063rem;
     width: 100%;
@@ -57,17 +61,22 @@
       color: #95accb;
       font-weight: 400;
       padding-right: 0.625rem;
+=======
+>>>>>>> 8306a5ece89382b465993ab47f7543737d7fc97e
     }
-  }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8306a5ece89382b465993ab47f7543737d7fc97e
 @media screen and (min-width: 768px) {
     .dropdown-field{    
         &__input{
             background-color: $page-background-light;
             height: 5.7vh;
         }
+<<<<<<< HEAD
 =======
 @media screen and (min-width: $tablet-breakpoint) {
   .dropdown-field {
@@ -75,6 +84,7 @@
       background-color: $page-background-light;
       height: 5.7vh;
 >>>>>>> 917a303adad1394ade282af8a7c18269a27c02a2
+=======
+>>>>>>> 8306a5ece89382b465993ab47f7543737d7fc97e
     }
-  }
 }

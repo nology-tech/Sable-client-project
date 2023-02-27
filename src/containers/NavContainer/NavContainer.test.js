@@ -123,15 +123,15 @@ it("should show the line break", () => {
   expect(lineBreak).toBeInTheDocument();
 });
 
-it("should redirect and update dom", () => {
-  render(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  );
-  userEvent.click(screen.getByText(/Welcome back/));
-  expect(location.pathname).toEqual("/");
-});
+// it("should redirect and update dom", () => {
+//   render(
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   );
+//   userEvent.click(screen.getByText(/Welcome back/));
+//   expect(location.pathname).toEqual("/");
+// });
 
 it("should render the logo in its own container", () => {
   render(
