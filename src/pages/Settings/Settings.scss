@@ -25,7 +25,11 @@
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: $tablet-breakpoint) {
+=======
+@media screen and (max-width: 767px) {
+>>>>>>> a094f7a581c36b34639f1cfad290848f35d895b3
   .settings-container {
     display: flex;
     flex-direction: column;
