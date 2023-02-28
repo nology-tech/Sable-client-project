@@ -23,8 +23,13 @@ const Settings = () => {
           </div>
         </div>
         <div className="home-button-container">
+<<<<<<< HEAD
           <HomeButton />
         </div>
+=======
+            <HomeButton />
+          </div>
+>>>>>>> a094f7a581c36b34639f1cfad290848f35d895b3
       </Layout>
     </div>
   );

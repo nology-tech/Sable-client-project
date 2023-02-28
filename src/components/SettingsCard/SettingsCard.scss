@@ -1,6 +1,9 @@
 @use "../../styles/abstracts/variables.scss" as *;
 @use "../../styles/base/typography" as *;
 
+* {
+  font-family: $font-modern !important;
+}
 .settings-card-container {
   display: flex;
   justify-content: flex-start;
@@ -12,8 +15,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 33vw;
-  height: 26vh;
+  min-width: 33vw;
+  min-height: 26vh;
   background-color: $color-white;
   border-radius: 7px;
   box-shadow: 0px 30px 30px rgba(114, 75, 203, 0.06);
@@ -21,7 +24,7 @@
   background-color: $color-white;
 
   &__content {
-    height: 12vh;
+    min-height: 12vh;
     justify-content: space-between;
     align-items: center;
   }
@@ -34,6 +37,7 @@
   &__option {
     font-size: 1rem;
     color: $heading-text;
+    min-width: 2vw;
   }
   &__toggle-container {
     display: flex;
@@ -51,7 +55,6 @@
     align-items: center;
   }
   &__checkbox-label {
-    font-family: $font-modern;
     font-size: 0.8rem;
     font-weight: 400;
     color: $page-text;
@@ -68,16 +71,26 @@
   &__toggle-moon {
     padding-left: 0.5vw;
   }
+  &__modern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .button {
-  height: 6.6vh;
+  min-height: 6.6vh;
 }
 
 .settings-card__toggle-switch {
   position: relative;
   display: inline-block;
-  width: 4vw;
-  height: 2.83vh;
+  min-width: 4vw;
+  min-height: 2.83vh;
 }
 
 .settings-card__toggle-switch input {
@@ -101,10 +114,11 @@
 .settings-card__toggle-slider:before {
   position: absolute;
   content: "";
-  height: 2.2vh;
-  width: 1.4vw;
+  min-height: 2.2vh;
+  min-width: 1.4vw;
   left: 0.2vw;
   bottom: 0.2vh;
+  top: 0.2vh;
   background-color: $page-text;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -128,7 +142,7 @@ input:checked + .settings-card__toggle-slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width: 767px) {
   .settings-card-container {
     display: flex;
     flex-direction: column;
@@ -136,15 +150,15 @@ input:checked + .settings-card__toggle-slider:before {
   }
   .settings-card {
     margin-top: 3vh;
-    height: 30vh;
-    width: 92.5%;
+    min-height: 30vh;
+    min-width: 92.5%;
     padding: 1.5vh 7vw;
     justify-content: space-between;
- 
+
     &__mode {
       display: flex;
       flex-direction: column;
-      align-items: start;
+      align-items: flex-start;
       padding-bottom: 3.75vh;
     }
     &__theme {
@@ -152,14 +166,14 @@ input:checked + .settings-card__toggle-slider:before {
       flex-direction: column;
       align-items: flex-start;
     }
-    &__option { 
+    &__option {
       padding-bottom: 0.75vh;
     }
     &__checkbox-label {
       padding-right: 4vw;
     }
     &__checkbox-container {
-      width: 70%;
+      min-width: 70%;
       display: flex;
       justify-content: space-between;
     }
@@ -174,59 +188,125 @@ input:checked + .settings-card__toggle-slider:before {
       align-items: center;
     }
     &__checkbox {
-      height: 2vh;
-      width: 2vw;
+      min-height: 2vh;
+      min-width: 2vw;
     }
 
     &__button-container {
       padding-bottom: 2.5vh;
-      width: 40vw;
+      min-width: 40vw;
       .button {
-        height: 4vh;
+        min-height: 4vh;
       }
     }
     &__toggle-container {
-      width: 22.5vw;
+      min-width: 22.5vw;
       padding-top: 1vh;
     }
-
     &__toggle-switch {
-      width: 10vw;
-      height: 2vh;
+      min-width: 10vw;
+      min-height: 2vh;
     }
     &__toggle-slider {
-      width: 10vw;
-      height: 2vh;
+      min-width: 10vw;
+      min-height: 2vh;
     }
     &__toggle-slider:before {
-      width: 2.5vw;
-      height: 1.4vh;
+      min-width: 3.75vmin;
+      min-height: 2vmin;
       left: 0.6vw;
       bottom: 0.2vh;
       -webkit-transition: 0.6s;
       transition: 0.6s;
     }
     input:checked + .settings-card__toggle-slider:before {
-      -webkit-transform: translateX(6vw);
-      -ms-transform: translateX(6vw);
-      transform: translateX(6vw);
+      -webkit-transform: translateX(4.8vw);
+      -ms-transform: translateX(4.8vw);
+      transform: translateX(4.8vw);
     }
   }
 }
 @media screen and (min-width: $tablet-breakpoint) and (max-width: 1023px) {
+  .settings-card {
+    &__mode {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__theme {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__option {
+      padding-bottom: 0.75vh;
+      font-size: 0.8rem;
+    }
+    &__checkbox-label {
+      padding-right: 4vw;
+      font-size: 0.7rem;
+    }
+    &__checkbox-container {
+      min-width: 70%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__modern {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__tech {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__checkbox {
+      min-height: 2vh;
+      min-width: 2vw;
+    }
+
+    &__button-container {
+      padding-top: 2vh;
+      min-width: 40vw;
+      .button {
+        min-height: 4vh;
+      }
+    }
+    &__toggle-container {
+      min-width: 15vw;
+      padding-top: 1vh;
+    }
+
+    &__toggle-switch {
+      min-width: 8vw;
+      min-height: 3vh;
+    }
+    &__toggle-slider {
+      min-width: 8vw;
+      min-height: 2vh;
+    }
+    &__toggle-slider:before {
+      min-width: 2.5vmin;
+      min-height: 2vmin;
+      left: 0.6vw;
+      bottom: 0.2vh;
+      -webkit-transition: 0.6s;
+      transition: 0.6s;
+    }
+    input:checked + .settings-card__toggle-slider:before {
+      -webkit-transform: translateX(4.2vw);
+      -ms-transform: translateX(4.2vw);
+      transform: translateX(4.2vw);
+    }
+  }
+}
+@media screen and (min-width: $desktop-breakpoint) and (max-width: 1439px) {
   .settings-card__option {
     font-size: 0.6rem;
   }
   .settings-card__checkbox-label {
     font-size: 0.4rem;
-  }
-}
-@media screen and (min-width: $desktop-breakpoint) and (max-width: 1439px) {
-  .settings-card__option {
-    font-size: 0.8rem;
-  }
-  .settings-card__checkbox-label {
-    font-size: 0.6rem;
   }
 }
 @media screen and (min-width: $extra-large-desktop-breakpoint) {
