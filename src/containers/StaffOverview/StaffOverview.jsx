@@ -4,12 +4,14 @@ import gridview from "../../assets/images/functional-icons/gridview-icon.png";
 import listview from "../../assets/images/functional-icons/listview-icon.png";
 import SortIcon from "../../assets/images/functional-icons/sort-icon.png";
 import StaffImage from "../../assets/images/users/staff-picture.png";
-import DataCard from "../../components/DataCard/DataCard";
+//import DataCard from "../../components/DataCard/DataCard";
 import EmployeeOverviewCard from "../../components/EmployeeOverviewCard/EmployeeOverviewCard.jsx";
 import UserProfile from "../../components/UserProfileCard/UserProfileCard.jsx";
-import { bookingData } from "../../mockData";
+import { mockData } from "../../data/mockData";
 import "./StaffOverview.scss";
 const StaffOverview = () => {
+
+  console.log(mockData)
   return (
     <div className="staff-overview">
       <h2 className="staff-overview__title">Overview</h2>
@@ -70,6 +72,7 @@ const StaffOverview = () => {
       </div>
       <div className="staff-overview__mobile-subheader">Staff 01 Bookings</div>
       <div className="staff-overview__booking-container">
+{/*         
         <DataCard cardType="booking" cardObject={bookingData[0]} />
         <DataCard cardType="booking" cardObject={bookingData[1]} />
         <DataCard cardType="booking" cardObject={bookingData[2]} />
@@ -79,6 +82,8 @@ const StaffOverview = () => {
         <DataCard cardType="booking" cardObject={bookingData[6]} />
         <DataCard cardType="booking" cardObject={bookingData[7]} />
         <DataCard cardType="booking" cardObject={bookingData[8]} />
+        */}
+        
       </div>
     </div>
   );
