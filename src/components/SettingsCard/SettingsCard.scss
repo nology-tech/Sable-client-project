@@ -105,6 +105,7 @@
   min-width: 1.4vw;
   left: 0.2vw;
   bottom: 0.2vh;
+  top: 0.2vh;
   background-color: $page-text;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -128,7 +129,7 @@ input:checked + .settings-card__toggle-slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width: 767px) {
   .settings-card-container {
     display: flex;
     flex-direction: column;
@@ -140,7 +141,7 @@ input:checked + .settings-card__toggle-slider:before {
     min-width: 92.5%;
     padding: 1.5vh 7vw;
     justify-content: space-between;
- 
+
     &__mode {
       display: flex;
       flex-direction: column;
@@ -152,7 +153,7 @@ input:checked + .settings-card__toggle-slider:before {
       flex-direction: column;
       align-items: flex-start;
     }
-    &__option { 
+    &__option {
       padding-bottom: 0.75vh;
     }
     &__checkbox-label {
@@ -199,34 +200,87 @@ input:checked + .settings-card__toggle-slider:before {
       min-height: 2vh;
     }
     &__toggle-slider:before {
-      min-width: 2.5vw;
-      min-height: 1.4vh;
+      min-width: 3.75vmin;
+      min-height: 2vmin;
       left: 0.6vw;
       bottom: 0.2vh;
       -webkit-transition: 0.6s;
       transition: 0.6s;
     }
     input:checked + .settings-card__toggle-slider:before {
-      -webkit-transform: translateX(6vw);
-      -ms-transform: translateX(6vw);
-      transform: translateX(6vw);
+      -webkit-transform: translateX(4.8vw);
+      -ms-transform: translateX(4.8vw);
+      transform: translateX(4.8vw);
     }
   }
 }
-@media screen and (min-width: $tablet-breakpoint) and (max-width: 1023px) {
+@media screen and (min-width: $tablet-breakpoint) and (max-width: $tablet-breakpoint) {
+  .settings-card__option {
+    font-size: 0.8rem;
+  }
+  .settings-card__checkbox-label {
+    font-size: 0.7rem;
+  }
+  .settings-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .settings-card {
+    margin-top: 6vh;
+    min-height: 40vh;
+    min-width: 60%;
+    padding: 4.5vh 8vw;
+    &__option {
+      width: 15vw;
+    }
+    &__tech {
+      display: flex;
+      justify-content: center;
+    }
+    &__modern {
+      display: flex;
+      justify-content: center;
+    }
+    &__theme {
+      padding-top: 4vh;
+    }
+    &__checkbox-label {
+      padding-left: 5vw;
+    }
+    &__toggle-container {
+      min-width: 12vw;
+      padding-top: 1vh;
+    }
+    &__toggle-switch {
+      min-width: 6vw;
+      min-height: 2vh;
+    }
+    &__toggle-slider:before {
+      min-width: 2.4vmin;
+      min-height: 1.8vmin;
+      left: 0.5vw;
+      bottom: 0.3vh;
+    }
+    &__button-container {
+      padding-bottom: 2vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input:checked + .settings-card__toggle-slider:before {
+      -webkit-transform: translateX(2.8vw);
+      -ms-transform: translateX(2.8vw);
+      transform: translateX(2.8vw);
+    }
+  }
+}
+@media screen and (min-width: $desktop-breakpoint) and (max-width: 1439px) {
   .settings-card__option {
     font-size: 0.6rem;
   }
   .settings-card__checkbox-label {
     font-size: 0.4rem;
-  }
-}
-@media screen and (min-width: $desktop-breakpoint) and (max-width: 1439px) {
-  .settings-card__option {
-    font-size: 0.8rem;
-  }
-  .settings-card__checkbox-label {
-    font-size: 0.6rem;
   }
 }
 @media screen and (min-width: $extra-large-desktop-breakpoint) {
