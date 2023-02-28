@@ -17,5 +17,5 @@ This is a table that summarizes how to call each key.
 the `[i]` is the object in the array. either use a loop or call the specific object needed.
 
 |        Staff        |        Resources        |        Clients        |        Bookings        |        ResourcesRequest        |
-| :-----------------: | :---------------------: | :-------------------: | :--------------------: | :----------------------------: |
+| :---:               | :---:                   | :---:                 | :---:                 | :---:                         |
 | `mockData.staff[i]` | `mockData.resources[i]` | `mockData.clients[i]` | `mockData.bookings[i]` | `mockData.resourcesRequest[i]` |
