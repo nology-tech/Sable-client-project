@@ -3,16 +3,18 @@ import "./DataCard.scss";
 import mockData from "../../data/mockData";
 const DataCard = (props) => {
   const { cardObject, cardType } = props;
-  let names =  cardObject.client.split(" ")
+  let names = cardObject.client.split(" ");
 
   const getClientDetails = (nameToSearch) => {
-    const filteredObject = mockData.clients.filter((client) => client.firstName == nameToSearch[0] && client.lastName == nameToSearch[1])
-    return filteredObject; 
-  }
+    const filteredObject = mockData.clients.filter(
+      (client) =>
+        client.firstName == nameToSearch[0] &&
+        client.lastName == nameToSearch[1]
+    );
+    return filteredObject;
+  };
 
- const currentClient = getClientDetails(names)
-  console.log(currentClient)
-
+  const currentClient = getClientDetails(names);
   const studentJSX = () => (
     <div className="user-card">
       <h1 className="user-card__name">{cardObject.name}</h1>
