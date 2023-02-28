@@ -296,7 +296,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Mark",
@@ -308,7 +308,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "Elisabeth",
+      staff: "Elisabeth",
     },
 
     {
@@ -321,7 +321,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "John",
@@ -333,7 +333,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Julia",
+      staff: "Julia",
     },
     {
       firstName: "Karen",
@@ -345,7 +345,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Sean",
@@ -357,7 +357,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Roberto",
+      staff: "Roberto",
     },
     {
       firstName: "Sophie",
@@ -369,7 +369,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Roberto",
+      staff: "Roberto",
     },
     {
       firstName: "Adam",
@@ -381,7 +381,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "Marianna",
+      staff: "Marianna",
     },
     {
       firstName: "Ethan",
@@ -393,7 +393,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Melanie",
@@ -405,7 +405,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "Julia",
+      staff: "Julia",
     },
     {
       firstName: "Peter",
@@ -417,10 +417,10 @@ export const mockData = {
       query: "consultant",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
-      firstName: "Jasmine Wang",
+      firstName: "Jasmine",
       lastName: "Wang",
       email: "jasminewang@gmail.com",
       mobile: "+441234567903",
@@ -429,10 +429,10 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Elisabeth",
+      staff: "Elisabeth",
     },
     {
-      firstName: "David Chen",
+      firstName: "David",
       lastName: "Chen",
       email: "davidchen@gmail.com",
       mobile: "+441234567904",
@@ -441,7 +441,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Stefania",
+      staff: "Stefania",
     },
     {
       firstName: "Alice",
@@ -453,7 +453,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "Elisabeth",
+      staff: "Elisabeth",
     },
     {
       firstName: "Rachel",
@@ -465,7 +465,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "Roberto",
+      staff: "Roberto",
     },
     {
       firstName: "Alex",
@@ -477,7 +477,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Emily",
@@ -504,7 +504,7 @@ export const mockData = {
       staff: "Roberto",
     },
     {
-      firsName: "Erica",
+      firstName: "Erica",
       lastName: "Chen",
       email: "ericachen@gmail.com",
       mobile: "+441234567910",

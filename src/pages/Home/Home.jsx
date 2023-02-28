@@ -1,3 +1,4 @@
+import Button from "../../components/Button/Button";
 import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
@@ -11,6 +12,7 @@ const Home = () => {
       <Layout>
         <PageHeader heading="Home" headerType="headingOnly" />
         <HomePageContainer />
+        <Button buttonText={"Logout"} buttonStyle={"isLogout"} />;
       </Layout>
     </div>
   );
