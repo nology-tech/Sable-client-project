@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import * as React from 'react';
 import Client from "./pages/Client/Client";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login.jsx";
@@ -15,6 +16,13 @@ import "./styles/base/_typography.scss";
 const App = () => {
   const [user, setUser] = useState();
   console.log(user);
+
+  const logOut = (event) => {
+    event.preventDefault(); 
+    window.location.href = '/';
+    setUser(null);
+  }
+
   return (
     <>
       <Routes>
@@ -29,7 +37,7 @@ const App = () => {
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/edit" element={<EditResource />} />
           <Route path="/resources/request" element={<RequestResource />} />
-          <Route path="/settings" element={<Settings/>} />
+          <Route path="/settings" element={<Settings setUser={logOut}/>} />
         </Routes>
       ) : null}
     </>
