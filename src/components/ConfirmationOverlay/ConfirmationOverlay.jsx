@@ -32,6 +32,7 @@ const ConfirmationOverlay = ({
       </div>
     </div>
   );
+
   return (
     <>
       {overlayType === "overlayOneButton"

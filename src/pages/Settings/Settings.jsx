@@ -7,6 +7,8 @@ import Button from "../../components/Button/Button";
 import HomeButton from "../../components/HomeButton/HomeButton";
 
 const Settings = () => {
+
+
   return (
     <div className="settings-container">
       <NavContainer />
@@ -14,6 +16,7 @@ const Settings = () => {
         <PageHeader heading="Settings" headerType="headingOnly" />
         <div className="settings-page__content">
           <SettingsCard />
+
           <div className="settings-page__button-container">
             <Button
               className="settings-page__button"
@@ -23,8 +26,8 @@ const Settings = () => {
           </div>
         </div>
         <div className="home-button-container">
-            <HomeButton />
-          </div>
+          <HomeButton />
+        </div>
       </Layout>
     </div>
   );
