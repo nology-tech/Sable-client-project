@@ -12,6 +12,7 @@ import EditResource from "./pages/EditResource/EditResource";
 import RequestResource from "./pages/RequestResource/RequestResource";
 import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
+import Error from "./pages/Error/Error";
 
 const App = () => {
   const [user, setUser] = useState();
@@ -39,7 +40,16 @@ const App = () => {
           <Route path="/resources/request" element={<RequestResource />} />
           <Route path="/settings" element={<Settings setUser={logOut}/>} />
         </Routes>
-      ) : null}
+      ) : <Routes>
+      <Route path="/home" element={<Error />} />
+      <Route path="/booking" element={<Error />} />
+      <Route path="/staff" element={<Error />} />
+      <Route path="/client" element={<Error />} />
+      <Route path="/resources" element={<Error />} />
+      <Route path="/resources/edit" element={<Error />} />
+      <Route path="/resources/request" element={<Error />} />
+      <Route path="/settings" element={<Error/>} />
+    </Routes>}
     </>
   );
 };
