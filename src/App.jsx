@@ -41,14 +41,14 @@ const App = () => {
           <Route path="/settings" element={<Settings setUser={logOut}/>} />
         </Routes>
       ) : <Routes>
-      <Route path="/home" element={<Error />} />
-      <Route path="/booking" element={<Error />} />
-      <Route path="/staff" element={<Error />} />
-      <Route path="/client" element={<Error />} />
-      <Route path="/resources" element={<Error />} />
-      <Route path="/resources/edit" element={<Error />} />
-      <Route path="/resources/request" element={<Error />} />
-      <Route path="/settings" element={<Error/>} />
+      <Route path="/home" element={<Error page={"home"}/>} />
+      <Route path="/booking" element={<Error page={"booking"}/>} />
+      <Route path="/staff" element={<Error page={"staff"}/>} />
+      <Route path="/client" element={<Error page={"client"}/>} />
+      <Route path="/resources" element={<Error page={"resources"}/>} />
+      <Route path="/resources/edit" element={<Error page={"resources"}/>} />
+      <Route path="/resources/request" element={<Error page={"resources"}/>} />
+      <Route path="/settings" element={<Error page={"settings"}/>} />
     </Routes>}
     </>
   );
