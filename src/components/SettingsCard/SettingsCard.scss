@@ -34,6 +34,7 @@
   &__option {
     font-size: 1rem;
     color: $heading-text;
+    min-width: 2vw;
   }
   &__toggle-container {
     display: flex;
@@ -67,6 +68,16 @@
   }
   &__toggle-moon {
     padding-left: 0.5vw;
+  }
+  &__modern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .button {
@@ -190,7 +201,6 @@ input:checked + .settings-card__toggle-slider:before {
       min-width: 22.5vw;
       padding-top: 1vh;
     }
-
     &__toggle-switch {
       min-width: 10vw;
       min-height: 2vh;
@@ -214,64 +224,78 @@ input:checked + .settings-card__toggle-slider:before {
     }
   }
 }
-@media screen and (min-width: $tablet-breakpoint) and (max-width: $tablet-breakpoint) {
-  .settings-card__option {
-    font-size: 0.8rem;
-  }
-  .settings-card__checkbox-label {
-    font-size: 0.7rem;
-  }
-  .settings-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@media screen and (min-width: $tablet-breakpoint) and (max-width: 1023px) {
   .settings-card {
-    margin-top: 6vh;
-    min-height: 40vh;
-    min-width: 60%;
-    padding: 4.5vh 8vw;
-    &__option {
-      width: 15vw;
-    }
-    &__tech {
+    &__mode {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__theme {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__option {
+      padding-bottom: 0.75vh;
+      font-size: 0.8rem;
+    }
+    &__checkbox-label {
+      padding-right: 4vw;
+      font-size: 0.7rem;
+    }
+    &__checkbox-container {
+      min-width: 70%;
+      display: flex;
+      justify-content: space-between;
     }
     &__modern {
       display: flex;
       justify-content: center;
+      align-items: center;
     }
-    &__theme {
-      padding-top: 4vh;
-    }
-    &__checkbox-label {
-      padding-left: 5vw;
-    }
-    &__toggle-container {
-      min-width: 12vw;
-      padding-top: 1vh;
-    }
-    &__toggle-switch {
-      min-width: 6vw;
-      min-height: 2vh;
-    }
-    &__toggle-slider:before {
-      min-width: 2.4vmin;
-      min-height: 1.8vmin;
-      left: 0.5vw;
-      bottom: 0.3vh;
-    }
-    &__button-container {
-      padding-bottom: 2vh;
+    &__tech {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+    &__checkbox {
+      min-height: 2vh;
+      min-width: 2vw;
+    }
+
+    &__button-container {
+      padding-top: 2vh;
+      min-width: 40vw;
+      .button {
+        min-height: 4vh;
+      }
+    }
+    &__toggle-container {
+      min-width: 15vw;
+      padding-top: 1vh;
+    }
+
+    &__toggle-switch {
+      min-width: 8vw;
+      min-height: 3vh;
+    }
+    &__toggle-slider {
+      min-width: 8vw;
+      min-height: 2vh;
+    }
+    &__toggle-slider:before {
+      min-width: 2.5vmin;
+      min-height: 2vmin;
+      left: 0.6vw;
+      bottom: 0.2vh;
+      -webkit-transition: 0.6s;
+      transition: 0.6s;
+    }
     input:checked + .settings-card__toggle-slider:before {
-      -webkit-transform: translateX(2.8vw);
-      -ms-transform: translateX(2.8vw);
-      transform: translateX(2.8vw);
+      -webkit-transform: translateX(4.2vw);
+      -ms-transform: translateX(4.2vw);
+      transform: translateX(4.2vw);
     }
   }
 }
