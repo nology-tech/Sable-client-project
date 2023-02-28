@@ -6,7 +6,7 @@ import PageHeader from "../../components/PageHeader/PageHeader.jsx";
 const Home = () => {
   return (
     <div className="home-container">
-      <NavContainer /> 
+      <NavContainer />
       <Layout>
         <PageHeader heading="Home" headerType="headingOnly" />
         <HomePageContainer />
