@@ -559,14 +559,14 @@ export const mockData = {
       bookingDate: "05/03/2023",
       bookingTime: "15:00",
       confirmed: true,
-      Staff: "Mariana",
+      staff: "Mariana",
     },
     {
       client: "Mark Wilson",
       bookingDate: "08/03/2023",
       bookingTime: "11:00",
       confirmed: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       client: "Bryan Kim",
@@ -580,7 +580,7 @@ export const mockData = {
       bookingDate: "10/03/2023",
       bookingTime: "14:00",
       confirmed: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       client: "Jason Lee",
@@ -601,7 +601,7 @@ export const mockData = {
       bookingDate: "02/03/2023",
       bookingTime: "14:30",
       confirmed: true,
-      Staff: "Marianna",
+      staff: "Marianna",
     },
   ],
 };

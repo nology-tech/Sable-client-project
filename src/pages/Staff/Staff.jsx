@@ -3,9 +3,19 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import StaffOverview from "../../containers/StaffOverview/StaffOverview";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "./Staff.scss";
+import { useState } from "react";
 import HomeButton from "../../components/HomeButton/HomeButton";
-
+import mockData from "../../data/mockData";
 const Staff = () => {
+  
+  let allStaffMembers = [];
+  const [currentStaff, setCurrentStaff] = useState("Stafania")
+  allStaffMembers = mockData.staff.map((staff) => staff.name)
+
+  const handleOnChange = (event) =>{
+    setCurrentStaff(event.target.value);
+  }
+
   return (
     <>
     <div className="staff-page">
@@ -18,9 +28,10 @@ const Staff = () => {
             text= "Edit"
             buttonStyle= "isHeader"
             isPlus= {true}
-            optionsArr={["Staff 01", "Staff 02", "Staff 03"]}
+            optionsArr={allStaffMembers}
+            handleOnChange={handleOnChange}
           />
-          <StaffOverview />
+          <StaffOverview currentStaff={currentStaff} />
         </div>
       </main>
     </div>

@@ -3,7 +3,7 @@ import Logo from "../../assets/images/logo/logo-white.png";
 import Button from "../Button/Button";
 import "./PageHeader.scss";
 
-const PageHeader = ({ headerType, heading, text, buttonStyle, isPlus, isInputIncomplete, optionsArr }) => {
+const PageHeader = ({ headerType, heading, text, buttonStyle, isPlus, isInputIncomplete, optionsArr, handleOnChange }) => {
   const HeadingOnlyJSX = () => (
     <div className="heading-only">
       <img src={Logo} alt="logo" className="heading-only__logo" />
@@ -39,7 +39,7 @@ const PageHeader = ({ headerType, heading, text, buttonStyle, isPlus, isInputInc
           </div>
         </div>
         <div className="heading-button-dropdown__dropdown">
-          <select id="dropdown">{optionsJSX}</select>
+          <select onChange={handleOnChange} id="dropdown">{optionsJSX}</select>
         </div>
       </div>
     );
