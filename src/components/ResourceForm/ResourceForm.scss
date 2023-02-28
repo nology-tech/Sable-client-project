@@ -2,7 +2,7 @@
 @use "../../styles/base/typography" as *;
 
 @media screen and (min-width: $mobile-breakpoint) {
-  .form-container {
+  .resource-form-container {
     padding: 20px 20px;
     height: fit-content;
     width: 100%;
@@ -90,7 +90,7 @@
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
-  .form-container {
+  .resource-form-container {
     gap: 50px;
     padding: 10px 20px;
     height: fit-content;
@@ -140,8 +140,8 @@
       grid-area: quantity-remaining;
       padding: 10px;
     }
-  }
-  .button {
-    display: none;
+    &__button{
+      display: none;
+    }
   }
 }

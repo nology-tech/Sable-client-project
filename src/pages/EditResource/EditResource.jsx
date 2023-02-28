@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../components/Form/Form";
+import ResourceForm from "../../components/ResourceForm/ResourceForm";
 import HomeButton from "../../components/HomeButton/HomeButton";
 import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader";
@@ -19,7 +19,7 @@ const EditResource = ({ staff, category, resourceName}) => {
           isPlus={true}
         />
         <div className="edit-resource-container__form">
-          <Form
+          <ResourceForm
             formPage={"editResource"}
             staff={staff}
             category={category}
