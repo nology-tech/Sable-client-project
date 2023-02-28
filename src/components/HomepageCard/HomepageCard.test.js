@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import HomepageCard from "./HomepageCard";
 import { MemoryRouter } from 'react-router-dom';
 it("should render the button component on the card", () => {
