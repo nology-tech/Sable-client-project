@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout/Layout";
-import PageHeader from "../../components/PageHeader/PageHeader.jsx";
-import NavContainer from "../../containers/NavContainer/NavContainer";
+//import PageHeader from "../../components/PageHeader/PageHeader.jsx";
+//import NavContainer from "../../containers/NavContainer/NavContainer";
 //import SettingsCard from "../../components/SettingsCard/SettingsCard";
 import "../Settings/Settings.scss";
 //import Button from "../../components/Button/Button";
@@ -10,9 +10,9 @@ import ConfirmationOverlay from "../../components/ConfirmationOverlay/Confirmati
 const Settings = () => {
   return (
     <div className="settings-container">
-      <NavContainer />
+      {/* <NavContainer /> */}
       <Layout>
-        <PageHeader heading="Settings" headerType="headingOnly" />
+        {/* <PageHeader heading="Settings" headerType="headingOnly" /> */}
         {/* <div className="settings-page__content">
           <SettingsCard />
           <div className="settings-page__button-container">
@@ -27,7 +27,7 @@ const Settings = () => {
           <HomeButton />
         </div> */}
         <ConfirmationOverlay overlayType="overlayOneButton" text="booking" buttonStyleOne="isPurple" buttonTextOne="book" />
-        <ConfirmationOverlay overlayType="overlayTwoButtons" text="booking 2" buttonStyleOne="isPurple" buttonTextOne="book" buttonStyleTwo="isPurple" buttonTextTwo="book"/>
+        {/* <ConfirmationOverlay overlayType="overlayTwoButtons" text="booking 2" buttonStyleOne="isPurple" buttonTextOne="book" buttonStyleTwo="isPurple" buttonTextTwo="book"/> */}
       </Layout>
     </div>
   );
