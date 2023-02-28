@@ -4,14 +4,19 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 const HomepageCard = ({ heading, link }) => {
   return (
-    <main className="homepage-card">
+<>
+    <Link to={`/${link}`}>
+      <main className="homepage-card" id="mobile">
+        <h2 className="homepage-card__heading">{heading}</h2>
+        <div className="homepage-card__arrow">  </div>
+      </main>
+    </Link>
+
+    <main className="homepage-card" id="desktop">
       <h2 className="homepage-card__heading">{heading}</h2>
-      <div className="homepage-card__button">
-        <Link to={`/${link}`} ><Button buttonText={"Go"}/> </Link>
-      </div>
-      <Link to={`/${link}`}><div className="homepage-card__arrow">  </div></Link>
-     
+      <Link to={`/${link}`} className="home-card__link" ><Button buttonText={"Go"}/></Link>
     </main>
+  </>    
   );
 };
 

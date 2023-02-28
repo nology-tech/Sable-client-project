@@ -27,6 +27,27 @@
     height: 40%;
     padding-top: 15px;
   }
+
+  &__link{
+    height: 40%;
+  }
+  a{
+    text-decoration: none;
+  }
+  button{
+    cursor: pointer;
+  }
+  transition: 300ms ease-in-out;
+}
+#mobile{
+  display: none;
+}
+#desktop{
+  display: flex;
+}
+
+.homepage-card:hover {
+  transform: scale(1.02);
 }
 
 @media screen and (min-width:$tablet-breakpoint) and (max-width:1023px) {
@@ -73,6 +94,14 @@
       background-image: url(../../assets/images/functional-icons/rightarrow-grey-icon.png);
       background-size: contain;
   }
+  
+
+}
+#mobile{
+  display: flex;
+}
+#desktop{
+  display: none;
 }
 }
 
