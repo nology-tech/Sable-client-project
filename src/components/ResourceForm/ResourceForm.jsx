@@ -78,6 +78,14 @@ const ResourceForm = ({
       </option>
     );
   });
+  const healthArr = [
+    <option className="option" value="health" key="health option">
+      Health
+    </option>,
+    <option className="option" value="admin" key="admin option">
+      Admin
+    </option>,
+  ];
 
   const requestResourceJSX = () => (
     <div className="resource-form-container">
@@ -86,7 +94,7 @@ const ResourceForm = ({
           label="Category Name"
           placeholderText="Health"
           id="category"
-          optionsJSX={optionsJSX}
+          optionsJSX={healthArr}
         />
       </div>
       <div className="resource-form-container__staff">
@@ -110,11 +118,19 @@ const ResourceForm = ({
         <div className="resource-form-container__checkboxes">
           <div className="resource-form-container__checkbox--yes">
             <label htmlFor="autopurchase-yes">Yes</label>
-            <input type="radio" name="autopurchase" id="autopurchase-yes"></input>
+            <input
+              type="radio"
+              name="autopurchase"
+              id="autopurchase-yes"
+            ></input>
           </div>
           <div className="resource-form-container__checkbox--no">
             <label htmlFor="autopurchase-no">No</label>
-            <input type="radio" name="autopurchase" id="autopurchase-No" ></input>
+            <input
+              type="radio"
+              name="autopurchase"
+              id="autopurchase-No"
+            ></input>
           </div>
         </div>
       </div>

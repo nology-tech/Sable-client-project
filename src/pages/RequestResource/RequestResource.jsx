@@ -6,7 +6,7 @@ import PageHeader from "../../components/PageHeader/PageHeader";
 import NavContainer from "../../containers/NavContainer/NavContainer";
 import "./RequestResource.scss";
 
-const RequestResource = ({ staff, category, resourceName}) => {
+const RequestResource = ({ staff, category, resourceName }) => {
   return (
     <div className="request-resource-container">
       <NavContainer />
@@ -24,7 +24,7 @@ const RequestResource = ({ staff, category, resourceName}) => {
             staff={staff}
             category={category}
             resourceName={resourceName}
-            optionsArr={["Health", "Admin"]}
+            optionsArr={["Syringe", "Bandage"]}
             text="Request"
           />
         </div>

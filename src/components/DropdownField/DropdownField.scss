@@ -34,6 +34,7 @@
       font-weight: 400;
       padding-right: 0.625rem;
       font-family: $font-modern;
+      background-color: $color-white;
     }
   }
 }
@@ -41,7 +42,7 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .dropdown-field {
     &__input {
-      background-color: $page-background-light;
+      background-color: $color-white;
       height: 5.7vh;
     }
   }
