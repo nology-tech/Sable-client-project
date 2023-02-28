@@ -11,16 +11,16 @@ const ConfirmationOverlay = ({
   buttonStyleTwo,
 }) => {
   const overlayOneButtonJSX = () => (
-    <div className="overlayOneButton">
+    <div className="overlayOneButton overlay">
       <h1 className="overlay-text">{text}</h1>
-      <div>
+      <div className="overlay-buttons">
         <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />
       </div>
     </div>
   );
 
   const overlayTwoButtonsJSX = () => (
-    <div className="overlayTwoButtons">
+    <div className="overlayTwoButtons overlay">
       <h1 className="overlay-text">{text}</h1>
       <div>
         <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />

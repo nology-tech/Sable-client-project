@@ -27,6 +27,7 @@ const Settings = () => {
           <HomeButton />
         </div> */}
         <ConfirmationOverlay overlayType="overlayOneButton" text="booking" buttonStyleOne="isPurple" buttonTextOne="book" />
+        <ConfirmationOverlay overlayType="overlayTwoButtons" text="booking 2" buttonStyleOne="isPurple" buttonTextOne="book" buttonStyleTwo="isPurple" buttonTextTwo="book"/>
       </Layout>
     </div>
   );
