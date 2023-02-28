@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Client from "./pages/Client/Client";
 import Home from "./pages/Home/Home";
@@ -10,31 +10,23 @@ import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
 
 const App = () => {
-  const [user, setUser] = useState(false);
+  const [user, setUser] = useState();
+  console.log(user);
   return (
-    <Routes>
-      {!user ? (
-        <>
-          <Route
-            path="/"
-            element={
-              <>
-                <Login user={user} setUser={setUser} />{" "}
-                <Navigate replace to="/" />{" "}
-              </>
-            }
-          />
-        </>
-      ) : (
-        <>
+    <>
+      <Routes>
+        <Route path="/" element={<Login user={user} setUser={setUser} />} />
+      </Routes>
+      {user ? (
+        <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/booking" element={<NewAppointment />} />
           <Route path="/staff" element={<Staff />} />
           <Route path="/client" element={<Client />} />
           <Route path="/resources" element={<Resources />} />
-        </>
-      )}
-    </Routes>
+        </Routes>
+      ) : null}
+    </>
   );
 };
 
