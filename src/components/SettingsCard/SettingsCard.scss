@@ -1,6 +1,9 @@
 @use "../../styles/abstracts/variables.scss" as *;
 @use "../../styles/base/typography" as *;
 
+* {
+  font-family: $font-modern !important;
+}
 .settings-card-container {
   display: flex;
   justify-content: flex-start;
@@ -33,7 +36,6 @@
   }
   &__option {
     font-size: 1rem;
-    font-family: $font-modern;
     color: $heading-text;
     min-width: 2vw;
   }
@@ -53,7 +55,6 @@
     align-items: center;
   }
   &__checkbox-label {
-    font-family: $font-modern;
     font-size: 0.8rem;
     font-weight: 400;
     color: $page-text;
