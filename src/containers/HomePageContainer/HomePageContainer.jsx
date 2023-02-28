@@ -4,18 +4,14 @@ import HomepageCard from "../../components/HomepageCard/HomepageCard";
 import Button from "../../components/Button/Button.jsx";
 
 const HomePageContainer = () => {
-
-
   return (
     <main className="homepage-content">
       <section className="homepage-container">
         <div className="homepage-container__new-appointment">
-           <HomepageCard
+          <HomepageCard
             className="homepage-container__card"
             heading={"New Appointment"}
             link="booking"
-
-            
           />
         </div>
         <div className="homepage-container__staff-details">
@@ -23,8 +19,6 @@ const HomePageContainer = () => {
             className="homepage-container__card"
             heading={"Staff Details"}
             link="staff"
-
-           
           />
         </div>
         <div className="homepage-container__client-details">
@@ -46,8 +40,6 @@ const HomePageContainer = () => {
             className="homepage-container__card"
             heading={"Settings"}
             link="settings"
-
-         
           />
         </div>
       </section>
