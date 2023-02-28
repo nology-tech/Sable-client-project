@@ -14,8 +14,15 @@
   margin: 20px;
 
   &__image-container {
-    height: 50%;
+    margin-top: 10px;
+    height: 65%;
     padding: 20px;
+
+    &--image{
+      height: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
   }
   &__info-container {
     display: flex;

@@ -3,7 +3,6 @@ import FilterIcon from "../../assets/images/functional-icons/filter-icon.png";
 import gridview from "../../assets/images/functional-icons/gridview-icon.png";
 import listview from "../../assets/images/functional-icons/listview-icon.png";
 import SortIcon from "../../assets/images/functional-icons/sort-icon.png";
-import StaffImage from "../../assets/images/users/staff-picture.png";
 import DataCard from "../../components/DataCard/DataCard";
 import EmployeeOverviewCard from "../../components/EmployeeOverviewCard/EmployeeOverviewCard.jsx";
 import UserProfile from "../../components/UserProfileCard/UserProfileCard.jsx";
@@ -13,6 +12,8 @@ const StaffOverview = ({ currentStaff }) => {
   const filteredBooking = mockData.bookings.filter(
     (booking) => booking.staff == currentStaff
   );
+
+  const currentStaffObject = mockData.staff.filter((object) => object.name == currentStaff)
   const jsx = filteredBooking.map((booking, index) => {
     return <DataCard key={index} cardType="booking" cardObject={booking} />;
   });
@@ -21,13 +22,13 @@ const StaffOverview = ({ currentStaff }) => {
     <div className="staff-overview">
       <h2 className="staff-overview__title">Overview</h2>
       <div className="staff-overview__card-container">
-        <UserProfile image={StaffImage} name={currentStaff} role={"Staff"} />
+        <UserProfile image={currentStaffObject[0].image} name={currentStaff} role={currentStaffObject[0].role} />
         <EmployeeOverviewCard
-          startDate={"10/10/2022"}
-          courseCompletion={"20/04/2024"}
-          manager={"Morgan Freeman"}
+          startDate={currentStaffObject[0].startDate}
+          courseCompletion={currentStaffObject[0].contractEndDate}
+          manager={currentStaffObject[0].manager}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non nam duis id lectus euismod porta ullamcorper amet. Sed non at laoreet viverra ante consectetur sapien nibh commodo. A quam nunc vitae, ultricies. Amet vel bibendum dignissim arcu fermentum, sem viverra tempor."
+            currentStaffObject[0].overview
           }
         />
       </div>
@@ -75,7 +76,7 @@ const StaffOverview = ({ currentStaff }) => {
         <p className="booking-container__label">Booking Date</p>
         <p className="booking-container__label">Booking Time</p>
       </div>
-      <div className="staff-overview__mobile-subheader">Staff 01 Bookings</div>
+      <div className="staff-overview__mobile-subheader">Bookings</div>
       <div className="staff-overview__booking-container">{jsx}</div>
     </div>
   );

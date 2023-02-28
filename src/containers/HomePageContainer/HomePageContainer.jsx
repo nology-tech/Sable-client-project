@@ -4,8 +4,6 @@ import HomepageCard from "../../components/HomepageCard/HomepageCard";
 import Button from "../../components/Button/Button.jsx";
 
 const HomePageContainer = () => {
-
-
   return (
     <main className="homepage-content">
       <section className="homepage-container">

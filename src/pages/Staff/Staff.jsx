@@ -8,7 +8,7 @@ import HomeButton from "../../components/HomeButton/HomeButton";
 import mockData from "../../data/mockData";
 const Staff = () => {
   let allStaffMembers = [];
-  const [currentStaff, setCurrentStaff] = useState("Stafania");
+  const [currentStaff, setCurrentStaff] = useState("Stefania");
   allStaffMembers = mockData.staff.map((staff) => staff.name);
 
   const handleOnChange = (event) => {
@@ -30,7 +30,7 @@ const Staff = () => {
               optionsArr={allStaffMembers}
               handleOnChange={handleOnChange}
             />
-            <StaffOverview currentStaff={currentStaff} />
+          <StaffOverview currentStaff={currentStaff} />
           </div>
         </main>
       </div>
