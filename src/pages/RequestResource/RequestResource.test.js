@@ -8,14 +8,12 @@ it("should render the checkboxes on the page", () => {
       <RequestResource />
     </BrowserRouter>
   );
-
   const checkBoxYes = screen.getByRole("checkbox", {
     name: /yes/i,
   });
   const checkBoxNo = screen.getByRole("checkbox", {
     name: /no/i,
   });
-
   expect(checkBoxYes).toBeInTheDocument();
   expect(checkBoxNo).toBeInTheDocument();
 });
@@ -26,9 +24,7 @@ it("should render all the input fields", () => {
       <RequestResource />
     </BrowserRouter>
   );
-
   const inputBoxes = screen.getAllByRole("textbox");
-
   expect(inputBoxes).toHaveLength(3);
 });
 
@@ -38,13 +34,11 @@ it("should render the form headings", () => {
       <RequestResource />
     </BrowserRouter>
   );
-
-  const purchaseLevel = screen.getByText(/auto\-purchase level/i);
+  const purchaseLevel = screen.getByText(/auto-purchase level/i);
   const quantRemaining = screen.getByText(/quantity remaining/i);
   const categoryName = screen.getByText(/category name/i);
   const staffMember = screen.getByText(/staff member/i);
   const resourceName = screen.getByText(/resource name/i);
-
   expect(purchaseLevel).toBeInTheDocument();
   expect(quantRemaining).toBeInTheDocument();
   expect(categoryName).toBeInTheDocument();
