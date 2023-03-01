@@ -1,5 +1,6 @@
+import { Route, Routes, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import * as React from 'react';
 import Client from "./pages/Client/Client";
 import EditResource from "./pages/EditResource/EditResource";
 import Home from "./pages/Home/Home";
@@ -11,9 +12,16 @@ import Settings from "./pages/Settings/Settings";
 import Staff from "./pages/Staff/Staff.jsx";
 import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
+import Error from "./pages/Error/Error";
 
 const App = () => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState();
+  const navigate = useNavigate();
+  const logOut = (event) => {
+    event.preventDefault(); 
+    navigate("/");
+    setUser(null);
+  }
   return (
     <>
       <Routes>
@@ -28,9 +36,18 @@ const App = () => {
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/edit" element={<EditResource />} />
           <Route path="/resources/request" element={<RequestResource />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/settings" element={<Settings setUser={logOut}/>} />
         </Routes>
-      ) : null}
+      ) : <Routes>
+      <Route path="/home" element={<Error page={"home"}/>} />
+      <Route path="/booking" element={<Error page={"booking"}/>} />
+      <Route path="/staff" element={<Error page={"staff"}/>} />
+      <Route path="/client" element={<Error page={"client"}/>} />
+      <Route path="/resources" element={<Error page={"resources"}/>} />
+      <Route path="/resources/edit" element={<Error page={"resources"}/>} />
+      <Route path="/resources/request" element={<Error page={"resources"}/>} />
+      <Route path="/settings" element={<Error page={"settings"}/>} />
+    </Routes>}
     </>
   );
 };
