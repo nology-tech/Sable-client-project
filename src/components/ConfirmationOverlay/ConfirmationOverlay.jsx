@@ -9,8 +9,9 @@ const ConfirmationOverlay = ({
   buttonTextTwo,
   buttonStyleOne,
   buttonStyleTwo,
-  handleCLick,
+  handleClick,
   setUser,
+  handleToggle
 }) => {
   const overlayOneButtonJSX = () => (
     <div className="overlayOneButton overlay">
@@ -20,7 +21,7 @@ const ConfirmationOverlay = ({
           <Button
             buttonText={buttonTextOne}
             buttonStyle={buttonStyleOne}
-            handleCLick={handleCLick}
+            handleClick={handleClick}
           />
         </div>
       </div>
@@ -35,32 +36,22 @@ const ConfirmationOverlay = ({
           <Button
             buttonText={buttonTextOne}
             buttonStyle={buttonStyleOne}
-            handleCLick={handleCLick}
+            handleClick={handleClick}
           />
           <Button
             buttonText={buttonTextTwo}
             buttonStyle={buttonStyleTwo}
-            handleCLick={handleCLick}
+            handleClick={handleClick}
           />
         </div>
       </div>
     </div>
   );
 
-  const handleLogout = () => {
-    <div className="overlayOneButton overlay">
-      <div className="overlay-content">
-        <h1 className="overlay-text">{text}</h1>
-        <div className="overlay-buttons">
-          <Button
-            buttonText={buttonTextOne}
-            buttonStyle={buttonStyleOne}
-            handleCLick={setUser}
-          />
-        </div>
-      </div>
-    </div>;
-  };
+  // const handleLogout = () => {
+  
+  // };
+
   const overlayLogoutJSX = () => (
     <div className="overlayLogout overlay">
       <div className="overlay-content">
@@ -69,12 +60,12 @@ const ConfirmationOverlay = ({
           <Button
             buttonText={buttonTextOne}
             buttonStyle={buttonStyleOne}
-            handleCLick={handleLogout}
+            handleClick={setUser}
           />
           <Button
             buttonText={buttonTextTwo}
             buttonStyle={buttonStyleTwo}
-            handleCLick={handleCLick}
+            handleClick={handleToggle}
           />
         </div>
       </div>

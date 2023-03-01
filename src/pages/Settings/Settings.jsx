@@ -16,46 +16,28 @@ const Settings = ({ setUser }) => {
     setShowOverlay(!showOverlay);
     setIsActive(!isActive);
   };
-  // if (showOverlay){
-  //   classname += "opacity"
-  // }
-  // const handleLogout =()=>{
-  //   <div className="overlayOneButton overlay">
-  //   <div className="overlay-content">
-  //     <h1 className="overlay-text">{text}</h1>
-  //     <div className="overlay-buttons">
-  //       <Button
-  //         buttonText={buttonTextOne}
-  //         buttonStyle={buttonStyleOne}
-  //         handleCLick={setUser}
-  //       />
-  //     </div>
-  //   </div>
-  // </div>
-  // }
 
   return (
     <div className="settings-container">
       <NavContainer />
       <Layout>
-        <div className={
-            isActive
-              ? "page-header__content + active"
-              : "page-header__content"
-          }>
+        <div
+          className={
+            isActive ? "page-header__content + active" : "page-header__content"
+          }
+        >
           <PageHeader heading="Settings" headerType="headingOnly" />
         </div>
         {showOverlay && (
           <ConfirmationOverlay
-            overlayType="overlayOneButton"
-            text="Test"
+            overlayType="overlayLogout"
+            text="Are you sure you want to log out?"
             buttonStyleOne="isLogoutPopup--logout"
             buttonTextOne="Logout"
             buttonStyleTwo="isLogoutPopup--back"
             buttonTextTwo="Back"
-            handleClick={handleToggle}
+            handleToggle={handleToggle}
             setUser={setUser}
-            // handleLogout={handleLogout}
           />
         )}
         <div
