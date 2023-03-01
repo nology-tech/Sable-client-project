@@ -10,7 +10,7 @@ it("shoud render the error page", () => {
   );
 
   const title = screen.getByRole("heading", {
-    name: /error \- 401/i,
+    name: /error - 401/i,
   });
 
   expect(title).toBeInTheDocument();
