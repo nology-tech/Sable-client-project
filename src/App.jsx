@@ -16,7 +16,6 @@ const App = () => {
   const [user, setUser] = useState();
   const navigate = useNavigate();
   const logOut = (event) => {
-    
     event.preventDefault(); 
     navigate("/");
     setUser(null);
