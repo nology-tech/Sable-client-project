@@ -4,7 +4,7 @@ import Sun from "../../assets/images/lightmode/sun-light.png";
 import Moon from "../../assets/images/lightmode/moon-light.png";
 import React, { useState } from "react";
 
-const SettingsCard = ({ handleClick }) => {
+const SettingsCard = () => {
   const [selectRadio, setSelectRadio] = useState("modern");
   const changeRadio = (e) => {
     setSelectRadio(e.target.value);
@@ -67,7 +67,7 @@ const SettingsCard = ({ handleClick }) => {
           </section>
         </div>
         <section className="settings-card__button-container">
-          <Button buttonText={"Apply"} handleClick={handleClick} />
+          <Button buttonText={"Apply"}  />
         </section>
       </div>
     </main>
