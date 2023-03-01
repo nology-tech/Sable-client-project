@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import "./ConfirmationOverlay.scss";
 
@@ -48,22 +49,24 @@ const ConfirmationOverlay = ({
     </div>
   );
 
-  const handleLogout = () => {
-    <div className="overlayOneButton overlay">
+  const overlayLoginJSX = () => (
+    <div className="overlayLogin overlay">
     <div className="overlay-content">
       <h1 className="overlay-text">{text}</h1>
       <div className="overlay-buttons">
+        <Link style={{textDecoration: "none"}} to="/">
         <Button
           buttonText={buttonTextOne}
           buttonStyle={buttonStyleOne}
           handleClick={setUser}
         />
+        </Link>
       </div>
     </div>
   </div>
 
   
-  };
+  );
 
   const overlayLogoutJSX = () => (
     <div className="overlayLogout overlay">
@@ -73,7 +76,7 @@ const ConfirmationOverlay = ({
           <Button
             buttonText={buttonTextOne}
             buttonStyle={buttonStyleOne}
-            handleClick={handleLogout}
+            handleClick={setUser}
           />
           <Button
             buttonText={buttonTextTwo}
@@ -87,12 +90,14 @@ const ConfirmationOverlay = ({
 
   return (
     <>
-      {overlayType === "overlayOneButton"
+      {   overlayType === "overlayOneButton"
         ? overlayOneButtonJSX()
         : overlayType === "overlayTwoButtons"
         ? overlayTwoButtonsJSX()
         : overlayType === "overlayLogout"
         ? overlayLogoutJSX()
+        : overlayType === "overlayLogin"
+        ? overlayLoginJSX()
         : alert("unknown overlay")}
     </>
   );
