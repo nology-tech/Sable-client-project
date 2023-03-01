@@ -105,7 +105,7 @@ const StaffOverview = ({ currentStaff }) => {
         />
       </div>
       <FilterBar
-        title={"Client List"}
+        title={"Bookings List"}
         handleInputSearch={handleInputSearch}
         handleSort={handleSort}
         handleSelect={handlefilter}
