@@ -10,12 +10,11 @@ import React, { useState } from "react";
 
 const Settings = ({ setUser }) => {
   const [showOverlay, setShowOverlay] = useState(false);
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
   const handleToggle = () => {
     setShowOverlay(!showOverlay);
-    setIsActive(!isActive)
-
+    setIsActive(!isActive);
   };
   // if (showOverlay){
   //   classname += "opacity"
@@ -39,21 +38,33 @@ const Settings = ({ setUser }) => {
     <div className="settings-container">
       <NavContainer />
       <Layout>
-        <PageHeader heading="Settings" headerType="headingOnly" />
+        <div className={
+            isActive
+              ? "page-header__content + active"
+              : "page-header__content"
+          }>
+          <PageHeader heading="Settings" headerType="headingOnly" />
+        </div>
         {showOverlay && (
-              <ConfirmationOverlay
-                overlayType="overlayOneButton"
-                text="Test"
-                buttonStyleOne="isLogoutPopup--logout"
-                buttonTextOne="Logout"
-                buttonStyleTwo="isLogoutPopup--back"
-                buttonTextTwo="Back"
-                handleClick={handleToggle}
-                setUser={setUser}
-                // handleLogout={handleLogout}
-                />
-            )}
-        <div className={isActive ? "settings-page__content + active" : "settings-page__content" }>
+          <ConfirmationOverlay
+            overlayType="overlayOneButton"
+            text="Test"
+            buttonStyleOne="isLogoutPopup--logout"
+            buttonTextOne="Logout"
+            buttonStyleTwo="isLogoutPopup--back"
+            buttonTextTwo="Back"
+            handleClick={handleToggle}
+            setUser={setUser}
+            // handleLogout={handleLogout}
+          />
+        )}
+        <div
+          className={
+            isActive
+              ? "settings-page__content + active"
+              : "settings-page__content"
+          }
+        >
           <SettingsCard handleClick={handleToggle} />
           <div className="settings-page__button-container">
             <Button
@@ -62,7 +73,6 @@ const Settings = ({ setUser }) => {
               buttonStyle="isLogout"
               handleClick={handleToggle}
             />
-      
           </div>
         </div>
         <div className="home-button-container">
@@ -72,6 +82,5 @@ const Settings = ({ setUser }) => {
     </div>
   );
 };
-
 
 export default Settings;
