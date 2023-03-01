@@ -1,29 +1,20 @@
-import React, { useState } from "react";
 import "./SettingsCard.scss";
 import Button from "../Button/Button";
 import Sun from "../../assets/images/lightmode/sun-light.png";
 import Moon from "../../assets/images/lightmode/moon-light.png";
-import ConfirmationOverlay from "../ConfirmationOverlay/ConfirmationOverlay";
+import React, { useState } from "react";
 
-const SettingsCard = () => {
-  const [showOverlay, setShowOverlay] = useState(false);
 
-  const handleClick = () => {
-    setShowOverlay(!showOverlay);
-  };
 
+const SettingsCard = ({handleClick}) => {
   const [selectRadio, setSelectRadio] = useState("modern");
   const changeRadio = (e) => {
     setSelectRadio(e.target.value);
   };
   return (
     <main className="settings-card-container">
-      {/* {showOverlay && ()} */}
-
       <div className="settings-card">
         <div className="settings-card__content">
-                <ConfirmationOverlay/>
-
           <section className="settings-card__mode">
             <h1 className="settings-card__option">Light/Dark Mode:</h1>
             <div className="settings-card__toggle-container">
@@ -78,7 +69,7 @@ const SettingsCard = () => {
           </section>
         </div>
         <section className="settings-card__button-container">
-          <Button buttonText={"Apply"} handleClick={handleClick}/>
+          <Button buttonText={"Apply"} handleClick={handleClick} />
         </section>
       </div>
     </main>

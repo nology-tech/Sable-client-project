@@ -30,7 +30,7 @@ const Button = (props) => {
  return (
    <button
     className= {buttonName} 
-    handleClick= {handleClick}
+    onClick= {handleClick}
     onSubmit= {handleSubmit}>
     <span className={plus}><img src={Plus} alt="" /></span>
     {buttonText}

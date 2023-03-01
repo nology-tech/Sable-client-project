@@ -10,6 +10,7 @@ const ConfirmationOverlay = ({
   buttonStyleOne,
   buttonStyleTwo,
 }) => {
+  
   const overlayOneButtonJSX = () => (
     <div className="overlayOneButton overlay">
       <div className="overlay-content">
@@ -39,7 +40,7 @@ const ConfirmationOverlay = ({
         ? overlayOneButtonJSX()
         : overlayType === "overlayTwoButtons"
         ? overlayTwoButtonsJSX()
-        : alert("unknown header")}
+        : alert("unknown overlay")}
     </>
   );
 };
