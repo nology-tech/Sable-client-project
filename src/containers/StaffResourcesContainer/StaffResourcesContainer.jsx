@@ -1,8 +1,9 @@
 import React from "react";
 import "./StaffResourcesContainer.scss";
 import StaffResources from "../../components/StaffResources/StaffResources";
-import { resourceData } from "../../mockData.js";
+import { mockData } from "../../data/mockData"
 const StaffResourcesContainer = () => {
+  let resourceData = mockData.resources
   let resourceDataCopy = [...resourceData];
   return (
     <div className="staff-resource-container">
