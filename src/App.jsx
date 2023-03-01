@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import Client from "./pages/Client/Client";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login.jsx";
@@ -12,19 +13,31 @@ import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
 
 const App = () => {
+  const [user, setUser] = useState();
+  const navigate = useNavigate();
+  const logOut = (event) => {
+    event.preventDefault(); 
+    navigate("/");
+    setUser(null);
+  }
   return (
-    <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/booking" element={<NewAppointment />} />
-      <Route path="/staff" element={<Staff />} />
-      <Route path="/client" element={<Client />} />
-      <Route path="/settings" element={<Settings />} />
-      <Route path="/resources" element={<Resources/>}/>
-      <Route path="/resources/edit" element={<EditResource />} />
-      <Route path="/resources/request" element={<RequestResource />} />
-      <Route path="/settings" element={<Settings />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Login user={user} setUser={setUser} />} />
+      </Routes>
+      {user ? (
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/booking" element={<NewAppointment />} />
+          <Route path="/staff" element={<Staff />} />
+          <Route path="/client" element={<Client />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/edit" element={<EditResource />} />
+          <Route path="/resources/request" element={<RequestResource />} />
+          <Route path="/settings" element={<Settings setUser={logOut}/>} />
+        </Routes>
+      ) : null}
+    </>
   );
 };
 

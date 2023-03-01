@@ -8,7 +8,7 @@ import HomeButton from "../../components/HomeButton/HomeButton";
 import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
 import React, { useState } from "react";
 
-const Settings = () => {
+const Settings = ({setUser}) => {
   const [showOverlay, setShowOverlay] = useState(false);
   const handleClick = () => {
     // let classname = ""
@@ -30,7 +30,7 @@ const Settings = () => {
               className="settings-page__button"
               buttonText="Log out"
               buttonStyle="isLogout"
-              handleClick={handleClick}
+              handleClick={setUser}
             />
             {showOverlay && (
               <ConfirmationOverlay
