@@ -16,10 +16,10 @@ const App = () => {
   const [user, setUser] = useState();
   const navigate = useNavigate();
   const logOut = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     navigate("/");
     setUser(null);
-  }
+  };
   return (
     <>
       <Routes>
@@ -34,7 +34,7 @@ const App = () => {
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/edit" element={<EditResource />} />
           <Route path="/resources/request" element={<RequestResource />} />
-          <Route path="/settings" element={<Settings setUser={logOut}/>} />
+          <Route path="/settings" element={<Settings setUser={logOut} />} />
         </Routes>
       ) : null}
     </>

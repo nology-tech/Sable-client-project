@@ -8,7 +8,8 @@ import HomeButton from "../../components/HomeButton/HomeButton";
 import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
 import React, { useState } from "react";
 
-const Settings = ({setUser}) => {
+<<<<<<< HEAD
+const Settings = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const handleClick = () => {
     // let classname = ""
@@ -18,6 +19,7 @@ const Settings = ({setUser}) => {
     // }
   };
 
+>>>>>>>>> Temporary merge branch 2
   return (
     <div className="settings-container">
       <NavContainer />
@@ -30,7 +32,11 @@ const Settings = ({setUser}) => {
               className="settings-page__button"
               buttonText="Log out"
               buttonStyle="isLogout"
+<<<<<<< HEAD
+              handleClick={handleClick}
+=======
               handleClick={setUser}
+>>>>>>> 3b91afd1b71fae267d2401c2130717ee78b6c9a7
             />
             {showOverlay && (
               <ConfirmationOverlay
