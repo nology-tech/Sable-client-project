@@ -24,6 +24,7 @@ const UserInfoContainer = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
+    console.log(event.target)
     const objectToSubmit = {
       firstName: event.target[0].value,
       lastName: event.target[1].value,
@@ -34,13 +35,10 @@ const UserInfoContainer = () => {
       bookingTime: time, 
     }
     console.log(objectToSubmit)
+    event.target.reset(); 
 
   
   };
-
-  const handleCancel = (event) => {
-    console.log(event)
-  }
 
   return (
     <form className="input-field-container"  onSubmit={handleSubmit}>
@@ -102,16 +100,11 @@ const UserInfoContainer = () => {
       <div className="input-field-container__submit">
         <Button
           buttonText="Submit"
-          handleClick={handleSubmit}
           buttonStyle="isMobileDefault"
         />
       </div>
       <div className="input-field-container__buttons">
-        <Button
-          buttonText="Cancel"
-          handleClick={handleCancel}
-          buttonStyle="isCancel--grey"
-        />
+       
         <Button buttonText="Save"/>
       </div>
     </form>
