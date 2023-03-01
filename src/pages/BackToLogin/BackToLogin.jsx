@@ -1,14 +1,13 @@
 import React from "react";
 import "./BackToLogin.scss";
 import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
-import Layout from "../../components/Layout/Layout";
 import PageHeader from "../../components/PageHeader/PageHeader";
 
 const BackToLogin = () => {
   return (
-    <Layout>
+    <div>
       <div className="header-container">
-        <PageHeader heading="" headerType="headingOnly" />
+        <PageHeader  headerType="logoOnly" />
       </div>
 
       <div className="content-container">
@@ -19,7 +18,7 @@ const BackToLogin = () => {
           buttonTextOne="Back to login"
         />
       </div>
-    </Layout>
+    </div>
   );
 };
 
