@@ -13,14 +13,14 @@ import RequestResource from "./pages/RequestResource/RequestResource";
 import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
 import Error from "./pages/Error/Error";
+import { useNavigate } from "react-router-dom";
 
 const App = () => {
   const [user, setUser] = useState();
-  console.log(user);
-
+  const navigate = useNavigate();
   const logOut = (event) => {
     event.preventDefault(); 
-    window.location.href = '/';
+    navigate("/");
     setUser(null);
   }
 
