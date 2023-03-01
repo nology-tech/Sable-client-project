@@ -8,7 +8,6 @@ import StaffResourcesContainer from "../StaffResourcesContainer/StaffResourcesCo
 import StaffResources from "../../components/StaffResources/StaffResources";
 import { mockData } from "../../data/mockData"
 const ResourcesOverview = ({ isAdmin }) => {
-  let resourceData = mockData.resources
   return (
     <div className="resources-overview">
       <div className="resources-overview__filters">
@@ -60,7 +59,7 @@ const ResourcesOverview = ({ isAdmin }) => {
 
       {isAdmin ? (
         <>
-          <StaffResources cardsArray={resourceData}/>
+          <StaffResources cardsArray={mockData.resources}/>
         </>
       ) : (
         <StaffResourcesContainer />
