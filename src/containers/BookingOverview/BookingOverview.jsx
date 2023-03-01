@@ -59,7 +59,7 @@ const UserInfoContainer = () => {
           id="staff"
           label="Staff Member"
           handleInput={handleInput}
-          options={mockData.staff.map((staffMember) => {
+          optionsJSX={mockData.staff.map((staffMember) => {
             return staffMember.name; 
           })}
         />
