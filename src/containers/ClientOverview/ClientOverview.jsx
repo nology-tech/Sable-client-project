@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import DataCard from "../../components/DataCard/DataCard";
 import FilterBar from "../../components/FilterBar/FilterBar";
 import mockData from "../../data/mockData";
 import "./ClientOverview.scss";
 const Client = () => {
   //Will replace with real data passed through props later
-  // const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
   const [click, setClick] = useState(0);
   const [dataArr, setDataArr] = useState([...mockData.clients]);
-  // const [selectQuery, setSelectQuery] = useState("")
-
-  useEffect(() => {
-    // handleSelect()
-  }, []);
+  const [filteredClients, setFilteredClients] = useState([]);
 
   const handleSort = () => {
     setClick(Number(click) + 1);
@@ -40,44 +36,42 @@ const Client = () => {
     }
   };
 
-  const handlefilter = (event) =>{
-    // setDataArr(
-    //   dataArr.filter((element) => {
-    //     return (
-    //       element.firstName.toLowerCase().includes(query.toLowerCase()) ||
-    //       element.lastName.toLowerCase().includes(query.toLowerCase())
-    //     );
-    //   })
-    // );
+  const handlefilter = (event) => {
     if (event.target.value == "Consultant") {
-      setDataArr(dataArr.filter((element) => {
+      const consultants = dataArr.filter((element) => {
         return element.query.includes("consultant");
-      }))
-      console.log("this is the consultant array", dataArr);
-      return;
+      });
+      setFilteredClients(consultants);
     } else if (event.target.value == "Consumer") {
-      setDataArr(dataArr.filter((element) => {
+      const consumers = dataArr.filter((element) => {
         return element.query.includes("consumer");
-      }))
-      console.log("this is the consumer array ", dataArr);
-      return
+      });
+      setFilteredClients(consumers);
     } else if (event.target.value == "Confirmed") {
-      setDataArr(dataArr.filter((element) => {
+      const confirmed = dataArr.filter((element) => {
         return element.confirmedAppoinment;
-      }))
-      console.log("This is the cinfirmed array", dataArr);
-      return
+      });
+      setFilteredClients(confirmed);
     }
-  }
-
-  const handleInputSearch = () => {
-    // setQuery(event.target.value);
   };
-  console.log("just before client list",dataArr)
-  const clientsListJSX = dataArr.map((client, index) => {
+
+  const filterArr = dataArr.filter((element) => {
+    return (
+      element.firstName.toLowerCase().includes(query.toLowerCase()) ||
+      element.lastName.toLowerCase().includes(query.toLowerCase())
+    );
+  });
+  const handleInputSearch = (event) => {
+    setFilteredClients([])
+    setQuery(event.target.value);
+  };
+
+  const clientsListJSX = filterArr.map((client, index) => {
     return <DataCard key={index + 1} cardType="client" cardObject={client} />;
   });
-
+  const filteredClientListJSX = filteredClients.map((client, index) => {
+    return <DataCard key={index + 1} cardType="client" cardObject={client} />;
+  });
   return (
     <div className="client-overview">
       <FilterBar
@@ -95,7 +89,9 @@ const Client = () => {
         <p className="client-overview__label">Confirmed</p>
         <p className="client-overview__label">Staff Name</p>
       </div>
-      <div className="client-overview__cards-container">{clientsListJSX}</div>
+      <div className="client-overview__cards-container">{filteredClientListJSX.length > 0
+          ? filteredClientListJSX
+          : clientsListJSX}</div>
     </div>
   );
 };

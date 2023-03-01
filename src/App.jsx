@@ -14,7 +14,6 @@ import "./styles/base/_typography.scss";
 
 const App = () => {
   const [user, setUser] = useState(true);
-  console.log(user);
   return (
     <>
       <Routes>

@@ -559,7 +559,7 @@ export const mockData = {
       bookingDate: "05/03/2023",
       bookingTime: "15:00",
       confirmed: true,
-      staff: "Mariana",
+      staff: "Marianna",
     },
     {
       client: "Mark Wilson",
