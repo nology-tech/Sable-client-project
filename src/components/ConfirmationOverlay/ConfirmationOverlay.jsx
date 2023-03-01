@@ -9,14 +9,18 @@ const ConfirmationOverlay = ({
   buttonTextTwo,
   buttonStyleOne,
   buttonStyleTwo,
+  handleCLick,
 }) => {
-  
   const overlayOneButtonJSX = () => (
     <div className="overlayOneButton overlay">
       <div className="overlay-content">
         <h1 className="overlay-text">{text}</h1>
         <div className="overlay-buttons">
-          <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />
+          <Button
+            buttonText={buttonTextOne}
+            buttonStyle={buttonStyleOne}
+            handleCLick={handleCLick}
+          />
         </div>
       </div>
     </div>
@@ -27,8 +31,16 @@ const ConfirmationOverlay = ({
       <div className="overlay-content">
         <h1 className="overlay-text">{text}</h1>
         <div className="overlay-buttons">
-          <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />
-          <Button buttonText={buttonTextTwo} buttonStyle={buttonStyleTwo} />
+          <Button
+            buttonText={buttonTextOne}
+            buttonStyle={buttonStyleOne}
+            handleCLick={handleCLick}
+          />
+          <Button
+            buttonText={buttonTextTwo}
+            buttonStyle={buttonStyleTwo}
+            handleCLick={handleCLick}
+          />
         </div>
       </div>
     </div>

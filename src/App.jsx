@@ -13,7 +13,7 @@ import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
 
 const App = () => {
-  const [user, setUser] = useState();
+  const [user, setUser] = useState(true);
   const navigate = useNavigate();
   const logOut = (event) => {
     event.preventDefault();

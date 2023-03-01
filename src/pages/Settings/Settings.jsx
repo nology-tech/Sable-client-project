@@ -8,37 +8,30 @@ import HomeButton from "../../components/HomeButton/HomeButton";
 import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
 import React, { useState } from "react";
 
-<<<<<<< HEAD
-const Settings = () => {
+const Settings = ({ setUser }) => {
   const [showOverlay, setShowOverlay] = useState(false);
-  const handleClick = () => {
+
+  const handleToggle = () => {
     // let classname = ""
     setShowOverlay(!showOverlay);
-    // if (showOverlay){
-    //   classname += "opacity"
-    // }
   };
+  // if (showOverlay){
+  //   classname += "opacity"
+  // }
 
-=======
-const Settings = ({setUser}) => {
->>>>>>> 3b91afd1b71fae267d2401c2130717ee78b6c9a7
   return (
     <div className="settings-container">
       <NavContainer />
       <Layout>
         <PageHeader heading="Settings" headerType="headingOnly" />
         <div className="settings-page__content">
-          <SettingsCard />
+          <SettingsCard handleClick={handleToggle} />
           <div className="settings-page__button-container">
             <Button
               className="settings-page__button"
               buttonText="Log out"
               buttonStyle="isLogout"
-<<<<<<< HEAD
-              handleClick={handleClick}
-=======
-              handleClick={setUser}
->>>>>>> 3b91afd1b71fae267d2401c2130717ee78b6c9a7
+              handleClick={handleToggle}
             />
             {showOverlay && (
               <ConfirmationOverlay
@@ -48,7 +41,8 @@ const Settings = ({setUser}) => {
                 buttonTextOne="Logout"
                 buttonStyleTwo="isLogoutPopup--back"
                 buttonTextTwo="Back"
-                />
+                handleClick={setUser}
+              />
             )}
           </div>
         </div>

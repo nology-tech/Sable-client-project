@@ -4,9 +4,7 @@ import Sun from "../../assets/images/lightmode/sun-light.png";
 import Moon from "../../assets/images/lightmode/moon-light.png";
 import React, { useState } from "react";
 
-
-
-const SettingsCard = ({handleClick}) => {
+const SettingsCard = ({ handleClick }) => {
   const [selectRadio, setSelectRadio] = useState("modern");
   const changeRadio = (e) => {
     setSelectRadio(e.target.value);
