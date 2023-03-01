@@ -9,11 +9,6 @@ import mockData from "../../data/mockData"
 import "./BookingOverview.scss";
 const UserInfoContainer = () => {
   const [day, setDay] = useState(new Date());
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [staff, setStaff] = useState("Stefania");
   const [time, setTime] = useState("09:00");
   const time_slots =  ['09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30',
   '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30',
@@ -21,26 +16,6 @@ const UserInfoContainer = () => {
 
   const handleInput = (event) => {
     switch (event.target.id){
-      case "first-name":
-        setFirstName(event.target.value);
-        break;
-      
-      case "last-name": 
-        setLastName(event.target.value);
-        break; 
-      
-      case "email": 
-        setEmail(event.target.value);
-        break;
-
-      case "number":
-        setNumber(event.target.value);
-        break;
-
-      case "staff":
-        setStaff(event.target.value); 
-        break;
-
       case "time":
         setTime(event.target.value);
         break; 
@@ -49,32 +24,37 @@ const UserInfoContainer = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
-    const objectToAdd = {
-      client: (firstName + " " + lastName),
+    const objectToSubmit = {
+      firstName: event.target[0].value,
+      lastName: event.target[1].value,
+      email: event.target[2].value, 
+      number: event.target[3].value, 
+      staff: event.target[4].value,
       bookingDate: day,
-      bookingTime: time,
-      confirmed: true,
-      Staff: staff,
-      email: email, 
-      number: number,
-      
+      bookingTime: time, 
     }
-    mockData.bookings.push(objectToAdd)
+    console.log(objectToSubmit)
+
+  
   };
 
+  const handleCancel = (event) => {
+    console.log(event)
+  }
+
   return (
-    <form className="input-field-container">
+    <form className="input-field-container"  onSubmit={handleSubmit}>
       <div className="input-field-container__firstName">
-        <InputField id="first-name" label="First Name" handleInput={handleInput} />
+        <InputField id="first-name" label="First Name" />
       </div>
       <div className="input-field-container__lastName">
-        <InputField id="last-name" label="Last Name" handleInput={handleInput} />
+        <InputField id="last-name" label="Last Name"  />
       </div>
       <div className="input-field-container__email">
-        <InputField id="email" label="Email Address" handleInput={handleInput} />
+        <InputField id="email" label="Email Address"/>
       </div>
       <div className="input-field-container__mobile">
-        <InputField id="number" label="Mobile Number" handleInput={handleInput} />
+        <InputField id="number" label="Mobile Number" />
       </div>
       <div className="input-field-container__staff-dropdown">
         <DropdownField
@@ -129,10 +109,10 @@ const UserInfoContainer = () => {
       <div className="input-field-container__buttons">
         <Button
           buttonText="Cancel"
-          handleClick={handleSubmit}
+          handleClick={handleCancel}
           buttonStyle="isCancel--grey"
         />
-        <Button buttonText="Save" handleClick={handleSubmit} />
+        <Button buttonText="Save"/>
       </div>
     </form>
   );
