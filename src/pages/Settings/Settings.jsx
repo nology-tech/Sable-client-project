@@ -10,13 +10,29 @@ import React, { useState } from "react";
 
 const Settings = ({ setUser }) => {
   const [showOverlay, setShowOverlay] = useState(false);
+  const [isActive, setIsActive] = useState(false)
 
   const handleToggle = () => {
-    // let classname = ""
     setShowOverlay(!showOverlay);
+    setIsActive(!isActive)
+
   };
   // if (showOverlay){
   //   classname += "opacity"
+  // }
+  // const handleLogout =()=>{
+  //   <div className="overlayOneButton overlay">
+  //   <div className="overlay-content">
+  //     <h1 className="overlay-text">{text}</h1>
+  //     <div className="overlay-buttons">
+  //       <Button
+  //         buttonText={buttonTextOne}
+  //         buttonStyle={buttonStyleOne}
+  //         handleCLick={setUser}
+  //       />
+  //     </div>
+  //   </div>
+  // </div>
   // }
 
   return (
@@ -24,7 +40,20 @@ const Settings = ({ setUser }) => {
       <NavContainer />
       <Layout>
         <PageHeader heading="Settings" headerType="headingOnly" />
-        <div className="settings-page__content">
+        {showOverlay && (
+              <ConfirmationOverlay
+                overlayType="overlayOneButton"
+                text="Test"
+                buttonStyleOne="isLogoutPopup--logout"
+                buttonTextOne="Logout"
+                buttonStyleTwo="isLogoutPopup--back"
+                buttonTextTwo="Back"
+                handleClick={handleToggle}
+                setUser={setUser}
+                // handleLogout={handleLogout}
+                />
+            )}
+        <div className={isActive ? "settings-page__content + active" : "settings-page__content" }>
           <SettingsCard handleClick={handleToggle} />
           <div className="settings-page__button-container">
             <Button
@@ -33,17 +62,7 @@ const Settings = ({ setUser }) => {
               buttonStyle="isLogout"
               handleClick={handleToggle}
             />
-            {showOverlay && (
-              <ConfirmationOverlay
-                overlayType="overlayTwoButtons"
-                text="Are you sure you want to log out?"
-                buttonStyleOne="isLogoutPopup--logout"
-                buttonTextOne="Logout"
-                buttonStyleTwo="isLogoutPopup--back"
-                buttonTextTwo="Back"
-                handleClick={setUser}
-              />
-            )}
+      
           </div>
         </div>
         <div className="home-button-container">
@@ -53,5 +72,6 @@ const Settings = ({ setUser }) => {
     </div>
   );
 };
+
 
 export default Settings;

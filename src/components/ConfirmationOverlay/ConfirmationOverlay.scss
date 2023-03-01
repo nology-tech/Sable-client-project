@@ -7,11 +7,10 @@
   left: 0vw;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 1;
   cursor: pointer;
-  height:100%;
-  width:100%;
-  background-color: red;
+  opacity:100% !important;
+
 }
 .overlay-content {
   width: 95vw;

@@ -5,6 +5,7 @@
   flex-direction: row;
   background-color: $page-background-light;
 }
+
 .settings-page__content {
   display: flex;
   flex-direction: column;
@@ -14,6 +15,11 @@
   min-height: 42vh;
   width: 42vw;
 }
+.active{
+  z-index: 5;
+  opacity:20%
+  }
+  
 .settings-page__button-container {
   display: flex;
   flex-direction: row;
