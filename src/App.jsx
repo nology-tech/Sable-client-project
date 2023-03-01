@@ -1,4 +1,4 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, } from "react-router-dom";
 import { useState } from "react";
 import * as React from 'react';
 import Client from "./pages/Client/Client";
@@ -16,10 +16,10 @@ import Error from "./pages/Error/Error";
 
 const App = () => {
   const [user, setUser] = useState(true);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const logOut = (event) => {
     event.preventDefault();
-    navigate("/");
+    // navigate("/");
     setUser(null);
   };
   return (

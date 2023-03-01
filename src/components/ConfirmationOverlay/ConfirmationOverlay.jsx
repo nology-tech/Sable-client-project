@@ -48,9 +48,22 @@ const ConfirmationOverlay = ({
     </div>
   );
 
-  // const handleLogout = () => {
+  const handleLogout = () => {
+    <div className="overlayOneButton overlay">
+    <div className="overlay-content">
+      <h1 className="overlay-text">{text}</h1>
+      <div className="overlay-buttons">
+        <Button
+          buttonText={buttonTextOne}
+          buttonStyle={buttonStyleOne}
+          handleClick={setUser}
+        />
+      </div>
+    </div>
+  </div>
+
   
-  // };
+  };
 
   const overlayLogoutJSX = () => (
     <div className="overlayLogout overlay">
@@ -60,7 +73,7 @@ const ConfirmationOverlay = ({
           <Button
             buttonText={buttonTextOne}
             buttonStyle={buttonStyleOne}
-            handleClick={setUser}
+            handleClick={handleLogout}
           />
           <Button
             buttonText={buttonTextTwo}
