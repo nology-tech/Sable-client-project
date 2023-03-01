@@ -50,11 +50,12 @@ const Client = () => {
         title={"Client List"}
         handleInputSearch={handleInputSearch}
         handleSort={handleSort}
-        options={[
+        optionsArr={[
           "Client Name",
           "Email",
-          "Consumer/Consultant",
-          "RSVPd",
+          "Consumer",
+          "Consultant",
+          "Confirmed",
           "Staff Name",
         ]}
       />

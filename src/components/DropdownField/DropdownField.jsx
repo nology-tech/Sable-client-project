@@ -2,7 +2,8 @@ import React from "react";
 import "./DropdownField.scss";
 
 const DropdownField = (props) => {
-  const { label, placeholderText, id, handleInput } = props;
+  const { label, placeholderText, id, handleInput, optionsJSX } = props;
+
   return (
     <div className="dropdown-field">
       <label className="dropdown-field__label" htmlFor={id}>
@@ -13,7 +14,9 @@ const DropdownField = (props) => {
         id={id}
         placeholder={placeholderText}
         onChange={handleInput}
-      ></select>
+      >
+        {optionsJSX}
+      </select>
     </div>
   );
 };
