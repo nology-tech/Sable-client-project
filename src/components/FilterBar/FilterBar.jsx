@@ -3,7 +3,7 @@ import React from "react";
 import sortIcon from "../../assets/images/functional-icons/sort-icon.png";
 import "./FilterBar.scss";
 
-const FilterBar = ({ handleInputSearch, title, handleSort, optionsArr }) => {
+const FilterBar = ({ handleInputSearch, title, handleSort, optionsArr, handleSelect}) => {
   const optionsJSX = optionsArr.map((option, index) => {
     return (
       <option className="filters__option" value={option} key={index}>
@@ -23,8 +23,7 @@ const FilterBar = ({ handleInputSearch, title, handleSort, optionsArr }) => {
         <select
           className="filters__select--dropdown"
           id="clientFilter"
-
-          // onChange={}
+          onChange={handleSelect}
         >
           <option hidden value="" disabled selected className="filters__option">
             Filter
