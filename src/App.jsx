@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Client from "./pages/Client/Client";
 import Home from "./pages/Home/Home";
@@ -14,9 +14,11 @@ import "./styles/base/_typography.scss";
 
 const App = () => {
   const [user, setUser] = useState();
+  const navigate = useNavigate();
   const logOut = (event) => {
+    
     event.preventDefault(); 
-    window.location.href = '/';
+    navigate("/");
     setUser(null);
   }
   return (
