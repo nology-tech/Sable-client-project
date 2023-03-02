@@ -3,7 +3,7 @@ import "../HomePageContainer/HomePageContainer.scss";
 import HomepageCard from "../../components/HomepageCard/HomepageCard";
 import Button from "../../components/Button/Button.jsx";
 
-const HomePageContainer = ({ handleClick }) => {
+const HomePageContainer = ({ handleClick,}) => {
   return (
     <main className="homepage-content">
       <section className="homepage-container">
@@ -49,6 +49,7 @@ const HomePageContainer = ({ handleClick }) => {
           buttonText={"Log Out"}
           buttonStyle="isLogout"
           handleClick={handleClick}
+
         />
       </div>
     </main>

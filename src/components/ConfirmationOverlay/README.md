@@ -9,19 +9,27 @@ The available PROPS to be passed through are as follows:-
 - buttonStyleOne: This is the style for the first button
 - buttonStyleTwo: This is the style for the first button
 
+INITIAL SETUP
+
 In order to have the overlay on your page you will need to import useState at the top of the page and copy the 2 function below.
 
 import { useState } from "react";
 
 const [showOverlay, setShowOverlay] = useState(false);
+const [isActive, setIsActive] = useState(false);
 
 const handleToggle = () => {
 setShowOverlay(!showOverlay);
+setIsActive(!isActive);
 };
 
 Once added, wrap the Overlay component in the following code
 
 {showOverlay && (<ConfirmationOverlay/>)}
+
+Pass the handleClick (handleToggle) function to the button in the container where you want the overlay to apply to.
+
+EXAMPLE OF OVERLAY TYPE
 
 If you want an Overlay with one button that says "booking" and has a purple style (see BUTTON read me for full list of styles) then it would look like this:-
 
@@ -41,7 +49,19 @@ buttonTextOne="Cancel"
 buttonStyleTwo="isDelete--confirm" 
 buttonTextTwo="Confirm" />
 
-To style the overlay, wrap the header and page content in a div and add this turnary so that it adds an opacity class to the overlay. See example below:-
+STYLING
+
+Add active class into relevant scss file so that when called, it activates the effect:-
+
+.active{
+opacity:20%
+}
+
+To style the overlay, wrap the header and page content in a div and add this turnary so that it adds an opacity class to the overlay.
+
+See example below:-
+
+Important - ConfirmationOverlay needs to be outside of the DIV you've just made.
 
  <div
           className={
@@ -52,9 +72,7 @@ To style the overlay, wrap the header and page content in a div and add this tur
         >
           <PageHeader heading="Home" headerType="headingOnly" />
           <HomePageContainer />
-        </div>
-
-Important - ConfirmationOverlay needs to be outside of the turnary.
+</div>
 
          {showOverlay && (
           <ConfirmationOverlay
@@ -68,19 +86,6 @@ Important - ConfirmationOverlay needs to be outside of the turnary.
             setUser={setUser}
           />
         )}
-
-Add the following under the previous useState:-
-const [isActive, setIsActive] = useState(false);
-
-Add the following to the handleToggle function:-
-setIsActive(!isActive);
-
-Add active class into relevant scss file so that when called, it activates the effect:-
-.active{
-opacity:20%
-}
-
-Pass the handleClick (handleToggle) function to the button in the container where you want the overlay to apply to.
 
 Mobile view
 

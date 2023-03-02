@@ -47,7 +47,8 @@ const Settings = ({ setUser }) => {
               : "settings-page__content"
           }
         >
-          <SettingsCard handleClick={handleToggle} />
+          <SettingsCard />
+
           <div className="settings-page__button-container">
             <Button
               className="settings-page__button"

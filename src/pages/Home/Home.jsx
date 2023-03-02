@@ -3,7 +3,7 @@ import NavContainer from "../../containers/NavContainer/NavContainer";
 import "../Home/Home.scss";
 import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
-import { useState } from "react";
+import React, { useState } from "react";
 import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
 
 const Home = ({ setUser }) => {
@@ -14,6 +14,7 @@ const Home = ({ setUser }) => {
     setShowOverlay(!showOverlay);
     setIsActive(!isActive);
   };
+
   return (
     <div className="home-container">
       <NavContainer />
@@ -26,7 +27,7 @@ const Home = ({ setUser }) => {
           }
         >
           <PageHeader heading="Home" headerType="headingOnly" />
-          <HomePageContainer handleClick={handleToggle} />
+          <HomePageContainer handleClick={handleToggle}/>
         </div>
         {showOverlay && (
           <ConfirmationOverlay

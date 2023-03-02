@@ -16,7 +16,7 @@ import Error from "./pages/Error/Error";
 import BackToLogin from "./pages/BackToLogin/BackToLogin";
 
 const App = () => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState();
   const navigate = useNavigate();
   const logOut = (event) => {
     event.preventDefault();
@@ -31,7 +31,7 @@ const App = () => {
       </Routes>
       {user ? (
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home setUser={logOut} />} />
           <Route path="/booking" element={<NewAppointment />} />
           <Route path="/staff" element={<Staff />} />
           <Route path="/client" element={<Client />} />
