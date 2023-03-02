@@ -71,8 +71,6 @@ const Client = () => {
    event.preventDefault();
    navigate("/client/detail");}
 
-  
-  
   const clientsListJSX = filterArr.map((client, index) => {
     return <DataCard key={index + 1} cardType="client" cardObject={client} handleClick={handleClick} />;
   });
