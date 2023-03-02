@@ -185,6 +185,7 @@ export const mockData = {
       resources: "Mouthwash",
       autoPurchase: "yes",
       autoPurchaseLevel: "210",
+      requestQuantity: "10",
     },
     {
       category: "Admin",
@@ -192,6 +193,7 @@ export const mockData = {
       resources: "Implants",
       autoPurchase: "no",
       autoPurchaseLevel: "413",
+      requestQuantity: "30",
     },
     {
       category: "Health",
@@ -199,6 +201,7 @@ export const mockData = {
       resources: "Dental Mirror",
       autoPurchase: "no",
       autoPurchaseLevel: "378",
+      requestQuantity: "100",
     },
     {
       category: "Health",
@@ -206,6 +209,7 @@ export const mockData = {
       resources: "Sutures",
       autoPurchase: "no",
       autoPurchaseLevel: "219",
+      requestQuantity: "90",
     },
     {
       category: "Admin",
@@ -213,6 +217,7 @@ export const mockData = {
       resources: "Sterilization Machine",
       autoPurchase: "yes",
       autoPurchaseLevel: "27",
+      requestQuantity: "80",
     },
     {
       category: "Health",
@@ -220,6 +225,7 @@ export const mockData = {
       resources: "Dental Light",
       autoPurchase: "yes",
       autoPurchaseLevel: "171",
+      requestQuantity: "20",
     },
     {
       category: "Admin",
@@ -227,6 +233,7 @@ export const mockData = {
       resources: "Surgical Gloves",
       autoPurchase: "yes",
       autoPurchaseLevel: "359",
+      requestQuantity: "200",
     },
     {
       category: "Health",
@@ -234,6 +241,7 @@ export const mockData = {
       resources: "Periodontal Probe",
       autoPurchase: "yes",
       autoPurchaseLevel: "40",
+      requestQuantity: "100",
     },
     {
       category: "Admin",
@@ -241,6 +249,7 @@ export const mockData = {
       resources: "X-Ray Machine",
       autoPurchase: "no",
       autoPurchaseLevel: "490",
+      requestQuantity: "3",
     },
     {
       category: "Health",
@@ -248,6 +257,7 @@ export const mockData = {
       resources: "Dental Drill",
       autoPurchase: "no",
       autoPurchaseLevel: "37",
+      requestQuantity: "10",
     },
     {
       category: "Admin",
@@ -255,6 +265,7 @@ export const mockData = {
       resources: "Orthodontic Pliers",
       autoPurchase: "yes",
       autoPurchaseLevel: "468",
+      requestQuantity: "10",
     },
     {
       category: "Health",
@@ -262,6 +273,7 @@ export const mockData = {
       resources: "Filling Material",
       autoPurchase: "no",
       autoPurchaseLevel: "283",
+      requestQuantity: "30",
     },
     {
       category: "Admin",
@@ -269,6 +281,7 @@ export const mockData = {
       resources: "Rubber Dam",
       autoPurchase: "yes",
       autoPurchaseLevel: "16",
+      requestQuantity: "55",
     },
     {
       category: "Health",
@@ -276,6 +289,7 @@ export const mockData = {
       resources: "Anaesthesia",
       autoPurchase: "no",
       autoPurchaseLevel: "325",
+      requestQuantity: "400",
     },
     {
       category: "Admin",
@@ -283,6 +297,7 @@ export const mockData = {
       resources: "Cavity Liner",
       autoPurchase: "no",
       autoPurchaseLevel: "145",
+      requestQuantity: "12",
     },
     {
       category: "Health",
@@ -290,6 +305,7 @@ export const mockData = {
       resources: "Toothpaste",
       autoPurchase: "yes",
       autoPurchaseLevel: "127",
+      requestQuantity: "25",
     },
     {
       category: "Admin",
@@ -297,6 +313,7 @@ export const mockData = {
       resources: "Surgical Masks",
       autoPurchase: "yes",
       autoPurchaseLevel: "97",
+      requestQuantity: "150",
     },
     {
       category: "Health",
@@ -304,6 +321,7 @@ export const mockData = {
       resources: "Intraoral Camera",
       autoPurchase: "yes",
       autoPurchaseLevel: "274",
+      requestQuantity: "10",
     },
     {
       category: "Admin",
@@ -311,6 +329,7 @@ export const mockData = {
       resources: "Scalpel Blades",
       autoPurchase: "no",
       autoPurchaseLevel: "405",
+      requestQuantity: "17",
     },
     {
       category: "Health",
@@ -318,6 +337,7 @@ export const mockData = {
       resources: "Intraoral Camera",
       autoPurchase: "yes",
       autoPurchaseLevel: "274",
+      requestQuantity: "10",
     },
     {
       category: "Admin",
@@ -325,6 +345,7 @@ export const mockData = {
       resources: "Dental Drill",
       autoPurchase: "no",
       autoPurchaseLevel: "405",
+      requestQuantity: "3",
     },
   ],
 
