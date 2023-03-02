@@ -1213,6 +1213,13 @@ export const mockData = {
 
   bookings: [
     {
+      client: "Joaquin Phoenix",
+      bookingDate: "15/05/2023",
+      bookingTime: "16:30",
+      confirmed: true,
+      staff: "Stefania",
+    },
+    {
       client: "Mariah Chan",
       bookingDate: "05/03/2023",
       bookingTime: "15:00",
@@ -1283,6 +1290,13 @@ export const mockData = {
       staff: "Stefania",
     },
     {
+      client: "Daniel Radcliffe",
+      bookingDate: "17/11/2023",
+      bookingTime: "12:00",
+      confirmed: true,
+      staff: "Stefania",
+    },
+    {
       client: "Charlize Theron",
       bookingDate: "08/02/2023",
       bookingTime: "11:30",
@@ -1290,9 +1304,6 @@ export const mockData = {
       staff: "Marianna",
     },
     {
-      client: "Tom Hanks",
-      bookingDate: "09/18/2023",
-      bookingTime: "16:00",
       client: "Sophie Kim",
       bookingDate: "04/03/2023",
       bookingTime: "12:30",
@@ -1307,6 +1318,13 @@ export const mockData = {
       staff: "Julia",
     },
     {
+      client: "Emma Stone",
+      bookingDate: "28/04/2023",
+      bookingTime: "16:30",
+      confirmed: false,
+      staff: "Julia",
+    },
+    {
       client: "Cate Blanchett",
       bookingDate: "10/22/2023",
       bookingTime: "15:30",
@@ -1314,8 +1332,6 @@ export const mockData = {
       staff: "Carla",
     },
     {
-      client: "Hugh Jackman",
-      bookingDate: "11/07/2023",
       client: "Ethan Chen",
       bookingDate: "06/03/2023",
       bookingTime: "11:30",
@@ -1337,16 +1353,46 @@ export const mockData = {
       staff: "Carla",
     },
     {
-      client: "Leonardo Dicaprio",
-      bookingDate: "11/07/2023",
-      bookingTime: "09:30",
-      confirmed: true,
-      staff: "Stefania",
-      client: "Daniel Lee",
-      bookingDate: "04/03/2023",
-      bookingTime: "09:30",
+      client: "Oprah Winfrey",
+      bookingDate: "03/10/2023",
+      bookingTime: "14:30",
       confirmed: false,
-      staff: "Julia",
+      staff: "Simon",
+    },
+    {
+      client: "Grace Kelly",
+      bookingDate: "10/12/2023",
+      bookingTime: "11:30",
+      confirmed: false,
+      staff: "Simon",
+    },
+    {
+      client: "Tom Cruise",
+      bookingDate: "12/11/2023",
+      bookingTime: "14:00",
+      confirmed: true,
+      staff: "Elisabeth",
+    },
+    {
+      client: "Sandra Bullock",
+      bookingDate: "15/09/2023",
+      bookingTime: "11:00",
+      confirmed: true,
+      staff: "Carla",
+    },
+    {
+      client: "Matt Damon",
+      bookingDate: "09/09/2023",
+      bookingTime: "10:30",
+      confirmed: true,
+      staff: "Roberto",
+    },
+    {
+      client: "Tom Hanks",
+      bookingDate: "09/09/2023",
+      bookingTime: "10:30",
+      confirmed: true,
+      staff: "Roberto",
     },
   ],
 };

@@ -50,6 +50,8 @@ const Client = () => {
         return element.confirmedAppoinment;
       });
       setFilteredClients(confirmed);
+    } else if (event.target.value == "All Clients") {
+      setFilteredClients([]);
     }
   };
 
@@ -77,7 +79,7 @@ const Client = () => {
         handleInputSearch={handleInputSearch}
         handleSort={handleSort}
         handleSelect={handlefilter}
-        optionsArr={["Consumer", "Consultant", "Confirmed"]}
+        optionsArr={["All Clients", "Consumer", "Consultant", "Confirmed"]}
       />
       <div className="client-overview__label-container">
         <p className="client-overview__label">Client Name</p>
