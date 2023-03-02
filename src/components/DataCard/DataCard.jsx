@@ -1,7 +1,9 @@
 import React from "react";
 import "./DataCard.scss";
 import mockData from "../../data/mockData";
-const DataCard = ({ cardObject, cardType }) => {
+const DataCard = (props) => {
+  const { cardObject, cardType, handleClick } = props;
+
   const clientJSX = () => (
     <div className="user-card">
       <h1 className="user-card__name">
@@ -20,7 +22,7 @@ const DataCard = ({ cardObject, cardType }) => {
         <p className="user-card__rsvp">NO</p>
       )}
       <p className="user-card__staff-name">{cardObject.staff}</p>
-      <figure className="user-card__image-container">
+      <figure onClick={handleClick} className="user-card__image-container">
         <span className="user-card__circle"></span>
       </figure>
     </div>
