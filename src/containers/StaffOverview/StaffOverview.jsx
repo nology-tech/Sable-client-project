@@ -16,10 +16,11 @@ const StaffOverview = ({ currentStaff }) => {
   const [click, setClick] = useState(0);
   const [dataArr, setDataArr] = useState(currentStaffBookings);
   const [filteredClients, setFilteredClients] = useState([]);
-  const [SearchInUse, setSearchInUse] =useState([])
+  const [SearchInUse, setSearchInUse] = useState([])
   useEffect(() => {
     setDataArr(currentStaffBookings);
     setFilteredClients([]);
+    setSearchInUse(true)
   }, [currentStaff]);
 
   const handleSort = () => {
@@ -52,13 +53,17 @@ const StaffOverview = ({ currentStaff }) => {
         return element.confirmed;
       });
       setFilteredClients(clients);
+      setSearchInUse(false)
     } else if (event.target.value == "Unconfirmed") {
       const clients = dataArr.filter((element) => {
         return !element.confirmed;
       });
       setFilteredClients(clients);
+      setSearchInUse(false)
+    } else if (event.target.value == "All Clients") {
+      setFilteredClients(currentStaffBookings);
+      setSearchInUse(true)
     }
-    setSearchInUse(false)
   };
 
   const searchFilterArr = dataArr.filter((element) => {
@@ -79,7 +84,6 @@ const StaffOverview = ({ currentStaff }) => {
   } else {
     clientsListJSX = [];
   }
-  
   let filteredClientListJSX
   if (filteredClients.length > 0) {
     filteredClientListJSX = filteredClients.map((booking, index) => {
@@ -110,7 +114,7 @@ const StaffOverview = ({ currentStaff }) => {
         handleInputSearch={handleInputSearch}
         handleSort={handleSort}
         handleSelect={handlefilter}
-        optionsArr={["Confirmed", "Unconfirmed"]}
+        optionsArr={["All Clients", "Confirmed", "Unconfirmed"]}
       />
       <div className="staff-overview__booking-container--labels booking-container--labels">
         <p className="booking-container__label">Client Name</p>
