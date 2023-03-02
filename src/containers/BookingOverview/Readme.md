@@ -8,4 +8,4 @@ If you need to use the date from the calendar, please use the `day` variable in 
 
 It will be updated everytime someone picks a date, in the calendar or the date picker.
 
-🎃 
+🎃

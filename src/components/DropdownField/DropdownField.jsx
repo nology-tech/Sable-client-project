@@ -6,9 +6,9 @@ const DropdownField = ({
   placeholderText,
   id,
   handleInput,
-  options,
+  optionsJSX,
 }) => {
-  const optionsJSX = options.map((option, index) => {
+  const JSX = optionsJSX.map((option, index) => {
     return <option key={index + 1}>{option}</option>;
   });
 
@@ -23,7 +23,7 @@ const DropdownField = ({
         placeholder={placeholderText}
         onChange={handleInput}
       >
-        {optionsJSX}
+        {JSX}
       </select>
     </div>
   );
