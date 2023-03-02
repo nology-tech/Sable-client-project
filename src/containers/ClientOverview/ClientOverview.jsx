@@ -5,11 +5,20 @@ import listIcon from "../../assets/images/functional-icons/listview-icon.png";
 import sortIcon from "../../assets/images/functional-icons/sort-icon.png";
 import DataCard from "../../components/DataCard/DataCard";
 import { mockData } from "../../data/mockData"
+import { useNavigate } from "react-router-dom";
 import "./ClientOverview.scss";
 const Client = () => {
   let clients = mockData.clients
   //Will replace with real data passed through props later
 
+  const navigate =useNavigate();
+
+  const handleClick = (event) => {
+   event.preventDefault();
+   navigate("/client/detail");}
+
+  
+  
   return (
     <div className="client-overview">
       <div className="client-overview__filters">
@@ -38,10 +47,10 @@ const Client = () => {
         <p className="client-overview__label">Staff Name</p>
       </div>
       <div className="client-overview__cards-container">
-        <DataCard cardType="student" cardObject={clients[0]} />
-        <DataCard cardType="student" cardObject={clients[1]} />
-        <DataCard cardType="student" cardObject={clients[2]} />
-        <DataCard cardType="student" cardObject={clients[3]} />
+        <DataCard cardType="student" cardObject={clients[0]} handleClick={handleClick}/>
+        <DataCard cardType="student" cardObject={clients[1]} handleClick={handleClick}/>
+        <DataCard cardType="student" cardObject={clients[2]} handleClick={handleClick}/>
+        <DataCard cardType="student" cardObject={clients[3]} handleClick={handleClick}/>
       </div>
     </div>
   );
