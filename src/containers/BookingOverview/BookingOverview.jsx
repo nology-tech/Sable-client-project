@@ -13,7 +13,9 @@ const UserInfoContainer = () => {
   const time_slots =  ['09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30',
   '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30',
   '17:00']
-
+  const staffMembers = mockData.staff.map((staffMember) => {
+    return staffMember.name; 
+  })
   const handleInput = (event) => {
     switch (event.target.id){
       case "time":
@@ -25,17 +27,45 @@ const UserInfoContainer = () => {
   const handleSubmit = (event) => {
     event.preventDefault(); 
     console.log(event.target)
-    const objectToSubmit = {
-      firstName: event.target[0].value,
-      lastName: event.target[1].value,
-      email: event.target[2].value, 
-      number: event.target[3].value, 
-      staff: event.target[4].value,
-      bookingDate: day,
-      bookingTime: time, 
+    const firstName = event.target[0].value
+    const lastName =  event.target[1].value
+    const email = event.target[2].value
+    const number = event.target[3].value
+    const checkIfOnlyNumbers = /[a-zA-Z]/g;
+    const checkIfEmailIsValid =(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+ 
+    //if email is valid: 
+    //if mobile number is a number min length of 10
+    //if first name and last names are text not special characters or numbers
+    //if any of the input fields are empty 
+    if(firstName == "" || lastName  == "" || email  == "" || number  == ""){
+      alert("Error, please ensure each field isn't empty")
     }
-    console.log(objectToSubmit)
-    event.target.reset(); 
+    if (number < 10){
+      alert("Error, phone number must be more than 10 numbers")
+    }
+    else if (checkIfOnlyNumbers.test(number)){
+      alert("Error, phone number most only contain numbers")
+    }
+    else if (!checkIfEmailIsValid.test(email)){
+      alert("Error, email is not valid")
+    }
+    else{
+      const objectToSubmit = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        number: number,
+        staff: event.target[4].value,
+        bookingDate: day,
+        bookingTime: time, 
+      }
+      console.log(objectToSubmit)
+      event.target.reset(); 
+    }
+    
 
   
   };
@@ -59,9 +89,7 @@ const UserInfoContainer = () => {
           id="staff"
           label="Staff Member"
           handleInput={handleInput}
-          optionsJSX={mockData.staff.map((staffMember) => {
-            return staffMember.name; 
-          })}
+          optionsJSX={staffMembers}
         />
       </div>
       <div id="datePicker" className="input-field-container__date-picker">
@@ -95,7 +123,7 @@ const UserInfoContainer = () => {
         />
       </div>
       <div className="input-field-container__time-dropdown">
-        <DropdownField id="time" label="Time" handleInput={handleInput} options={time_slots}/>
+        <DropdownField id="time" label="Time" handleInput={handleInput} optionsJSX={time_slots}/>
       </div>
       <div className="input-field-container__submit">
         <Button

@@ -3,6 +3,7 @@ import "./DropdownField.scss"
 
 const DropdownField = (props) => {
   const {label, placeholderText, id, handleInput, optionsJSX, value} = props
+
   const JSX = optionsJSX.map((option, index) => {
     return <option key={index+1}>{option}</option>
   })
