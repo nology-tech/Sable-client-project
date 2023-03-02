@@ -418,9 +418,9 @@ export const mockData = {
     },
     {
       name: "Carla",
-      role: "Receptionist",
+      role: "Dentist",
       overview:
-        "Carla is a friendly and professional receptionist who joined our team in 2020. She is always ready to greet our patients with a smile, and is dedicated to ensuring that their experience at our practice is a positive one. Carla has excellent communication skills, and is able to answer any questions or concerns our patients may have. She is a valuable member of our team, and we are grateful to have her with us.",
+        "Carla is a friendly and professional dentist who joined our team in 2020. She is always ready to greet our patients with a smile, and is dedicated to ensuring that their experience at our practice is a positive one. Carla has excellent communication skills, and is able to answer any questions or concerns our patients may have. She is a valuable member of our team, and we are grateful to have her with us.",
       startDate: "08.03.2020",
       contractEndDate: "08.03.2024",
       manager: "George",
@@ -429,9 +429,9 @@ export const mockData = {
     },
     {
       name: "Simon",
-      role: "Receptionist",
+      role: "Assistant",
       overview:
-        "Simon is a skilled and efficient receptionist who has been with our practice since 2016. He is committed to providing excellent customer service to our patients, and always goes above and beyond to ensure that their needs are met. Simon has a friendly and outgoing personality, and is always happy to help in any way he can. He is an important member of our team, and we are fortunate to have him with us.",
+        "Simon is a skilled and efficient assistant who has been with our practice since 2016. He is committed to providing excellent customer service to our patients, and always goes above and beyond to ensure that their needs are met. Simon has a friendly and outgoing personality, and is always happy to help in any way he can. He is an important member of our team, and we are fortunate to have him with us.",
       startDate: "22.09.2016",
       contractEndDate: "22.09.2025",
       manager: "Harry",
@@ -451,7 +451,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Mark",
@@ -463,7 +463,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "Elisabeth",
+      staff: "Elisabeth",
     },
 
     {
@@ -476,7 +476,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "John",
@@ -488,7 +488,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Julia",
+      staff: "Julia",
     },
     {
       firstName: "Karen",
@@ -500,7 +500,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Sean",
@@ -512,7 +512,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Roberto",
+      staff: "Roberto",
     },
     {
       firstName: "Sophie",
@@ -522,9 +522,9 @@ export const mockData = {
       image:
         "https://images.unsplash.com/photo-1541257710737-06d667133a53?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80",
       query: "consumer",
-      hasAppointment: false,
-      confirmedAppoinment: false,
-      Staff: "Roberto",
+      hasAppointment: true,
+      confirmedAppoinment: true,
+      staff: "Roberto",
     },
     {
       firstName: "Adam",
@@ -536,7 +536,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "Marianna",
+      staff: "Marianna",
     },
     {
       firstName: "Ethan",
@@ -548,7 +548,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Melanie",
@@ -560,7 +560,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: true,
-      Staff: "Julia",
+      staff: "Julia",
     },
     {
       firstName: "Peter",
@@ -572,10 +572,10 @@ export const mockData = {
       query: "consultant",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
-      firstName: "Jasmine Wang",
+      firstName: "Jasmine",
       lastName: "Wang",
       email: "jasminewang@gmail.com",
       mobile: "+441234567903",
@@ -584,10 +584,10 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Elisabeth",
+      staff: "Elisabeth",
     },
     {
-      firstName: "David Chen",
+      firstName: "David",
       lastName: "Chen",
       email: "davidchen@gmail.com",
       mobile: "+441234567904",
@@ -596,7 +596,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: false,
       confirmedAppoinment: false,
-      Staff: "Stefania",
+      staff: "Stefania",
     },
     {
       firstName: "Alice",
@@ -608,7 +608,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "Elisabeth",
+      staff: "Elisabeth",
     },
     {
       firstName: "Rachel",
@@ -620,7 +620,7 @@ export const mockData = {
       query: "consumer",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "Roberto",
+      staff: "Roberto",
     },
     {
       firstName: "Alex",
@@ -632,7 +632,7 @@ export const mockData = {
       query: "consultant",
       hasAppointment: true,
       confirmedAppoinment: false,
-      Staff: "David",
+      staff: "David",
     },
     {
       firstName: "Emily",
@@ -659,7 +659,7 @@ export const mockData = {
       staff: "Roberto",
     },
     {
-      firsName: "Erica",
+      firstName: "Erica",
       lastName: "Chen",
       email: "ericachen@gmail.com",
       mobile: "+441234567910",
@@ -1217,14 +1217,14 @@ export const mockData = {
       bookingDate: "05/03/2023",
       bookingTime: "15:00",
       confirmed: true,
-      staff: "Mariana",
+      staff: "David",
     },
     {
       client: "Mark Wilson",
       bookingDate: "08/03/2023",
       bookingTime: "11:00",
       confirmed: false,
-      staff: "David",
+      staff: "Elisabeth",
     },
     {
       client: "Bryan Kim",
@@ -1293,6 +1293,16 @@ export const mockData = {
       client: "Tom Hanks",
       bookingDate: "09/18/2023",
       bookingTime: "16:00",
+      client: "Sophie Kim",
+      bookingDate: "04/03/2023",
+      bookingTime: "12:30",
+      confirmed: true,
+      staff: "Roberto",
+    },
+    {
+      client: "Melanie Wong",
+      bookingDate: "05/03/2023",
+      bookingTime: "12:30",
       confirmed: true,
       staff: "Julia",
     },
@@ -1306,6 +1316,15 @@ export const mockData = {
     {
       client: "Hugh Jackman",
       bookingDate: "11/07/2023",
+      client: "Ethan Chen",
+      bookingDate: "06/03/2023",
+      bookingTime: "11:30",
+      confirmed: true,
+      staff: "David",
+    },
+    {
+      client: "Rachel Kim",
+      bookingDate: "04/03/2023",
       bookingTime: "09:30",
       confirmed: false,
       staff: "Roberto",
@@ -1323,6 +1342,11 @@ export const mockData = {
       bookingTime: "09:30",
       confirmed: true,
       staff: "Stefania",
+      client: "Daniel Lee",
+      bookingDate: "04/03/2023",
+      bookingTime: "09:30",
+      confirmed: false,
+      staff: "Julia",
     },
   ],
 };

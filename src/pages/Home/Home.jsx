@@ -1,10 +1,10 @@
 import Layout from "../../components/Layout/Layout";
-import NavContainer from "../../containers/NavContainer/NavContainer";
-import "../Home/Home.scss";
-import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
 import PageHeader from "../../components/PageHeader/PageHeader.jsx";
-import React, { useState } from "react";
+import HomePageContainer from "../../containers/HomePageContainer/HomePageContainer";
+import NavContainer from "../../containers/NavContainer/NavContainer";
 import ConfirmationOverlay from "../../components/ConfirmationOverlay/ConfirmationOverlay";
+import "../Home/Home.scss";
+import React, { useState } from "react";
 
 const Home = ({ setUser }) => {
   const [showOverlay, setShowOverlay] = useState(false);
@@ -27,7 +27,7 @@ const Home = ({ setUser }) => {
           }
         >
           <PageHeader heading="Home" headerType="headingOnly" />
-          <HomePageContainer handleClick={handleToggle}/>
+          <HomePageContainer handleClick={handleToggle} />
         </div>
         {showOverlay && (
           <ConfirmationOverlay
