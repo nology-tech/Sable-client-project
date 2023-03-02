@@ -3,7 +3,7 @@ import "./DataCard.scss";
 import mockData from "../../data/mockData";
 const DataCard = (props) => {
   const { cardObject, cardType } = props;
-
+  
   const clientJSX = () => (
     <div className="user-card">
       <h1 className="user-card__name">
@@ -21,7 +21,7 @@ const DataCard = (props) => {
       ) : (
         <p className="user-card__rsvp">NO</p>
       )}
-      <p className="user-card__staff-name">{cardObject.staff}</p>
+      <p className="user-card__staff-name">{cardObject.Staff}</p>
       <figure className="user-card__image-container">
         <span className="user-card__circle"></span>
       </figure>
@@ -59,9 +59,9 @@ const DataCard = (props) => {
 
   const resourceCardJSX = () => (
     <div className="resource-card">
-      <h1 className="resource-card__name">{cardObject.resourceName}</h1>
+      <h1 className="resource-card__name">{cardObject.name}</h1>
       <p className="resource-card__quantity">{cardObject.quantity}</p>
-      <p className="resource-card__cost">{cardObject.cost}</p>
+      <p className="resource-card__cost">{cardObject.costPerUnit}</p>
       {cardObject.isAutoPurchase ? (
         <p className="resource-card__auto-purchase">YES</p>
       ) : (

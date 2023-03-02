@@ -4,7 +4,6 @@ import FilterBar from "../../components/FilterBar/FilterBar";
 import mockData from "../../data/mockData";
 import "./ClientOverview.scss";
 const Client = () => {
-  //Will replace with real data passed through props later
   const [query, setQuery] = useState("");
   const [click, setClick] = useState(0);
   const [dataArr, setDataArr] = useState([...mockData.clients]);
@@ -88,7 +87,8 @@ const Client = () => {
         <p className="client-overview__label">Confirmed</p>
         <p className="client-overview__label">Staff Name</p>
       </div>
-      <div className="client-overview__cards-container">{filteredClientListJSX.length > 0
+      <div className="client-overview__cards-container">
+        {filteredClientListJSX.length > 0
           ? filteredClientListJSX
           : clientsListJSX}</div>
     </div>

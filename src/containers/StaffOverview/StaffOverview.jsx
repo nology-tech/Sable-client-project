@@ -79,6 +79,7 @@ const StaffOverview = ({ currentStaff }) => {
   } else {
     clientsListJSX = [];
   }
+  
   let filteredClientListJSX
   if (filteredClients.length > 0) {
     filteredClientListJSX = filteredClients.map((booking, index) => {
