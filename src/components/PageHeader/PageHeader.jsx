@@ -12,6 +12,7 @@ const PageHeader = ({
   isInputIncomplete,
   optionsArr,
   handleOnChange,
+  handleClick,
 }) => {
   const HeadingOnlyJSX = () => (
     <div className="heading-only">
@@ -36,6 +37,7 @@ const PageHeader = ({
           buttonStyle={buttonStyle}
           isPlus={isPlus}
           isInputIncomplete={isInputIncomplete}
+          handleClick={handleClick}
         />
       </div>
     </div>
@@ -64,6 +66,7 @@ const PageHeader = ({
               buttonStyle={buttonStyle}
               isPlus={isPlus}
               isInputIncomplete={isInputIncomplete}
+              handleClick={handleClick}
             />
           </div>
         </div>
