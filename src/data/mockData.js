@@ -1166,7 +1166,8 @@ export const mockData = {
       lastName: "Hepburn",
       email: "khepburn@hotmail.com",
       mobile: "+44123456789",
-      image: "",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Katharine_Hepburn_promo_pic.jpg/330px-Katharine_Hepburn_promo_pic.jpg",
       query: "consumer",
       hasAppointment: true,
       confirmedAppointment: false,
@@ -1177,7 +1178,8 @@ export const mockData = {
       lastName: "Bullock",
       email: "sbullock@hotmail.com",
       mobile: "+44123456789",
-      image: "",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Sandra_Bullock_in_July_2013.jpg/330px-Sandra_Bullock_in_July_2013.jpg",
       query: "consumer",
       hasAppointment: true,
       confirmedAppointment: false,
@@ -1188,7 +1190,8 @@ export const mockData = {
       lastName: "Stone",
       email: "estone@hotmail.com",
       mobile: "+44123456789",
-      image: "",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Emma_Stone_at_Maniac_UK_premiere_%28cropped%29.jpg/330px-Emma_Stone_at_Maniac_UK_premiere_%28cropped%29.jpg",
       query: "consumer",
       hasAppointment: true,
       confirmedAppointment: false,
@@ -1199,7 +1202,8 @@ export const mockData = {
       lastName: "Brando",
       email: "mbrando@gmail.com",
       mobile: "+44123456789",
-      image: "",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Marlon_Brando_publicity_for_One-Eyed_Jacks.png/330px-Marlon_Brando_publicity_for_One-Eyed_Jacks.png",
       query: "consumer",
       hasAppointment: true,
       confirmedAppointment: true,
