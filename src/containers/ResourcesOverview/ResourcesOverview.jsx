@@ -6,12 +6,12 @@ import SortIcon from "../../assets/images/functional-icons/sort-icon.png";
 import "./ResourcesOverview.scss";
 import StaffResourcesContainer from "../StaffResourcesContainer/StaffResourcesContainer";
 import StaffResources from "../../components/StaffResources/StaffResources";
-import { mockData } from "../../data/mockData"
+import { mockData } from "../../data/mockData";
 const ResourcesOverview = ({ isAdmin }) => {
   return (
     <div className="resources-overview">
       <div className="resources-overview__filters">
-        {!isAdmin && (
+        {!isAdmin ? (
           <>
             <h2 className="resources-overview__title">Health Products</h2>
             <div className="resources-overview__display--icons">
@@ -49,8 +49,7 @@ const ResourcesOverview = ({ isAdmin }) => {
               <p className="resources-overview__subheading">Filter</p>
             </div>
           </>
-        )}
-        {isAdmin && (
+        ) : (
           <>
             <h2 className="resources-overview__title">Admin</h2>
           </>
@@ -59,7 +58,7 @@ const ResourcesOverview = ({ isAdmin }) => {
 
       {isAdmin ? (
         <>
-          <StaffResources cardsArray={mockData.resources}/>
+          <StaffResources cardsArray={mockData.resources} />
         </>
       ) : (
         <StaffResourcesContainer />

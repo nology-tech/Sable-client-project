@@ -22,6 +22,7 @@ const StaffResources = ({ staffName, renderLabels, cardsArray }) => {
           <p className="booking-container__label">Cost per unit</p>
           <p className="booking-container__label">Auto-Purchase</p>
           <p className="booking-container__label">Auto-Purchase Level</p>
+          <p className="booking-container__label">Quantity Requested</p>
         </div>
       )}
       <div className="staff-resources__cards">{cardJSX && cardJSX}</div>
