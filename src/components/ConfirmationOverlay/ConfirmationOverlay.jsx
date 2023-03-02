@@ -12,7 +12,7 @@ const ConfirmationOverlay = ({
   buttonStyleTwo,
   handleClick,
   setUser,
-  handleToggle
+  handleToggle,
 }) => {
   const overlayOneButtonJSX = () => (
     <div className="overlayOneButton overlay">
@@ -49,25 +49,6 @@ const ConfirmationOverlay = ({
     </div>
   );
 
-  const overlayLoginJSX = () => (
-    <div className="overlayLogin overlay">
-    <div className="overlay-content">
-      <h1 className="overlay-text">{text}</h1>
-      <div className="overlay-buttons">
-        <Link style={{textDecoration: "none"}} to="/">
-        <Button
-          buttonText={buttonTextOne}
-          buttonStyle={buttonStyleOne}
-          handleClick={setUser}
-        />
-        </Link>
-      </div>
-    </div>
-  </div>
-
-  
-  );
-
   const overlayLogoutJSX = () => (
     <div className="overlayLogout overlay">
       <div className="overlay-content">
@@ -88,9 +69,22 @@ const ConfirmationOverlay = ({
     </div>
   );
 
+  const overlayLoginJSX = () => (
+    <div className="overlayLogin overlay">
+      <div className="overlay-content">
+        <h1 className="overlay-text">{text}</h1>
+        <div className="overlay-buttons">
+          <Link style={{ textDecoration: "none" }} to="/">
+            <Button buttonText={buttonTextOne} buttonStyle={buttonStyleOne} />
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <>
-      {   overlayType === "overlayOneButton"
+      {overlayType === "overlayOneButton"
         ? overlayOneButtonJSX()
         : overlayType === "overlayTwoButtons"
         ? overlayTwoButtonsJSX()
