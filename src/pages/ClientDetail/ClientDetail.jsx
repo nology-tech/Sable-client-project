@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'
 const ClientDetail = () => {
    
     const navigate = useNavigate();
-
     const handleClick = (event) => {
         event.preventDefault();
         navigate("/client/edit-client");
@@ -21,10 +20,8 @@ const ClientDetail = () => {
             handleClick ={ handleClick}
             isPlus= {true} />
             <div className='client-detail__REPLACEWITHCONTAINER'>
-    
             </div>
         </main>
-        
     </div>
   )
 }
