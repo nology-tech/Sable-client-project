@@ -11,11 +11,8 @@ const Client = () => {
   const [filteredClients, setFilteredClients] = useState([]);
 
   const handleSort = () => {
-    setClick(Number(click) + 1);
-    if (click == 2) {
-      setClick(0);
-    }
-    if (click == 1) {
+    if (click == 0) {
+      setClick(1)
       setDataArr(
         dataArr.sort((x, y) => {
           let a = x.lastName.toUpperCase(),
@@ -23,7 +20,8 @@ const Client = () => {
           return a == b ? 0 : a < b ? 1 : -1;
         })
       );
-    } else if (click == 2) {
+    } else if (click == 1) {
+      setClick(2);
       setDataArr(
         dataArr.sort((x, y) => {
           let a = x.lastName.toUpperCase(),
@@ -33,6 +31,7 @@ const Client = () => {
       );
     } else {
       setDataArr([...mockData.clients]);
+      setClick(0);
     }
   };
 
