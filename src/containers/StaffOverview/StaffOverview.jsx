@@ -16,11 +16,11 @@ const StaffOverview = ({ currentStaff }) => {
   const [click, setClick] = useState(0);
   const [dataArr, setDataArr] = useState(currentStaffBookings);
   const [filteredClients, setFilteredClients] = useState([]);
-  const [SearchInUse, setSearchInUse] = useState([])
+  const [SearchInUse, setSearchInUse] = useState([]);
   useEffect(() => {
     setDataArr(currentStaffBookings);
     setFilteredClients([]);
-    setSearchInUse(true)
+    setSearchInUse(true);
   }, [currentStaff]);
 
   const handleSort = () => {
@@ -53,16 +53,16 @@ const StaffOverview = ({ currentStaff }) => {
         return element.confirmed;
       });
       setFilteredClients(clients);
-      setSearchInUse(false)
+      setSearchInUse(false);
     } else if (event.target.value == "Unconfirmed") {
       const clients = dataArr.filter((element) => {
         return !element.confirmed;
       });
       setFilteredClients(clients);
-      setSearchInUse(false)
+      setSearchInUse(false);
     } else if (event.target.value == "All Clients") {
       setFilteredClients(currentStaffBookings);
-      setSearchInUse(true)
+      setSearchInUse(true);
     }
   };
 
@@ -72,11 +72,11 @@ const StaffOverview = ({ currentStaff }) => {
 
   const handleInputSearch = (event) => {
     setFilteredClients([]);
-    setSearchInUse(true)
+    setSearchInUse(true);
     setQuery(event.target.value);
   };
 
-  let clientsListJSX = []
+  let clientsListJSX = [];
   if (searchFilterArr.length > 0) {
     clientsListJSX = searchFilterArr.map((booking, index) => {
       return <DataCard key={index} cardType="booking" cardObject={booking} />;
@@ -84,7 +84,7 @@ const StaffOverview = ({ currentStaff }) => {
   } else {
     clientsListJSX = [];
   }
-  let filteredClientListJSX
+  let filteredClientListJSX;
   if (filteredClients.length > 0) {
     filteredClientListJSX = filteredClients.map((booking, index) => {
       return <DataCard key={index} cardType="booking" cardObject={booking} />;
@@ -125,9 +125,7 @@ const StaffOverview = ({ currentStaff }) => {
       </div>
       <div className="staff-overview__mobile-subheader">Bookings</div>
       <div className="staff-overview__booking-container">
-        {SearchInUse
-          ? clientsListJSX
-          : filteredClientListJSX}
+        {SearchInUse ? clientsListJSX : filteredClientListJSX}
       </div>
     </div>
   );

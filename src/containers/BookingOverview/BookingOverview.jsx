@@ -98,7 +98,7 @@ const UserInfoContainer = () => {
           id="staff"
           label="Staff Member"
           handleInput={handleInput}
-          optionsJSX={staffMembers}
+          options={staffMembers}
         />
       </div>
       <div id="datePicker" className="input-field-container__date-picker">

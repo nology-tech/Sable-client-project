@@ -10,6 +10,8 @@ import Settings from "./pages/Settings/Settings";
 import Staff from "./pages/Staff/Staff.jsx";
 import EditResource from "./pages/EditResource/EditResource";
 import RequestResource from "./pages/RequestResource/RequestResource";
+import AddClient from "./pages/AddClient/AddClient";
+import EditClient from "./pages/EditClient/EditClient";
 import "./styles/base/_reset.scss";
 import "./styles/base/_typography.scss";
 import Error from "./pages/Error/Error";

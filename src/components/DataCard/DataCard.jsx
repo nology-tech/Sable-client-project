@@ -3,7 +3,7 @@ import "./DataCard.scss";
 import mockData from "../../data/mockData";
 const DataCard = (props) => {
   const { cardObject, cardType } = props;
-  
+
   const clientJSX = () => (
     <div className="user-card">
       <h1 className="user-card__name">

@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import DataCard from "../../components/DataCard/DataCard";
 import FilterBar from "../../components/FilterBar/FilterBar";
 import mockData from "../../data/mockData";
@@ -11,7 +11,7 @@ const Client = () => {
 
   const handleSort = () => {
     if (click == 0) {
-      setClick(1)
+      setClick(1);
       setDataArr(
         dataArr.sort((x, y) => {
           let a = x.lastName.toUpperCase(),
@@ -60,7 +60,7 @@ const Client = () => {
     );
   });
   const handleInputSearch = (event) => {
-    setFilteredClients([])
+    setFilteredClients([]);
     setQuery(event.target.value);
   };
 
@@ -90,7 +90,8 @@ const Client = () => {
       <div className="client-overview__cards-container">
         {filteredClientListJSX.length > 0
           ? filteredClientListJSX
-          : clientsListJSX}</div>
+          : clientsListJSX}
+      </div>
     </div>
   );
 };
