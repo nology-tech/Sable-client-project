@@ -1,8 +1,16 @@
 import React from "react";
 import "./DropdownField.scss";
 
-const DropdownField = (props) => {
-  const { label, placeholderText, id, handleInput, optionsJSX } = props;
+const DropdownField = ({
+  label,
+  placeholderText,
+  id,
+  handleInput,
+  options,
+}) => {
+  const JSX = options.map((option, index) => {
+    return <option key={index + 1}>{option}</option>;
+  });
 
   return (
     <div className="dropdown-field">
@@ -15,7 +23,7 @@ const DropdownField = (props) => {
         placeholder={placeholderText}
         onChange={handleInput}
       >
-        {optionsJSX}
+        {JSX}
       </select>
     </div>
   );
