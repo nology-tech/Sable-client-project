@@ -19,7 +19,7 @@ import BackToLogin from "./pages/BackToLogin/BackToLogin";
 import ClientDetail from "./pages/ClientDetail/ClientDetail";
 
 const App = () => {
-  const [user, setUser] = useState(true);
+  const [user, setUser] = useState();
   const navigate = useNavigate();
   const logOut = (event) => {
     event.preventDefault();
@@ -44,7 +44,7 @@ const App = () => {
           <Route path="/settings" element={<Settings setUser={logOut} />} />
           <Route path="/client/add-client" element={<AddClient />} />
           <Route path="/client/edit-client" element={<EditClient />} />
-          <Route path="/client/detail" element={<ClientDetail />}/>
+          <Route path="/client/detail" element={<ClientDetail />} />
         </Routes>
       ) : (
         <Routes>
@@ -70,7 +70,7 @@ const App = () => {
             path="/client/edit-client"
             element={<Error page={"client"} />}
           />
-          <Route path="/client/detail" element={<Error page={"client"} />}/>
+          <Route path="/client/detail" element={<Error page={"client"} />} />
         </Routes>
       )}
     </>
