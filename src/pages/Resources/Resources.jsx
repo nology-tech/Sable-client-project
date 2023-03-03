@@ -5,13 +5,12 @@ import ResourcesOverview from "../../containers/ResourcesOverview/ResourcesOverv
 import "./Resources.scss";
 import { useNavigate } from "react-router-dom";
 const Resource = () => {
-
   const navigate = useNavigate();
 
   const handleClick = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     navigate("/resources/request");
-  }
+  };
 
   return (
     <>
