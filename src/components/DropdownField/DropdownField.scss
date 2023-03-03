@@ -15,6 +15,10 @@
     font-family: $font-modern;
   }
 
+&__option{
+  color: $color-black;
+}
+
   &__input {
     font-family: $font-modern;
     height: 3.063rem;
