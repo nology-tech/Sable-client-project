@@ -12,15 +12,15 @@
   border-radius: 7px;
 
   &__image-container {
-    margin-top: 10px;
-    height: 50%;
+    padding: 20px;
+    height: 60%;
     margin-top: 10%;
 
     &--image {
       height: 100%;
       width: 100%;
-      aspect-ratio: 1;
       border-radius: 50%;
+      aspect-ratio: 0.8;
     }
   }
   &__info-container {
@@ -52,8 +52,10 @@
 }
 @media screen and (max-width: 767px) {
   .card-container {
-    width: 70vw;
-    height: 50vh;
+    width: 45vw;
+    height: 40vh;
+    margin: 20px;
+
     &__info-container {
       height: auto;
       &--name {

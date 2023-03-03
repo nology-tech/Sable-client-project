@@ -23,7 +23,9 @@
     width: 58%;
     height: 32px;
   }
-
+  #filter-title {
+    font-family: $font-modern;
+  }
   &__logic {
     display: flex;
     width: 42%;
@@ -103,7 +105,7 @@
 @media screen and (max-width: $tablet-breakpoint) {
   .filters--label {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .filters--sort,
   .filters--sort-label,
