@@ -201,7 +201,7 @@ export const mockData = {
   ],
 
   resourcesRequest: [
-    { id: 0,
+    { resourceId: 3,
       category: "Health",
       staffMember: "Marianna",
       resources: "Mouthwash",
@@ -210,7 +210,7 @@ export const mockData = {
       requestQuantity: "10",
     },
     {
-      id: 1,
+      resourceId: 13,
       category: "Admin",
       staffMember: "Stefania",
       resources: "Implants",
@@ -219,7 +219,7 @@ export const mockData = {
       requestQuantity: "50",
     },
     {
-      id: 2,
+      resourceId: 7,
       category: "Health",
       staffMember: "David",
       resources: "Dental Mirror",
@@ -354,7 +354,7 @@ export const mockData = {
       requestQuantity: "200",
     },
     {
-      id: 17,
+      
       category: "Admin",
       staffMember: "David",
       resources: "Dental Drill",
