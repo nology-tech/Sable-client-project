@@ -25,8 +25,6 @@ const StaffResourcesContainer = ({ isAdmin /*resourcesRequestArr*/ }) => {
     return staffRequests;
   };
 
-  console.log(staffResourceList(isAdmin));
-
   const staffJSX = staffResourceList(isAdmin).map((staff, index) => {
     return (
       <StaffResources
@@ -34,7 +32,7 @@ const StaffResourcesContainer = ({ isAdmin /*resourcesRequestArr*/ }) => {
         staffName={staff[0]}
         cardsArray={staff[1]}
         id={index}
-      /> // [staff.name, stafresources, isfirst]
+      />
     );
   });
 

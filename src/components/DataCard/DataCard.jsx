@@ -57,6 +57,7 @@ const DataCard = (props) => {
     const currentResource = mockData.resources.filter((resource) => {
       return resource.name.toLowerCase() === cardObject.resources.toLowerCase();
     })[0];
+
     return (
       <div className="resource-card">
         <h1 className="resource-card__name">{currentResource.name}</h1>
