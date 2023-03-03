@@ -8,13 +8,10 @@ import "./EditResource.scss";
 import { useParams } from 'react-router-dom';
 
 const EditResource = ({ resources }) => {
-
   let { id } = useParams();
-
   const currentResource = resources.find((resource) => {
     return resource.id == id 
   })
-  console.log(currentResource)
   return (
     <div className="edit-resource-container">
       <NavContainer />
@@ -32,7 +29,6 @@ const EditResource = ({ resources }) => {
             resource={currentResource}
             optionsArr={[]}
             text="Save"
-      
           />
         </div>
         <HomeButton />

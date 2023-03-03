@@ -6,11 +6,9 @@ import { useNavigate } from "react-router-dom";
 const StaffResources = ({ staffName, cardsArray, id }) => {
     const navigate = useNavigate();
     const handleClick = (id) => {
-      console.log(id)
       navigate(`/resources/edit/${id}`);
     }
   
-
   const cardJSX = cardsArray.map((object, index) => {
     return (
       <div key={index} className="staff-resources__cards-card">
