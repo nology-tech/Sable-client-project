@@ -9,9 +9,6 @@ const ResourcesOverview = ({ isAdmin }) => {
         {!isAdmin ? (
           <FilterBar
             title={"Health Products"}
-            // handleInputSearch={handleInputSearch}
-            // handleSort={handleSort}
-            // handleSelect={handlefilter}
             optionsArr={["All Resource", "AutoPurchase"]}
           />
         ) : (

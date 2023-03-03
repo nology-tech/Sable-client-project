@@ -1,7 +1,6 @@
 import React from "react";
 import "./StaffResources.scss";
 import DataCard from "../DataCard/DataCard";
-//import resourceData from "../../mockData.js"
 
 const StaffResources = ({ staffName, cardsArray, id }) => {
   const cardJSX = cardsArray.map((object, index) => {
