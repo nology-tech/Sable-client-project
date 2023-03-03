@@ -13,7 +13,7 @@
 
   &__image-container {
     margin-top: 10px;
-    height: 50%;
+    height: 15vh;
     margin-top: 10%;
 
     &--image {
@@ -52,8 +52,8 @@
 }
 @media screen and (max-width: 767px) {
   .card-container {
-    width: 70vw;
-    height: 50vh;
+    width: 45vw;
+    height: 40vh;
     margin:20px;
     &__info-container {
       height: auto;
