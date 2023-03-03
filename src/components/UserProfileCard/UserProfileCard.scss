@@ -2,7 +2,7 @@
 @use "../../styles/abstracts/variables" as *;
 
 .card-container {
-  width: 270px;
+  width:295px;
   min-height: 310px;
   height: auto;
   background-color: $color-white;
@@ -12,18 +12,17 @@
   align-items: center;
   gap: 25px;
   border-radius: 7px;
-  margin: 20px;
 
   &__image-container {
     margin-top: 10px;
-    height: 300px;
+    height:275px;
     padding: 20px;
-
+    
     &--image {
       height: 100%;
       width: 100%;
-      aspect-ratio: 1;
       border-radius: 50%;
+      aspect-ratio:0.80;
     }
   }
   &__info-container {
@@ -68,6 +67,7 @@
 }
 @media screen and (max-width: 767px) {
   .card-container {
+    margin:20px;
     &__info-container {
       height: auto;
 

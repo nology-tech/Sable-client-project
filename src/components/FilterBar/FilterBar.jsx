@@ -19,7 +19,7 @@ const FilterBar = ({
   });
   return (
     <div className="filters">
-      <h2 className="filters--label">{title}</h2>
+      <h2 className="filters--label" id="filter-title">{title}</h2>
       <div className="filters__logic">
         <input className="filters--search" onChange={handleInputSearch}></input>
         <div className="filters--sort" onClick={handleSort}>

@@ -10,8 +10,9 @@
 
   &__title {
     width: auto;
+    font-family: $font-modern;
     color: $page-sub-heading;
-    margin: 0 10%;
+    margin: 2vh 10%;
     font-size: 1rem;
   }
   &__card-container {

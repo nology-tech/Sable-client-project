@@ -23,7 +23,9 @@
     width: 58%;
     height: 32px;
   }
-
+  #filter-title {
+    font-family: $font-modern;
+  }
   &__logic {
     display: flex;
     width: 42%;
