@@ -2,19 +2,8 @@
 @use "../../styles/abstracts/variables" as *;
 
 .card-container {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  width:295px;
-  min-height: 310px;
-  height: auto;
-=======
   width: 17vw;
   height: 35vh;
->>>>>>> 1555ec9a92dbd00a2981aa75f30708e674bf7551
-=======
-  width: 17vw;
-  height: 35vh;
->>>>>>> 3b0aa13998d728b23fce5f6610624f29067bae7e
   background-color: $color-white;
   display: flex;
   flex-direction: column;
@@ -23,27 +12,15 @@
   border-radius: 7px;
 
   &__image-container {
-    margin-top: 10px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    height:275px;
     padding: 20px;
-    
-=======
-    height: 50%;
+    height: 25vh;
     margin-top: 10%;
 
->>>>>>> 1555ec9a92dbd00a2981aa75f30708e674bf7551
-=======
-    height: 15vh;
-    margin-top: 10%;
-
->>>>>>> 3b0aa13998d728b23fce5f6610624f29067bae7e
     &--image {
       height: 100%;
       width: 100%;
       border-radius: 50%;
-      aspect-ratio:0.80;
+      aspect-ratio: 1;
     }
   }
   &__info-container {
@@ -75,18 +52,10 @@
 }
 @media screen and (max-width: 767px) {
   .card-container {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    margin:20px;
-=======
-    width: 70vw;
-    height: 50vh;
->>>>>>> 1555ec9a92dbd00a2981aa75f30708e674bf7551
-=======
     width: 45vw;
     height: 40vh;
-    margin:20px;
->>>>>>> 3b0aa13998d728b23fce5f6610624f29067bae7e
+    margin: 20px;
+
     &__info-container {
       height: auto;
       &--name {
