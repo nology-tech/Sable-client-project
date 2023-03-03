@@ -29,22 +29,15 @@ const StaffResourcesContainer = ({ isAdmin /*resourcesRequestArr*/ }) => {
 
   const staffJSX = staffResourceList(isAdmin).map((staff, index) => {
     return (
-      <StaffResources key={index} staffName={staff[0]} cardsArray={staff[1]} />
+      <StaffResources
+        key={index}
+        staffName={staff[0]}
+        cardsArray={staff[1]}
+        id={index}
+      /> // [staff.name, stafresources, isfirst]
     );
   });
 
-  return (
-    <div className="staff-resource-container">
-      <div className="staff-resources__labels">
-        <p className="booking-container__label">Resource Name</p>
-        <p className="booking-container__label">Quantity Remaining</p>
-        <p className="booking-container__label">Cost per unit</p>
-        <p className="booking-container__label">Auto-Purchase</p>
-        <p className="booking-container__label">Auto-Purchase Level</p>
-        <p className="booking-container__label">Quantity Requested</p>
-      </div>
-      {staffJSX}
-    </div>
-  );
+  return <div className="staff-resource-container">{staffJSX}</div>;
 };
 export default StaffResourcesContainer;
