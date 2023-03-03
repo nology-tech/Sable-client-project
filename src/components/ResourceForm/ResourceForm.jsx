@@ -10,6 +10,9 @@ const ResourceForm = ({
   optionsArr,
   text,
   handleToggle,
+  staff,
+  category,
+  resourceName,
 }) => {
 
   console.log(resource)
@@ -102,18 +105,18 @@ const ResourceForm = ({
       <div className="resource-form-container__category">
         <DropdownField
           label="Category Name"
-          placeholderText={resource.category}
+          placeholderText={category}
           id="category"
           optionsJSX={healthArr}
         />
       </div>
       <div className="resource-form-container__staff">
-        <InputField label="Staff Member" placeholderText={"Mariana"} />
+        <InputField label="Staff Member" placeholderText={staff} />
       </div>
       <div className="resource-form-container__resource">
         <DropdownField
           label="Resource Name"
-          placeholderText={resource.name}
+          placeholderText={resourceName}
           optionsJSX={optionsJSX}
         />
       </div>
